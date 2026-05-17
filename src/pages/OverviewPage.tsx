@@ -7,6 +7,11 @@ export default function OverviewPage() {
         title="What is Lovejoy? — an introduction"
         description="A full introduction to Lovejoy: the show, the cast (Ian McShane, Phyllis Logan, Dudley Sutton, Chris Jury, Malcolm Tierney), the writers (Dick Clement & Ian La Frenais), and the novels by Jonathan Gash."
       />
+      <img
+        src="/images/core/lovejoy_cast.jpg"
+        alt="The cast of Lovejoy"
+        className="article__hero"
+      />
       <header className="article__head">
         <div className="article__eyebrow">An introduction</div>
         <h1 className="article__title">What on earth is Lovejoy?</h1>
@@ -26,6 +31,13 @@ export default function OverviewPage() {
           antiques. It is, in practice, a show about Ian McShane being
           enormously charming at people.
         </p>
+        <p>
+          Famously, Series 1 aired in 1986 and then nothing happened for{" "}
+          <em>five years</em> — the BBC didn't bring it back until Series 2 in
+          1991. After that wait, though, it ran like clockwork: Series 3 in
+          1992, Series 4 and 5 in 1993, Series 6 in 1994. As regular as buses,
+          once one finally turned up.
+        </p>
 
         <h2>The people</h2>
         <p>
@@ -40,9 +52,9 @@ export default function OverviewPage() {
           Wears jumpers.
         </p>
         <p>
-          <strong>Tinker Dill</strong> — a knocker (door-to-door antique
-          finder), generally found in a pub, generally with information for
-          sale at the price of one more drink.
+          <strong>Tinker Dill</strong> — Lovejoy's barker: the man who drums
+          up trade, sniffs out leads at fairs and in pubs, and arrives with
+          information for sale at the price of one more drink.
         </p>
         <p>
           <strong>Lady Jane Felsham</strong> — friend, foil, and source of
@@ -114,26 +126,17 @@ export default function OverviewPage() {
 
         <h2>Behind the page</h2>
         <p>
-          <strong>Jonathan Gash</strong> is the best thing here, because the
-          name is a joke that's been hiding in plain sight on every paperback
-          spine since 1977. His real name is John Grant, born in Bolton in
-          1933, and "Gash" is Cockney rhyming slang for trash — meaning
-          "good-for-nothing". So Britain's most beloved fictional rogue
-          antiques dealer was conjured up by a man who, with deadpan medical
-          precision, signed himself Jonathan Trash. It's the kind of pun
-          Lovejoy himself would talk a tourist into buying for £400.
-        </p>
-        <p>
-          The deeper joke is that Grant's day job couldn't have been less
-          rogueish. He was a pathologist and bacteriologist — a proper one,
+          <strong>Jonathan Gash</strong> is the pen name of John Grant, born
+          in Bolton in 1933. The quietly remarkable thing about him is the
+          day job: Grant was a pathologist and bacteriologist — a proper one,
           not a cosy-mystery vicar's assistant. He worked in England, Germany
           and Hong Kong (where he taught himself Cantonese for the job), and
           from 1971 to 1988 he was Head of Bacteriology at the London School
           of Hygiene and Tropical Medicine. He wrote his Lovejoy novels around
           all this. The first one, <em>The Judas Pair</em> (1977), won the
           Crime Writers' Association's John Creasey Award for Best First Crime
-          Novel. He went on to publish 24 Lovejoy novels between 1977 and
-          2008, finishing with <em>Faces in the Pool</em>. The TV adaptation
+          Novel. He went on to publish more than twenty Lovejoy novels between
+          1977 and 2008, finishing with <em>Faces in the Pool</em>. The TV adaptation
           only really mined the books for Series 1 (1986); from Series 2
           onwards the writers' room invented its own scams, which is partly
           why the show is jollier than the books — Gash's Lovejoy on the page
@@ -173,11 +176,13 @@ export default function OverviewPage() {
         </p>
         <p className="overview-footnote">
           <em>
-            Worth a footnote: in 2026 See-Saw Films — the{" "}
-            <em>Slow Horses</em> people — picked up the rights for a new TV
-            adaptation of the novels. Whether they'll out-twinkle McShane is
-            the question of the century, but it's a sign that Gash/Grant's
-            roguish doctor-turned-novelist creation still has legs.
+            A note on timing: 2026 marks forty years since Series 1 aired,
+            and a reboot is rumoured to be in the offing — See-Saw Films
+            (the <em>Slow Horses</em> people) are said to have picked up the
+            rights to the novels. Which raises the urgent personal question
+            of whether I'm going to make it through all seventy-odd original
+            episodes before the new show airs. Whether See-Saw can
+            out-twinkle McShane is the question of the century either way.
           </em>
         </p>
 

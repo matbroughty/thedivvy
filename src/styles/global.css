@@ -171,6 +171,8 @@ li {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
   font-family: var(--font-serif);
   font-weight: 700;
   font-size: 1.5rem;
@@ -183,8 +185,24 @@ li {
   font-style: italic;
   margin-right: 0.25em;
 }
+.brand__badge {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  vertical-align: middle;
+  margin-right: 0.6rem;
+}
 .brand:hover {
   color: var(--color-accent);
+}
+
+@media (max-width: 720px) {
+  .brand__badge {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .nav {
@@ -551,6 +569,16 @@ li {
 .article {
   max-width: var(--max-article);
   margin: 0 auto;
+}
+
+.article__hero {
+  display: block;
+  width: 100%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-border);
+  margin-bottom: 2rem;
 }
 
 .article__head {

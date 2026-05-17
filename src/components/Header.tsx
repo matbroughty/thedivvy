@@ -5,6 +5,13 @@ export default function Header() {
     <header className="site-header">
       <div className="site-header__inner">
         <Link to="/" className="brand">
+          <img
+            src="/images/core/lovejoy_main_circle_96.png"
+            alt=""
+            width={56}
+            height={56}
+            className="brand__badge"
+          />
           <span className="brand__the">The</span>Divvy
         </Link>
         <nav className="nav" aria-label="Primary">
