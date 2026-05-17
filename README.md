@@ -51,6 +51,21 @@ Output goes to `dist/`.
    `imageSourceUrl` to point at the IMDb page and we'll show a small
    "Image via IMDb" credit underneath.
 
+   **Multiple images:** You can add up to 3 images per episode. Only the main
+   `image` appears in previews/cards. All images display on the full episode page:
+
+   ```mdx
+   image: "/images/episodes/series-1-episode-1-the-firefly-cage.jpg"
+   imageAlt: "Ian McShane as Lovejoy"
+   imageSourceUrl: "https://www.imdb.com/..."
+   image2: "/images/episodes/series-1-episode-1-the-firefly-cage2.jpg"
+   imageAlt2: "Description of second key moment"
+   imageSourceUrl2: "https://www.imdb.com/..."
+   image3: "/images/episodes/series-1-episode-1-the-firefly-cage3.jpg"
+   imageAlt3: "Description of third key moment"
+   imageSourceUrl3: "https://www.imdb.com/..."
+   ```
+
 3. Write the body using the standard sections:
 
    ```

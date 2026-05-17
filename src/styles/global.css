@@ -593,10 +593,18 @@ li {
   letter-spacing: 0.01em;
 }
 
-.episode-image {
+.episode-images {
   max-width: var(--max-article);
   margin: 0 auto 2.4rem;
+}
+
+.episode-image {
+  margin: 0 0 2rem;
   padding: 0;
+}
+
+.episode-image:last-child {
+  margin-bottom: 0;
 }
 
 .episode-image img {

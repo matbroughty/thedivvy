@@ -19,6 +19,13 @@ export interface EpisodeFrontmatter {
   imageAlt?: string;
   /** Link used for image attribution, e.g. an IMDb mediaviewer page. */
   imageSourceUrl?: string;
+  /** Additional episode images (only shown on full episode page, not previews). */
+  image2?: string;
+  imageAlt2?: string;
+  imageSourceUrl2?: string;
+  image3?: string;
+  imageAlt3?: string;
+  imageSourceUrl3?: string;
 }
 
 export interface Episode {
