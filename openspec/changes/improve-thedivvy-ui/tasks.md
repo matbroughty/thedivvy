@@ -105,6 +105,6 @@
 - [x] 11.3 Test navigation flow through homepage → series → episode → archive
 - [x] 11.4 Verify visual identity is consistent across all pages
 - [x] 11.5 Ensure no unnecessary dependencies were added
-- [ ] 11.6 Git commit all changes with appropriate commit messages
+- [x] 11.6 Git commit all changes with appropriate commit messages
 - [x] 11.7 Final visual QA of nostalgic, warm, antique-inspired aesthetic
 - [x] 11.8 Verify site clearly communicates purpose within 5 seconds of homepage visit

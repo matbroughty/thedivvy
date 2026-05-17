@@ -98,6 +98,15 @@ export default function HomePage() {
             <span>The full set</span>
             Every review, by series &rarr;
           </Link>
+          <a
+            href="https://www.instagram.com/theinstadivvy"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="start-here__item"
+          >
+            <span>Behind the scenes</span>
+            Follow on Instagram &rarr;
+          </a>
         </div>
       </section>
 

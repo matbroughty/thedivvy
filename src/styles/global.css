@@ -204,6 +204,17 @@ li {
   color: var(--color-accent);
 }
 
+.nav__instagram {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.7;
+  transition: opacity 120ms ease, color 120ms ease;
+}
+
+.nav__instagram:hover {
+  opacity: 1;
+}
+
 .site-main {
   flex: 1;
   padding: 2.5rem 1.5rem 4rem;
