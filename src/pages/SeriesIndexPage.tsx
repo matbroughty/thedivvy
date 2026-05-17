@@ -6,7 +6,7 @@ export default function SeriesIndexPage() {
   return (
     <div className="page page--narrow">
       <Seo
-        title="The series"
+        title="Lovejoy series guide"
         description="Lovejoy ran for six series between 1986 and 1994. Browse our reviews of every series, from the Firefly Cage onwards."
       />
       <h1>The series</h1>

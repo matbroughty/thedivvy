@@ -113,7 +113,7 @@ export default function ExternalLinksPage() {
   return (
     <div className="page page--narrow">
       <Seo
-        title="External Links | The Divvy"
+        title="Lovejoy links — external resources"
         description="Curated Lovejoy links, episode references, cast information, watching guides, antiques resources, blogs and podcasts."
       />
 

@@ -37,7 +37,7 @@ export default function Seo({
   const url = `${SITE_URL}${pathname}`;
   const fullTitle = title
     ? `${title} · ${SITE_NAME}`
-    : `${SITE_NAME} — a weekly Lovejoy review`;
+    : `${SITE_NAME} — weekly Lovejoy episode reviews`;
   const desc = description ?? DEFAULT_DESCRIPTION;
   const imgPath = image ?? DEFAULT_OG_IMAGE;
   const imgAbs = imgPath.startsWith("http") ? imgPath : `${SITE_URL}${imgPath}`;

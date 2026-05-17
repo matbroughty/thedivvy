@@ -4,7 +4,7 @@ export default function AboutPage() {
   return (
     <article className="article">
       <Seo
-        title="About"
+        title="About — Lovejoy reviews"
         description="The Divvy is written by Mat, in Chislehurst, with warm nostalgia for watching Lovejoy with his mum. Get in touch at mat@broughty.com."
       />
       <header className="article__head">
@@ -16,27 +16,23 @@ export default function AboutPage() {
       <div className="article__body">
         <p>
           I watched <em>Lovejoy</em> with my mum. That's where it starts,
-          really — the lounge, mum commenting on how dishy Ian McShane was,
-          dad barely breaking his third wall to mutter that McShane was
-          vertically challenged. The show belonged to mum, the running gag
-          belonged to dad, and on balance I think the show probably won.
+          really — the lounge, Mum commenting on how dishy Ian McShane was,
+          Dad pointing out that he was a short arse.
         </p>
 
         <p>
-          Over the years I've kept coming back. <em>Lovejoy</em> served as my
-          work avatar for an embarrassing stretch of time, until HR (the
-          people team now, I gather) gently enforced something a bit more
-          sensible. I've ended up in Chislehurst, whose only meaningful link
-          to the world of antiques is that Catherine Southon from{" "}
-          <em>Bargain Hunt</em> runs an auction house here. Lovejoy would
+          Over the (many) years I've kept coming back . <em>Lovejoy</em> served as my
+          work avatar for an impressive stretch of time, until HR (rebranded People Team nowadays I think) gently
+            enforced something a bit more recognisable.
+            I've ended up in Chislehurst, whose only meaningful link to the world of antiques is that Catherine Southon from{" "}
+          <em>Bargain Hunt</em> runs an auction house here. Lovejoy, Tinker et al would
           approve.
         </p>
 
         <p>
           Modern tech has eroded my attention span to approximately that of a
           drunk squirrel, so the plan — review every episode, weekly, for the
-          next eighteen months or so — is part enjoyment, part discipline
-          course. Let's see how much I end up cheating with AI.
+          next eighteen months or so — is part enjoyment, part discipline test. Let's see how much I end up cheating with AI.
         </p>
 
         <p>

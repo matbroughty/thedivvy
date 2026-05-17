@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thedivvy.example.com/sitemap.xml
+Sitemap: https://thedivvy.co.uk/sitemap.xml
