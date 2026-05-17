@@ -1,59 +1,40 @@
-// Generates dist/sitemap.xml after `vite build`. Reads MDX files from
-// src/content/reviews/ and discovers each episode by its frontmatter slug.
-// Static routes are listed below.
+// Generates dist/sitemap.xml after `vite build`.
 //
-// Set the production hostname via the SITE_URL env var, or edit the default.
+// Route enumeration is delegated to scripts/lib/routes.mjs so the sitemap
+// and the build-time prerender share a single source of truth.
+//
+// Set the production hostname via the SITE_URL env var, the VITE_SITE_URL
+// entry in .env.production, or edit the default.
 
-import { readdir, readFile, writeFile } from "node:fs/promises";
-import { existsSync } from "node:fs";
+import { writeFile } from "node:fs/promises";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { getEpisodeEntries } from "./lib/routes.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
-const REVIEWS_DIR = path.join(ROOT, "src", "content", "reviews");
 const DIST_DIR = path.join(ROOT, "dist");
 
+// Fall back to .env.production so the site URL has a single source of truth.
+// Vite reads VITE_SITE_URL from .env.production for the frontend; we read the
+// same file here so the sitemap stays in sync without an extra env var on
+// Amplify.
+function readSiteUrlFromEnvFile() {
+  const envPath = path.join(ROOT, ".env.production");
+  if (!existsSync(envPath)) return undefined;
+  const contents = readFileSync(envPath, "utf-8");
+  const match = contents.match(/^VITE_SITE_URL\s*=\s*(.+?)\s*$/m);
+  return match ? match[1].replace(/^["']|["']$/g, "") : undefined;
+}
+
 const SITE_URL = (
-  process.env.SITE_URL ?? "https://thedivvy.example.com"
+  process.env.SITE_URL ??
+  readSiteUrlFromEnvFile() ??
+  "https://thedivvy.example.com"
 ).replace(/\/$/, "");
 
 // ---------------------------------------------------------------- helpers
-
-async function walk(dir) {
-  const entries = await readdir(dir, { withFileTypes: true });
-  const files = await Promise.all(
-    entries.map((e) => {
-      const full = path.join(dir, e.name);
-      if (e.isDirectory()) return walk(full);
-      if (e.isFile() && full.endsWith(".mdx")) return [full];
-      return [];
-    }),
-  );
-  return files.flat();
-}
-
-// Cheap-but-sufficient YAML frontmatter extractor for the fields we know
-// we'll have. Pulls "key: value" pairs, strips quotes. Anything more
-// elaborate would mean adding a YAML parser dependency just for this.
-function parseFrontmatter(source) {
-  const match = source.match(/^---\s*\n([\s\S]*?)\n---/);
-  if (!match) return {};
-  const out = {};
-  for (const line of match[1].split("\n")) {
-    const m = line.match(/^([A-Za-z0-9_]+):\s*(.+)\s*$/);
-    if (!m) continue;
-    let value = m[2].trim();
-    if (
-      (value.startsWith('"') && value.endsWith('"')) ||
-      (value.startsWith("'") && value.endsWith("'"))
-    ) {
-      value = value.slice(1, -1);
-    }
-    out[m[1]] = value;
-  }
-  return out;
-}
 
 function urlEntry(loc, lastmod, changefreq = "monthly", priority = "0.5") {
   const lastmodLine = lastmod ? `\n    <lastmod>${lastmod}</lastmod>` : "";
@@ -82,31 +63,12 @@ async function main() {
     return;
   }
 
-  // Discover episode entries from MDX frontmatter
-  const mdxFiles = existsSync(REVIEWS_DIR) ? await walk(REVIEWS_DIR) : [];
-  const episodes = [];
-  for (const file of mdxFiles) {
-    const src = await readFile(file, "utf-8");
-    const fm = parseFrontmatter(src);
-    if (!fm.slug) {
-      console.warn(`[sitemap] skipping ${path.relative(ROOT, file)} — no slug in frontmatter`);
-      continue;
-    }
-    episodes.push({
-      slug: fm.slug,
-      series: Number(fm.series),
-      lastmod: reviewDateToIso(fm.reviewDate),
-    });
-  }
-
-  const seriesNumbers = [
+  const episodes = await getEpisodeEntries();
+  const seriesWithReviews = [
     ...new Set(episodes.map((e) => e.series).filter((n) => Number.isFinite(n))),
   ].sort((a, b) => a - b);
-
-  // Always advertise all six series even if some are empty — they're real pages
   const allSeries = [1, 2, 3, 4, 5, 6];
 
-  // Build url list
   const today = new Date().toISOString().slice(0, 10);
   const urls = [];
 
@@ -115,18 +77,17 @@ async function main() {
   urls.push(urlEntry(`${SITE_URL}/archive`, today, "weekly", "0.6"));
   urls.push(urlEntry(`${SITE_URL}/lovejoy-overview`, today, "monthly", "0.7"));
   urls.push(urlEntry(`${SITE_URL}/about`, today, "yearly", "0.4"));
+  urls.push(urlEntry(`${SITE_URL}/links`, today, "monthly", "0.4"));
 
   for (const s of allSeries) {
-    urls.push(
-      urlEntry(`${SITE_URL}/series/${s}`, today, "weekly", "0.6"),
-    );
+    urls.push(urlEntry(`${SITE_URL}/series/${s}`, today, "weekly", "0.6"));
   }
 
   for (const ep of episodes) {
     urls.push(
       urlEntry(
         `${SITE_URL}/episodes/${ep.slug}`,
-        ep.lastmod ?? today,
+        reviewDateToIso(ep.reviewDate) ?? today,
         "monthly",
         "0.8",
       ),
@@ -142,7 +103,7 @@ ${urls.join("\n")}
   const outPath = path.join(DIST_DIR, "sitemap.xml");
   await writeFile(outPath, xml, "utf-8");
   console.log(
-    `[sitemap] wrote ${urls.length} URLs (${episodes.length} episodes, ${seriesNumbers.length} series with reviews) → dist/sitemap.xml`,
+    `[sitemap] wrote ${urls.length} URLs (${episodes.length} episodes, ${seriesWithReviews.length} series with reviews) → dist/sitemap.xml`,
   );
 }
 

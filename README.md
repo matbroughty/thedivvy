@@ -20,6 +20,14 @@ npm run preview
 
 Output goes to `dist/`.
 
+The build pipeline is three sequential steps:
+
+1. `tsc && vite build` — type-check and bundle.
+2. `node scripts/prerender.mjs` — boot a local static server, drive headless Chromium (via `puppeteer`) over every known route, and snapshot the rendered HTML to `dist/{route}/index.html`. Crawlers and social-card bots get full HTML on first byte, no JS required.
+3. `node scripts/generate-sitemap.mjs` — emit `dist/sitemap.xml`.
+
+Routes are enumerated from `scripts/lib/routes.mjs` — the single source of truth shared by both the prerender and the sitemap. Run `npm run routes` to print the current list. The prerender step waits for `window.__APP_HYDRATED__` (set in `src/main.tsx` after React's initial render) before capturing each page; it fails the build (non-zero exit) if any route errors or produces an empty `<title>`.
+
 ## Adding a new episode
 
 1. Create a new `.mdx` file under `src/content/reviews/series-XX/` (e.g. `src/content/reviews/series-01/02-the-sting.mdx`).
@@ -103,7 +111,13 @@ icons are in.
 - **Build command:** `npm run build`
 - **Output directory:** `dist`
 
-`amplify.yml` is included with the same settings, and `public/_redirects` rewrites all paths to `index.html` so client-side routing survives a refresh.
+`amplify.yml` is included with the same settings.
+
+**Puppeteer on Amplify:** the prerender step uses `puppeteer`'s bundled Chromium. Amplify's build container runs as root, so Chromium is launched with `--no-sandbox --disable-setuid-sandbox` (hard-coded in `scripts/prerender.mjs`). No console-side env vars or system-dep install needed for the default `linux2023` build image.
+
+**SPA fallback:** `public/_redirects` declares `/* /index.html 200` (Netlify-style). Amplify Hosting does not natively parse this file — set the equivalent rule under **App settings → Rewrites and redirects** in the Amplify console. With prerendering, Amplify will serve `dist/{route}/index.html` directly for known routes; the fallback only fires for paths that don't have a prerendered file (typos, deleted episodes), where it serves `dist/index.html` and lets React Router render the 404 page client-side.
+
+**Env vars:** the production site URL is read from `.env.production` (`VITE_SITE_URL`). The sitemap script also reads this file at build time, so no extra Amplify console env var is required.
 
 ## Project layout
 
