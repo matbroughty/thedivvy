@@ -7,6 +7,7 @@ import SeriesPage from "./pages/SeriesPage";
 import ArchivePage from "./pages/ArchivePage";
 import OverviewPage from "./pages/OverviewPage";
 import AboutPage from "./pages/AboutPage";
+import ExternalLinksPage from "./pages/ExternalLinksPage";
 import NotFoundPage from "./pages/NotFoundPage";
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
         <Route path="/archive" element={<ArchivePage />} />
         <Route path="/lovejoy-overview" element={<OverviewPage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/links" element={<ExternalLinksPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Layout>

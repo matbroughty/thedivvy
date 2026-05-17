@@ -109,8 +109,8 @@ icons are in.
 
 ```
 src/
-  components/   Layout, Header, EpisodeCard, EpisodeScore, MetricsBlock
-  pages/        Home, Episode, Series, Archive, Overview, NotFound
+  components/   Layout, Header, EpisodeCard, EpisodeScore
+  pages/        Home, Episode, Series, Archive, Overview, About, Links, NotFound
   content/
     reviews/
       series-01/

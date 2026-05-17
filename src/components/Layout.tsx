@@ -21,7 +21,8 @@ export default function Layout({ children }: { children: ReactNode }) {
             rel="noopener noreferrer"
           >
             @theinstadivvy
-          </a>
+          </a>{" "}
+          &middot; <Link to="/links">Links</Link>
         </p>
       </footer>
     </div>

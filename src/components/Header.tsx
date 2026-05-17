@@ -13,6 +13,7 @@ export default function Header() {
           </NavLink>
           <NavLink to="/archive">Archive</NavLink>
           <NavLink to="/lovejoy-overview">Overview</NavLink>
+          <NavLink to="/links">Links</NavLink>
           <NavLink to="/about">About</NavLink>
           <a
             href="https://www.instagram.com/theinstadivvy"
