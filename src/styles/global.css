@@ -596,21 +596,22 @@ li {
 .episode-images {
   max-width: var(--max-article);
   margin: 0 auto 2.4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
 .episode-image {
-  margin: 0 0 2rem;
+  margin: 0;
   padding: 0;
-}
-
-.episode-image:last-child {
-  margin-bottom: 0;
 }
 
 .episode-image img {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
   border-radius: var(--radius);
   border: 1px solid var(--color-border);
   background: var(--color-bg-card);
@@ -618,12 +619,43 @@ li {
 }
 
 .episode-image__credit {
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   color: var(--color-text-muted);
-  text-align: right;
+  text-align: center;
+}
+
+/* Single image: full width */
+.episode-images:has(.episode-image:only-child) {
+  grid-template-columns: 1fr;
+}
+
+.episode-images:has(.episode-image:only-child) .episode-image img {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+/* Two images: equal columns */
+.episode-images:has(.episode-image:first-child:nth-last-child(2)) {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 720px) {
+  .episode-images {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .episode-image img {
+    aspect-ratio: 16 / 9;
+  }
+
+  .episode-image__credit {
+    text-align: right;
+  }
 }
 
 .article__score-row {
