@@ -1,0 +1,30 @@
+{
+  "name": "the-divvy",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "A weekly Lovejoy episode review site.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && node scripts/generate-sitemap.mjs",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdx-js/react": "^3.0.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-helmet-async": "^2.0.5",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@mdx-js/rollup": "^3.0.1",
+    "@types/mdx": "^2.0.13",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "remark-frontmatter": "^5.0.0",
+    "remark-mdx-frontmatter": "^5.0.0",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.9"
+  }
+}
