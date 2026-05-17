@@ -682,6 +682,20 @@ li {
   margin-top: 0.4rem;
 }
 
+/* Section heading icons */
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.section-heading__icon {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-accent);
+  flex-shrink: 0;
+}
+
 /* ---------------- Metrics block ---------------- */
 
 .metrics {

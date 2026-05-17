@@ -66,17 +66,17 @@ Output goes to `dist/`.
    imageSourceUrl3: "https://www.imdb.com/..."
    ```
 
-3. Write the body using the standard sections:
+3. Write the body using the three main sections (each displays with an icon):
 
    ```
-   ## Plot in one breath
-   ## Opening Scene Observations
+   ## One Wink Plot
+   A brief plot summary — what happens in the episode in one breath.
+
    ## Review
-   ## Lovejoy Units
-   ## Divvy Moment
-   ## Guest Star Watch
-   ## Line of the Episode
-   ## Divvy Fact
+   The main review content — your thoughts, observations, and commentary.
+
+   ## Guest Star Watch / Divvy Observation
+   Notable guest stars and the key "divvy moment" from the episode.
    ```
 
 4. Save. The new episode will appear automatically on the homepage, in its series, and in the archive.

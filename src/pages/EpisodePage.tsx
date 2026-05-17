@@ -5,7 +5,6 @@ import {
   getEpisodeBySlug,
 } from "../lib/episodes";
 import EpisodeScore from "../components/EpisodeScore";
-import MetricsBlock from "../components/MetricsBlock";
 import EpisodeImage from "../components/EpisodeImage";
 import Seo from "../components/Seo";
 import { formatAirDate, formatReviewDate } from "../lib/dates";
@@ -67,7 +66,6 @@ export default function EpisodePage() {
 
       <div className="article__body">
         <Component />
-        <MetricsBlock frontmatter={frontmatter} />
       </div>
 
       <nav className="episode-nav" aria-label="Adjacent episodes">
