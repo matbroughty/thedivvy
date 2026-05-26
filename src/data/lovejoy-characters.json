@@ -1,0 +1,2647 @@
+{
+  "source": "IMDb non-commercial datasets",
+  "seriesTconst": "tt0090477",
+  "generatedAt": "2026-05-26T12:39:39.368Z",
+  "totalEpisodes": 72,
+  "recurringCharacterCount": 30,
+  "characters": [
+    {
+      "character": "Lovejoy",
+      "actor": "Ian McShane",
+      "nconst": "nm0574534",
+      "episodeCount": 72,
+      "seriesAppearances": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 1,
+          "title": "The Firefly Cage",
+          "tconst": "tt0637230"
+        },
+        {
+          "season": 1,
+          "episode": 2,
+          "title": "The Axeman Cometh",
+          "tconst": "tt0637228"
+        },
+        {
+          "season": 1,
+          "episode": 3,
+          "title": "The Sting",
+          "tconst": "tt0637244"
+        },
+        {
+          "season": 1,
+          "episode": 4,
+          "title": "Friends, Romans and Enemies",
+          "tconst": "tt0637194"
+        },
+        {
+          "season": 1,
+          "episode": 5,
+          "title": "The Judas Pair",
+          "tconst": "tt0637233"
+        },
+        {
+          "season": 1,
+          "episode": 6,
+          "title": "To Sleep No More",
+          "tconst": "tt0637247"
+        },
+        {
+          "season": 1,
+          "episode": 7,
+          "title": "The Real Thing",
+          "tconst": "tt0637242"
+        },
+        {
+          "season": 1,
+          "episode": 8,
+          "title": "The March of Time",
+          "tconst": "tt0637238"
+        },
+        {
+          "season": 1,
+          "episode": 9,
+          "title": "Death and Venice: Part One",
+          "tconst": "tt0637186"
+        },
+        {
+          "season": 1,
+          "episode": 10,
+          "title": "Death and Venice: Part Two",
+          "tconst": "tt0637187"
+        },
+        {
+          "season": 2,
+          "episode": 1,
+          "title": "Just Desserts",
+          "tconst": "tt0637202"
+        },
+        {
+          "season": 2,
+          "episode": 2,
+          "title": "The Italian Venus",
+          "tconst": "tt0637232"
+        },
+        {
+          "season": 2,
+          "episode": 3,
+          "title": "Bin Diving",
+          "tconst": "tt0637181"
+        },
+        {
+          "season": 2,
+          "episode": 4,
+          "title": "Montezuma's Revenge",
+          "tconst": "tt0637209"
+        },
+        {
+          "season": 2,
+          "episode": 5,
+          "title": "Who Dares, Sings",
+          "tconst": "tt0637248"
+        },
+        {
+          "season": 2,
+          "episode": 6,
+          "title": "One Born Every Minute",
+          "tconst": "tt0637213"
+        },
+        {
+          "season": 2,
+          "episode": 7,
+          "title": "National Wealth",
+          "tconst": "tt0637210"
+        },
+        {
+          "season": 2,
+          "episode": 8,
+          "title": "Sugar & Spice",
+          "tconst": "tt0637225"
+        },
+        {
+          "season": 2,
+          "episode": 9,
+          "title": "Raise the Hispanic",
+          "tconst": "tt0637218"
+        },
+        {
+          "season": 2,
+          "episode": 10,
+          "title": "Lily's Pearls",
+          "tconst": "tt0637205"
+        },
+        {
+          "season": 2,
+          "episode": 11,
+          "title": "Black Virgin of Vladimir",
+          "tconst": "tt0637182"
+        },
+        {
+          "season": 3,
+          "episode": 1,
+          "title": "Friends in High Places",
+          "tconst": "tt0637193"
+        },
+        {
+          "season": 3,
+          "episode": 2,
+          "title": "Out to Lunch",
+          "tconst": "tt0637214"
+        },
+        {
+          "season": 3,
+          "episode": 3,
+          "title": "No Strings",
+          "tconst": "tt0637212"
+        },
+        {
+          "season": 3,
+          "episode": 4,
+          "title": "Angel Trousers",
+          "tconst": "tt0637179"
+        },
+        {
+          "season": 3,
+          "episode": 5,
+          "title": "Benin Bronze",
+          "tconst": "tt0637180"
+        },
+        {
+          "season": 3,
+          "episode": 6,
+          "title": "Eric of Arabia",
+          "tconst": "tt0637190"
+        },
+        {
+          "season": 3,
+          "episode": 7,
+          "title": "Scotch on the Rocks",
+          "tconst": "tt0637220"
+        },
+        {
+          "season": 3,
+          "episode": 8,
+          "title": "Loveknots",
+          "tconst": "tt0637207"
+        },
+        {
+          "season": 3,
+          "episode": 9,
+          "title": "Smoke Your Nose",
+          "tconst": "tt0637222"
+        },
+        {
+          "season": 3,
+          "episode": 10,
+          "title": "Kids",
+          "tconst": "tt0637203"
+        },
+        {
+          "season": 3,
+          "episode": 11,
+          "title": "Members Only",
+          "tconst": "tt0637208"
+        },
+        {
+          "season": 3,
+          "episode": 12,
+          "title": "Highland Fling: Part One",
+          "tconst": "tt0637199"
+        },
+        {
+          "season": 3,
+          "episode": 13,
+          "title": "Highland Fling: Part Two",
+          "tconst": "tt0855541"
+        },
+        {
+          "season": 3,
+          "episode": 14,
+          "title": "The Prague Sun",
+          "tconst": "tt0394771"
+        },
+        {
+          "season": 4,
+          "episode": 1,
+          "title": "The Napoleonic Commode",
+          "tconst": "tt0637239"
+        },
+        {
+          "season": 4,
+          "episode": 2,
+          "title": "The Ring",
+          "tconst": "tt0637243"
+        },
+        {
+          "season": 4,
+          "episode": 3,
+          "title": "Second Fiddle",
+          "tconst": "tt0637221"
+        },
+        {
+          "season": 4,
+          "episode": 4,
+          "title": "The Colour of Mary",
+          "tconst": "tt0637229"
+        },
+        {
+          "season": 4,
+          "episode": 5,
+          "title": "Fly the Flag",
+          "tconst": "tt0637192"
+        },
+        {
+          "season": 4,
+          "episode": 6,
+          "title": "Judgement of Solomon",
+          "tconst": "tt0637234"
+        },
+        {
+          "season": 4,
+          "episode": 7,
+          "title": "The Galloping Major",
+          "tconst": "tt0637231"
+        },
+        {
+          "season": 4,
+          "episode": 8,
+          "title": "God Helps Those",
+          "tconst": "tt0637196"
+        },
+        {
+          "season": 4,
+          "episode": 9,
+          "title": "They Call Me Midas",
+          "tconst": "tt0637245"
+        },
+        {
+          "season": 4,
+          "episode": 10,
+          "title": "Irish Stew",
+          "tconst": "tt0637201"
+        },
+        {
+          "season": 4,
+          "episode": 11,
+          "title": "Dainty Dish",
+          "tconst": "tt0637184"
+        },
+        {
+          "season": 4,
+          "episode": 12,
+          "title": "Taking the Pledge",
+          "tconst": "tt0637227"
+        },
+        {
+          "season": 4,
+          "episode": 13,
+          "title": "Lovejoy Loses It",
+          "tconst": "tt0637206"
+        },
+        {
+          "season": 5,
+          "episode": 1,
+          "title": "Pig in a Poke",
+          "tconst": "tt0637216"
+        },
+        {
+          "season": 5,
+          "episode": 2,
+          "title": "Who Is the Fairest of Them All?",
+          "tconst": "tt0637249"
+        },
+        {
+          "season": 5,
+          "episode": 3,
+          "title": "A Going Concern",
+          "tconst": "tt0637178"
+        },
+        {
+          "season": 5,
+          "episode": 4,
+          "title": "The Kakiemon Tiger",
+          "tconst": "tt0637235"
+        },
+        {
+          "season": 5,
+          "episode": 5,
+          "title": "Three Men and a Brittle Lady",
+          "tconst": "tt0637246"
+        },
+        {
+          "season": 5,
+          "episode": 6,
+          "title": "Ducking and Diving",
+          "tconst": "tt0637189"
+        },
+        {
+          "season": 5,
+          "episode": 7,
+          "title": "Stones of Destiny",
+          "tconst": "tt0637224"
+        },
+        {
+          "season": 5,
+          "episode": 8,
+          "title": "Poetic Licence",
+          "tconst": "tt0637217"
+        },
+        {
+          "season": 5,
+          "episode": 9,
+          "title": "The Peking Gun",
+          "tconst": "tt0637215"
+        },
+        {
+          "season": 5,
+          "episode": 10,
+          "title": "Goose Bumps",
+          "tconst": "tt0637197"
+        },
+        {
+          "season": 5,
+          "episode": 11,
+          "title": "Swings and Roundabouts",
+          "tconst": "tt0637226"
+        },
+        {
+          "season": 5,
+          "episode": 12,
+          "title": "Never Judge a Book by Its Cover",
+          "tconst": "tt0637211"
+        },
+        {
+          "season": 5,
+          "episode": 13,
+          "title": "The Price of Fish",
+          "tconst": "tt0637241"
+        },
+        {
+          "season": 5,
+          "episode": 14,
+          "title": "The Lost Colony",
+          "tconst": "tt0637237"
+        },
+        {
+          "season": 6,
+          "episode": 1,
+          "title": "Fair Exchange",
+          "tconst": "tt0637191"
+        },
+        {
+          "season": 6,
+          "episode": 2,
+          "title": "Day of Reckoning",
+          "tconst": "tt0637185"
+        },
+        {
+          "season": 6,
+          "episode": 3,
+          "title": "Somewhere - Over the Rainbow?",
+          "tconst": "tt0637223"
+        },
+        {
+          "season": 6,
+          "episode": 4,
+          "title": "Double Edged Sword",
+          "tconst": "tt0637188"
+        },
+        {
+          "season": 6,
+          "episode": 5,
+          "title": "Guns and Roses",
+          "tconst": "tt0637198"
+        },
+        {
+          "season": 6,
+          "episode": 6,
+          "title": "The Last of the Uzkoks",
+          "tconst": "tt0637236"
+        },
+        {
+          "season": 6,
+          "episode": 7,
+          "title": "Breaking the Broker",
+          "tconst": "tt0637183"
+        },
+        {
+          "season": 6,
+          "episode": 8,
+          "title": "Fruit of the Desert",
+          "tconst": "tt0637195"
+        },
+        {
+          "season": 6,
+          "episode": 9,
+          "title": "Holding the Baby",
+          "tconst": "tt0637200"
+        },
+        {
+          "season": 6,
+          "episode": 10,
+          "title": "Last Tango in Lavenham",
+          "tconst": "tt0637204"
+        }
+      ]
+    },
+    {
+      "character": "Tinker Dill",
+      "actor": "Dudley Sutton",
+      "nconst": "nm0840303",
+      "episodeCount": 69,
+      "seriesAppearances": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 1,
+          "title": "The Firefly Cage",
+          "tconst": "tt0637230"
+        },
+        {
+          "season": 1,
+          "episode": 2,
+          "title": "The Axeman Cometh",
+          "tconst": "tt0637228"
+        },
+        {
+          "season": 1,
+          "episode": 3,
+          "title": "The Sting",
+          "tconst": "tt0637244"
+        },
+        {
+          "season": 1,
+          "episode": 4,
+          "title": "Friends, Romans and Enemies",
+          "tconst": "tt0637194"
+        },
+        {
+          "season": 1,
+          "episode": 5,
+          "title": "The Judas Pair",
+          "tconst": "tt0637233"
+        },
+        {
+          "season": 1,
+          "episode": 6,
+          "title": "To Sleep No More",
+          "tconst": "tt0637247"
+        },
+        {
+          "season": 1,
+          "episode": 7,
+          "title": "The Real Thing",
+          "tconst": "tt0637242"
+        },
+        {
+          "season": 1,
+          "episode": 8,
+          "title": "The March of Time",
+          "tconst": "tt0637238"
+        },
+        {
+          "season": 1,
+          "episode": 9,
+          "title": "Death and Venice: Part One",
+          "tconst": "tt0637186"
+        },
+        {
+          "season": 1,
+          "episode": 10,
+          "title": "Death and Venice: Part Two",
+          "tconst": "tt0637187"
+        },
+        {
+          "season": 2,
+          "episode": 1,
+          "title": "Just Desserts",
+          "tconst": "tt0637202"
+        },
+        {
+          "season": 2,
+          "episode": 4,
+          "title": "Montezuma's Revenge",
+          "tconst": "tt0637209"
+        },
+        {
+          "season": 2,
+          "episode": 5,
+          "title": "Who Dares, Sings",
+          "tconst": "tt0637248"
+        },
+        {
+          "season": 2,
+          "episode": 6,
+          "title": "One Born Every Minute",
+          "tconst": "tt0637213"
+        },
+        {
+          "season": 2,
+          "episode": 7,
+          "title": "National Wealth",
+          "tconst": "tt0637210"
+        },
+        {
+          "season": 2,
+          "episode": 9,
+          "title": "Raise the Hispanic",
+          "tconst": "tt0637218"
+        },
+        {
+          "season": 2,
+          "episode": 10,
+          "title": "Lily's Pearls",
+          "tconst": "tt0637205"
+        },
+        {
+          "season": 2,
+          "episode": 11,
+          "title": "Black Virgin of Vladimir",
+          "tconst": "tt0637182"
+        },
+        {
+          "season": 3,
+          "episode": 1,
+          "title": "Friends in High Places",
+          "tconst": "tt0637193"
+        },
+        {
+          "season": 3,
+          "episode": 2,
+          "title": "Out to Lunch",
+          "tconst": "tt0637214"
+        },
+        {
+          "season": 3,
+          "episode": 3,
+          "title": "No Strings",
+          "tconst": "tt0637212"
+        },
+        {
+          "season": 3,
+          "episode": 4,
+          "title": "Angel Trousers",
+          "tconst": "tt0637179"
+        },
+        {
+          "season": 3,
+          "episode": 5,
+          "title": "Benin Bronze",
+          "tconst": "tt0637180"
+        },
+        {
+          "season": 3,
+          "episode": 6,
+          "title": "Eric of Arabia",
+          "tconst": "tt0637190"
+        },
+        {
+          "season": 3,
+          "episode": 7,
+          "title": "Scotch on the Rocks",
+          "tconst": "tt0637220"
+        },
+        {
+          "season": 3,
+          "episode": 8,
+          "title": "Loveknots",
+          "tconst": "tt0637207"
+        },
+        {
+          "season": 3,
+          "episode": 9,
+          "title": "Smoke Your Nose",
+          "tconst": "tt0637222"
+        },
+        {
+          "season": 3,
+          "episode": 10,
+          "title": "Kids",
+          "tconst": "tt0637203"
+        },
+        {
+          "season": 3,
+          "episode": 11,
+          "title": "Members Only",
+          "tconst": "tt0637208"
+        },
+        {
+          "season": 3,
+          "episode": 12,
+          "title": "Highland Fling: Part One",
+          "tconst": "tt0637199"
+        },
+        {
+          "season": 3,
+          "episode": 13,
+          "title": "Highland Fling: Part Two",
+          "tconst": "tt0855541"
+        },
+        {
+          "season": 3,
+          "episode": 14,
+          "title": "The Prague Sun",
+          "tconst": "tt0394771"
+        },
+        {
+          "season": 4,
+          "episode": 1,
+          "title": "The Napoleonic Commode",
+          "tconst": "tt0637239"
+        },
+        {
+          "season": 4,
+          "episode": 2,
+          "title": "The Ring",
+          "tconst": "tt0637243"
+        },
+        {
+          "season": 4,
+          "episode": 3,
+          "title": "Second Fiddle",
+          "tconst": "tt0637221"
+        },
+        {
+          "season": 4,
+          "episode": 4,
+          "title": "The Colour of Mary",
+          "tconst": "tt0637229"
+        },
+        {
+          "season": 4,
+          "episode": 5,
+          "title": "Fly the Flag",
+          "tconst": "tt0637192"
+        },
+        {
+          "season": 4,
+          "episode": 6,
+          "title": "Judgement of Solomon",
+          "tconst": "tt0637234"
+        },
+        {
+          "season": 4,
+          "episode": 7,
+          "title": "The Galloping Major",
+          "tconst": "tt0637231"
+        },
+        {
+          "season": 4,
+          "episode": 8,
+          "title": "God Helps Those",
+          "tconst": "tt0637196"
+        },
+        {
+          "season": 4,
+          "episode": 9,
+          "title": "They Call Me Midas",
+          "tconst": "tt0637245"
+        },
+        {
+          "season": 4,
+          "episode": 10,
+          "title": "Irish Stew",
+          "tconst": "tt0637201"
+        },
+        {
+          "season": 4,
+          "episode": 11,
+          "title": "Dainty Dish",
+          "tconst": "tt0637184"
+        },
+        {
+          "season": 4,
+          "episode": 12,
+          "title": "Taking the Pledge",
+          "tconst": "tt0637227"
+        },
+        {
+          "season": 4,
+          "episode": 13,
+          "title": "Lovejoy Loses It",
+          "tconst": "tt0637206"
+        },
+        {
+          "season": 5,
+          "episode": 1,
+          "title": "Pig in a Poke",
+          "tconst": "tt0637216"
+        },
+        {
+          "season": 5,
+          "episode": 2,
+          "title": "Who Is the Fairest of Them All?",
+          "tconst": "tt0637249"
+        },
+        {
+          "season": 5,
+          "episode": 3,
+          "title": "A Going Concern",
+          "tconst": "tt0637178"
+        },
+        {
+          "season": 5,
+          "episode": 4,
+          "title": "The Kakiemon Tiger",
+          "tconst": "tt0637235"
+        },
+        {
+          "season": 5,
+          "episode": 5,
+          "title": "Three Men and a Brittle Lady",
+          "tconst": "tt0637246"
+        },
+        {
+          "season": 5,
+          "episode": 6,
+          "title": "Ducking and Diving",
+          "tconst": "tt0637189"
+        },
+        {
+          "season": 5,
+          "episode": 7,
+          "title": "Stones of Destiny",
+          "tconst": "tt0637224"
+        },
+        {
+          "season": 5,
+          "episode": 8,
+          "title": "Poetic Licence",
+          "tconst": "tt0637217"
+        },
+        {
+          "season": 5,
+          "episode": 9,
+          "title": "The Peking Gun",
+          "tconst": "tt0637215"
+        },
+        {
+          "season": 5,
+          "episode": 10,
+          "title": "Goose Bumps",
+          "tconst": "tt0637197"
+        },
+        {
+          "season": 5,
+          "episode": 11,
+          "title": "Swings and Roundabouts",
+          "tconst": "tt0637226"
+        },
+        {
+          "season": 5,
+          "episode": 12,
+          "title": "Never Judge a Book by Its Cover",
+          "tconst": "tt0637211"
+        },
+        {
+          "season": 5,
+          "episode": 13,
+          "title": "The Price of Fish",
+          "tconst": "tt0637241"
+        },
+        {
+          "season": 5,
+          "episode": 14,
+          "title": "The Lost Colony",
+          "tconst": "tt0637237"
+        },
+        {
+          "season": 6,
+          "episode": 1,
+          "title": "Fair Exchange",
+          "tconst": "tt0637191"
+        },
+        {
+          "season": 6,
+          "episode": 2,
+          "title": "Day of Reckoning",
+          "tconst": "tt0637185"
+        },
+        {
+          "season": 6,
+          "episode": 3,
+          "title": "Somewhere - Over the Rainbow?",
+          "tconst": "tt0637223"
+        },
+        {
+          "season": 6,
+          "episode": 4,
+          "title": "Double Edged Sword",
+          "tconst": "tt0637188"
+        },
+        {
+          "season": 6,
+          "episode": 5,
+          "title": "Guns and Roses",
+          "tconst": "tt0637198"
+        },
+        {
+          "season": 6,
+          "episode": 6,
+          "title": "The Last of the Uzkoks",
+          "tconst": "tt0637236"
+        },
+        {
+          "season": 6,
+          "episode": 7,
+          "title": "Breaking the Broker",
+          "tconst": "tt0637183"
+        },
+        {
+          "season": 6,
+          "episode": 8,
+          "title": "Fruit of the Desert",
+          "tconst": "tt0637195"
+        },
+        {
+          "season": 6,
+          "episode": 9,
+          "title": "Holding the Baby",
+          "tconst": "tt0637200"
+        },
+        {
+          "season": 6,
+          "episode": 10,
+          "title": "Last Tango in Lavenham",
+          "tconst": "tt0637204"
+        }
+      ]
+    },
+    {
+      "character": "Eric Catchpole",
+      "actor": "Chris Jury",
+      "nconst": "nm0433035",
+      "episodeCount": 54,
+      "seriesAppearances": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 1,
+          "title": "The Firefly Cage",
+          "tconst": "tt0637230"
+        },
+        {
+          "season": 1,
+          "episode": 2,
+          "title": "The Axeman Cometh",
+          "tconst": "tt0637228"
+        },
+        {
+          "season": 1,
+          "episode": 3,
+          "title": "The Sting",
+          "tconst": "tt0637244"
+        },
+        {
+          "season": 1,
+          "episode": 4,
+          "title": "Friends, Romans and Enemies",
+          "tconst": "tt0637194"
+        },
+        {
+          "season": 1,
+          "episode": 5,
+          "title": "The Judas Pair",
+          "tconst": "tt0637233"
+        },
+        {
+          "season": 1,
+          "episode": 6,
+          "title": "To Sleep No More",
+          "tconst": "tt0637247"
+        },
+        {
+          "season": 1,
+          "episode": 7,
+          "title": "The Real Thing",
+          "tconst": "tt0637242"
+        },
+        {
+          "season": 1,
+          "episode": 8,
+          "title": "The March of Time",
+          "tconst": "tt0637238"
+        },
+        {
+          "season": 1,
+          "episode": 9,
+          "title": "Death and Venice: Part One",
+          "tconst": "tt0637186"
+        },
+        {
+          "season": 1,
+          "episode": 10,
+          "title": "Death and Venice: Part Two",
+          "tconst": "tt0637187"
+        },
+        {
+          "season": 2,
+          "episode": 1,
+          "title": "Just Desserts",
+          "tconst": "tt0637202"
+        },
+        {
+          "season": 2,
+          "episode": 2,
+          "title": "The Italian Venus",
+          "tconst": "tt0637232"
+        },
+        {
+          "season": 2,
+          "episode": 3,
+          "title": "Bin Diving",
+          "tconst": "tt0637181"
+        },
+        {
+          "season": 2,
+          "episode": 4,
+          "title": "Montezuma's Revenge",
+          "tconst": "tt0637209"
+        },
+        {
+          "season": 2,
+          "episode": 5,
+          "title": "Who Dares, Sings",
+          "tconst": "tt0637248"
+        },
+        {
+          "season": 2,
+          "episode": 7,
+          "title": "National Wealth",
+          "tconst": "tt0637210"
+        },
+        {
+          "season": 2,
+          "episode": 8,
+          "title": "Sugar & Spice",
+          "tconst": "tt0637225"
+        },
+        {
+          "season": 2,
+          "episode": 9,
+          "title": "Raise the Hispanic",
+          "tconst": "tt0637218"
+        },
+        {
+          "season": 2,
+          "episode": 10,
+          "title": "Lily's Pearls",
+          "tconst": "tt0637205"
+        },
+        {
+          "season": 2,
+          "episode": 11,
+          "title": "Black Virgin of Vladimir",
+          "tconst": "tt0637182"
+        },
+        {
+          "season": 3,
+          "episode": 1,
+          "title": "Friends in High Places",
+          "tconst": "tt0637193"
+        },
+        {
+          "season": 3,
+          "episode": 2,
+          "title": "Out to Lunch",
+          "tconst": "tt0637214"
+        },
+        {
+          "season": 3,
+          "episode": 3,
+          "title": "No Strings",
+          "tconst": "tt0637212"
+        },
+        {
+          "season": 3,
+          "episode": 4,
+          "title": "Angel Trousers",
+          "tconst": "tt0637179"
+        },
+        {
+          "season": 3,
+          "episode": 5,
+          "title": "Benin Bronze",
+          "tconst": "tt0637180"
+        },
+        {
+          "season": 3,
+          "episode": 6,
+          "title": "Eric of Arabia",
+          "tconst": "tt0637190"
+        },
+        {
+          "season": 3,
+          "episode": 7,
+          "title": "Scotch on the Rocks",
+          "tconst": "tt0637220"
+        },
+        {
+          "season": 3,
+          "episode": 8,
+          "title": "Loveknots",
+          "tconst": "tt0637207"
+        },
+        {
+          "season": 3,
+          "episode": 9,
+          "title": "Smoke Your Nose",
+          "tconst": "tt0637222"
+        },
+        {
+          "season": 3,
+          "episode": 10,
+          "title": "Kids",
+          "tconst": "tt0637203"
+        },
+        {
+          "season": 3,
+          "episode": 11,
+          "title": "Members Only",
+          "tconst": "tt0637208"
+        },
+        {
+          "season": 3,
+          "episode": 12,
+          "title": "Highland Fling: Part One",
+          "tconst": "tt0637199"
+        },
+        {
+          "season": 3,
+          "episode": 13,
+          "title": "Highland Fling: Part Two",
+          "tconst": "tt0855541"
+        },
+        {
+          "season": 3,
+          "episode": 14,
+          "title": "The Prague Sun",
+          "tconst": "tt0394771"
+        },
+        {
+          "season": 4,
+          "episode": 1,
+          "title": "The Napoleonic Commode",
+          "tconst": "tt0637239"
+        },
+        {
+          "season": 4,
+          "episode": 2,
+          "title": "The Ring",
+          "tconst": "tt0637243"
+        },
+        {
+          "season": 4,
+          "episode": 3,
+          "title": "Second Fiddle",
+          "tconst": "tt0637221"
+        },
+        {
+          "season": 4,
+          "episode": 4,
+          "title": "The Colour of Mary",
+          "tconst": "tt0637229"
+        },
+        {
+          "season": 4,
+          "episode": 5,
+          "title": "Fly the Flag",
+          "tconst": "tt0637192"
+        },
+        {
+          "season": 4,
+          "episode": 6,
+          "title": "Judgement of Solomon",
+          "tconst": "tt0637234"
+        },
+        {
+          "season": 4,
+          "episode": 7,
+          "title": "The Galloping Major",
+          "tconst": "tt0637231"
+        },
+        {
+          "season": 4,
+          "episode": 8,
+          "title": "God Helps Those",
+          "tconst": "tt0637196"
+        },
+        {
+          "season": 4,
+          "episode": 9,
+          "title": "They Call Me Midas",
+          "tconst": "tt0637245"
+        },
+        {
+          "season": 4,
+          "episode": 10,
+          "title": "Irish Stew",
+          "tconst": "tt0637201"
+        },
+        {
+          "season": 4,
+          "episode": 11,
+          "title": "Dainty Dish",
+          "tconst": "tt0637184"
+        },
+        {
+          "season": 4,
+          "episode": 12,
+          "title": "Taking the Pledge",
+          "tconst": "tt0637227"
+        },
+        {
+          "season": 4,
+          "episode": 13,
+          "title": "Lovejoy Loses It",
+          "tconst": "tt0637206"
+        },
+        {
+          "season": 5,
+          "episode": 1,
+          "title": "Pig in a Poke",
+          "tconst": "tt0637216"
+        },
+        {
+          "season": 5,
+          "episode": 2,
+          "title": "Who Is the Fairest of Them All?",
+          "tconst": "tt0637249"
+        },
+        {
+          "season": 5,
+          "episode": 3,
+          "title": "A Going Concern",
+          "tconst": "tt0637178"
+        },
+        {
+          "season": 5,
+          "episode": 4,
+          "title": "The Kakiemon Tiger",
+          "tconst": "tt0637235"
+        },
+        {
+          "season": 5,
+          "episode": 5,
+          "title": "Three Men and a Brittle Lady",
+          "tconst": "tt0637246"
+        },
+        {
+          "season": 5,
+          "episode": 6,
+          "title": "Ducking and Diving",
+          "tconst": "tt0637189"
+        },
+        {
+          "season": 6,
+          "episode": 10,
+          "title": "Last Tango in Lavenham",
+          "tconst": "tt0637204"
+        }
+      ]
+    },
+    {
+      "character": "Lady Jane Felsham",
+      "actor": "Phyllis Logan",
+      "nconst": "nm0517642",
+      "episodeCount": 47,
+      "seriesAppearances": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 1,
+          "title": "The Firefly Cage",
+          "tconst": "tt0637230"
+        },
+        {
+          "season": 1,
+          "episode": 2,
+          "title": "The Axeman Cometh",
+          "tconst": "tt0637228"
+        },
+        {
+          "season": 1,
+          "episode": 3,
+          "title": "The Sting",
+          "tconst": "tt0637244"
+        },
+        {
+          "season": 1,
+          "episode": 4,
+          "title": "Friends, Romans and Enemies",
+          "tconst": "tt0637194"
+        },
+        {
+          "season": 1,
+          "episode": 5,
+          "title": "The Judas Pair",
+          "tconst": "tt0637233"
+        },
+        {
+          "season": 1,
+          "episode": 6,
+          "title": "To Sleep No More",
+          "tconst": "tt0637247"
+        },
+        {
+          "season": 1,
+          "episode": 7,
+          "title": "The Real Thing",
+          "tconst": "tt0637242"
+        },
+        {
+          "season": 1,
+          "episode": 8,
+          "title": "The March of Time",
+          "tconst": "tt0637238"
+        },
+        {
+          "season": 1,
+          "episode": 9,
+          "title": "Death and Venice: Part One",
+          "tconst": "tt0637186"
+        },
+        {
+          "season": 1,
+          "episode": 10,
+          "title": "Death and Venice: Part Two",
+          "tconst": "tt0637187"
+        },
+        {
+          "season": 2,
+          "episode": 1,
+          "title": "Just Desserts",
+          "tconst": "tt0637202"
+        },
+        {
+          "season": 2,
+          "episode": 2,
+          "title": "The Italian Venus",
+          "tconst": "tt0637232"
+        },
+        {
+          "season": 2,
+          "episode": 3,
+          "title": "Bin Diving",
+          "tconst": "tt0637181"
+        },
+        {
+          "season": 2,
+          "episode": 4,
+          "title": "Montezuma's Revenge",
+          "tconst": "tt0637209"
+        },
+        {
+          "season": 2,
+          "episode": 5,
+          "title": "Who Dares, Sings",
+          "tconst": "tt0637248"
+        },
+        {
+          "season": 2,
+          "episode": 8,
+          "title": "Sugar & Spice",
+          "tconst": "tt0637225"
+        },
+        {
+          "season": 2,
+          "episode": 10,
+          "title": "Lily's Pearls",
+          "tconst": "tt0637205"
+        },
+        {
+          "season": 3,
+          "episode": 1,
+          "title": "Friends in High Places",
+          "tconst": "tt0637193"
+        },
+        {
+          "season": 3,
+          "episode": 2,
+          "title": "Out to Lunch",
+          "tconst": "tt0637214"
+        },
+        {
+          "season": 3,
+          "episode": 3,
+          "title": "No Strings",
+          "tconst": "tt0637212"
+        },
+        {
+          "season": 3,
+          "episode": 4,
+          "title": "Angel Trousers",
+          "tconst": "tt0637179"
+        },
+        {
+          "season": 3,
+          "episode": 5,
+          "title": "Benin Bronze",
+          "tconst": "tt0637180"
+        },
+        {
+          "season": 3,
+          "episode": 6,
+          "title": "Eric of Arabia",
+          "tconst": "tt0637190"
+        },
+        {
+          "season": 3,
+          "episode": 7,
+          "title": "Scotch on the Rocks",
+          "tconst": "tt0637220"
+        },
+        {
+          "season": 3,
+          "episode": 8,
+          "title": "Loveknots",
+          "tconst": "tt0637207"
+        },
+        {
+          "season": 3,
+          "episode": 9,
+          "title": "Smoke Your Nose",
+          "tconst": "tt0637222"
+        },
+        {
+          "season": 3,
+          "episode": 10,
+          "title": "Kids",
+          "tconst": "tt0637203"
+        },
+        {
+          "season": 3,
+          "episode": 11,
+          "title": "Members Only",
+          "tconst": "tt0637208"
+        },
+        {
+          "season": 3,
+          "episode": 12,
+          "title": "Highland Fling: Part One",
+          "tconst": "tt0637199"
+        },
+        {
+          "season": 3,
+          "episode": 13,
+          "title": "Highland Fling: Part Two",
+          "tconst": "tt0855541"
+        },
+        {
+          "season": 3,
+          "episode": 14,
+          "title": "The Prague Sun",
+          "tconst": "tt0394771"
+        },
+        {
+          "season": 4,
+          "episode": 1,
+          "title": "The Napoleonic Commode",
+          "tconst": "tt0637239"
+        },
+        {
+          "season": 4,
+          "episode": 2,
+          "title": "The Ring",
+          "tconst": "tt0637243"
+        },
+        {
+          "season": 4,
+          "episode": 3,
+          "title": "Second Fiddle",
+          "tconst": "tt0637221"
+        },
+        {
+          "season": 4,
+          "episode": 4,
+          "title": "The Colour of Mary",
+          "tconst": "tt0637229"
+        },
+        {
+          "season": 4,
+          "episode": 5,
+          "title": "Fly the Flag",
+          "tconst": "tt0637192"
+        },
+        {
+          "season": 4,
+          "episode": 6,
+          "title": "Judgement of Solomon",
+          "tconst": "tt0637234"
+        },
+        {
+          "season": 4,
+          "episode": 7,
+          "title": "The Galloping Major",
+          "tconst": "tt0637231"
+        },
+        {
+          "season": 4,
+          "episode": 8,
+          "title": "God Helps Those",
+          "tconst": "tt0637196"
+        },
+        {
+          "season": 4,
+          "episode": 9,
+          "title": "They Call Me Midas",
+          "tconst": "tt0637245"
+        },
+        {
+          "season": 4,
+          "episode": 10,
+          "title": "Irish Stew",
+          "tconst": "tt0637201"
+        },
+        {
+          "season": 4,
+          "episode": 11,
+          "title": "Dainty Dish",
+          "tconst": "tt0637184"
+        },
+        {
+          "season": 4,
+          "episode": 12,
+          "title": "Taking the Pledge",
+          "tconst": "tt0637227"
+        },
+        {
+          "season": 4,
+          "episode": 13,
+          "title": "Lovejoy Loses It",
+          "tconst": "tt0637206"
+        },
+        {
+          "season": 5,
+          "episode": 1,
+          "title": "Pig in a Poke",
+          "tconst": "tt0637216"
+        },
+        {
+          "season": 5,
+          "episode": 2,
+          "title": "Who Is the Fairest of Them All?",
+          "tconst": "tt0637249"
+        },
+        {
+          "season": 6,
+          "episode": 10,
+          "title": "Last Tango in Lavenham",
+          "tconst": "tt0637204"
+        }
+      ]
+    },
+    {
+      "character": "Charlie Gimbert",
+      "actor": "Malcolm Tierney",
+      "nconst": "nm0862939",
+      "episodeCount": 27,
+      "seriesAppearances": [
+        1,
+        4,
+        5
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 1,
+          "title": "The Firefly Cage",
+          "tconst": "tt0637230"
+        },
+        {
+          "season": 1,
+          "episode": 2,
+          "title": "The Axeman Cometh",
+          "tconst": "tt0637228"
+        },
+        {
+          "season": 1,
+          "episode": 3,
+          "title": "The Sting",
+          "tconst": "tt0637244"
+        },
+        {
+          "season": 1,
+          "episode": 4,
+          "title": "Friends, Romans and Enemies",
+          "tconst": "tt0637194"
+        },
+        {
+          "season": 1,
+          "episode": 5,
+          "title": "The Judas Pair",
+          "tconst": "tt0637233"
+        },
+        {
+          "season": 1,
+          "episode": 6,
+          "title": "To Sleep No More",
+          "tconst": "tt0637247"
+        },
+        {
+          "season": 1,
+          "episode": 7,
+          "title": "The Real Thing",
+          "tconst": "tt0637242"
+        },
+        {
+          "season": 1,
+          "episode": 8,
+          "title": "The March of Time",
+          "tconst": "tt0637238"
+        },
+        {
+          "season": 1,
+          "episode": 9,
+          "title": "Death and Venice: Part One",
+          "tconst": "tt0637186"
+        },
+        {
+          "season": 1,
+          "episode": 10,
+          "title": "Death and Venice: Part Two",
+          "tconst": "tt0637187"
+        },
+        {
+          "season": 4,
+          "episode": 4,
+          "title": "The Colour of Mary",
+          "tconst": "tt0637229"
+        },
+        {
+          "season": 4,
+          "episode": 6,
+          "title": "Judgement of Solomon",
+          "tconst": "tt0637234"
+        },
+        {
+          "season": 4,
+          "episode": 8,
+          "title": "God Helps Those",
+          "tconst": "tt0637196"
+        },
+        {
+          "season": 4,
+          "episode": 11,
+          "title": "Dainty Dish",
+          "tconst": "tt0637184"
+        },
+        {
+          "season": 4,
+          "episode": 12,
+          "title": "Taking the Pledge",
+          "tconst": "tt0637227"
+        },
+        {
+          "season": 4,
+          "episode": 13,
+          "title": "Lovejoy Loses It",
+          "tconst": "tt0637206"
+        },
+        {
+          "season": 5,
+          "episode": 3,
+          "title": "A Going Concern",
+          "tconst": "tt0637178"
+        },
+        {
+          "season": 5,
+          "episode": 4,
+          "title": "The Kakiemon Tiger",
+          "tconst": "tt0637235"
+        },
+        {
+          "season": 5,
+          "episode": 5,
+          "title": "Three Men and a Brittle Lady",
+          "tconst": "tt0637246"
+        },
+        {
+          "season": 5,
+          "episode": 6,
+          "title": "Ducking and Diving",
+          "tconst": "tt0637189"
+        },
+        {
+          "season": 5,
+          "episode": 7,
+          "title": "Stones of Destiny",
+          "tconst": "tt0637224"
+        },
+        {
+          "season": 5,
+          "episode": 9,
+          "title": "The Peking Gun",
+          "tconst": "tt0637215"
+        },
+        {
+          "season": 5,
+          "episode": 10,
+          "title": "Goose Bumps",
+          "tconst": "tt0637197"
+        },
+        {
+          "season": 5,
+          "episode": 11,
+          "title": "Swings and Roundabouts",
+          "tconst": "tt0637226"
+        },
+        {
+          "season": 5,
+          "episode": 12,
+          "title": "Never Judge a Book by Its Cover",
+          "tconst": "tt0637211"
+        },
+        {
+          "season": 5,
+          "episode": 13,
+          "title": "The Price of Fish",
+          "tconst": "tt0637241"
+        },
+        {
+          "season": 5,
+          "episode": 14,
+          "title": "The Lost Colony",
+          "tconst": "tt0637237"
+        }
+      ]
+    },
+    {
+      "character": "Charlotte Cavendish",
+      "actor": "Caroline Langrishe",
+      "nconst": "nm0486674",
+      "episodeCount": 22,
+      "seriesAppearances": [
+        5,
+        6
+      ],
+      "episodes": [
+        {
+          "season": 5,
+          "episode": 3,
+          "title": "A Going Concern",
+          "tconst": "tt0637178"
+        },
+        {
+          "season": 5,
+          "episode": 4,
+          "title": "The Kakiemon Tiger",
+          "tconst": "tt0637235"
+        },
+        {
+          "season": 5,
+          "episode": 5,
+          "title": "Three Men and a Brittle Lady",
+          "tconst": "tt0637246"
+        },
+        {
+          "season": 5,
+          "episode": 6,
+          "title": "Ducking and Diving",
+          "tconst": "tt0637189"
+        },
+        {
+          "season": 5,
+          "episode": 7,
+          "title": "Stones of Destiny",
+          "tconst": "tt0637224"
+        },
+        {
+          "season": 5,
+          "episode": 8,
+          "title": "Poetic Licence",
+          "tconst": "tt0637217"
+        },
+        {
+          "season": 5,
+          "episode": 9,
+          "title": "The Peking Gun",
+          "tconst": "tt0637215"
+        },
+        {
+          "season": 5,
+          "episode": 10,
+          "title": "Goose Bumps",
+          "tconst": "tt0637197"
+        },
+        {
+          "season": 5,
+          "episode": 11,
+          "title": "Swings and Roundabouts",
+          "tconst": "tt0637226"
+        },
+        {
+          "season": 5,
+          "episode": 12,
+          "title": "Never Judge a Book by Its Cover",
+          "tconst": "tt0637211"
+        },
+        {
+          "season": 5,
+          "episode": 13,
+          "title": "The Price of Fish",
+          "tconst": "tt0637241"
+        },
+        {
+          "season": 5,
+          "episode": 14,
+          "title": "The Lost Colony",
+          "tconst": "tt0637237"
+        },
+        {
+          "season": 6,
+          "episode": 1,
+          "title": "Fair Exchange",
+          "tconst": "tt0637191"
+        },
+        {
+          "season": 6,
+          "episode": 2,
+          "title": "Day of Reckoning",
+          "tconst": "tt0637185"
+        },
+        {
+          "season": 6,
+          "episode": 3,
+          "title": "Somewhere - Over the Rainbow?",
+          "tconst": "tt0637223"
+        },
+        {
+          "season": 6,
+          "episode": 4,
+          "title": "Double Edged Sword",
+          "tconst": "tt0637188"
+        },
+        {
+          "season": 6,
+          "episode": 5,
+          "title": "Guns and Roses",
+          "tconst": "tt0637198"
+        },
+        {
+          "season": 6,
+          "episode": 6,
+          "title": "The Last of the Uzkoks",
+          "tconst": "tt0637236"
+        },
+        {
+          "season": 6,
+          "episode": 7,
+          "title": "Breaking the Broker",
+          "tconst": "tt0637183"
+        },
+        {
+          "season": 6,
+          "episode": 8,
+          "title": "Fruit of the Desert",
+          "tconst": "tt0637195"
+        },
+        {
+          "season": 6,
+          "episode": 9,
+          "title": "Holding the Baby",
+          "tconst": "tt0637200"
+        },
+        {
+          "season": 6,
+          "episode": 10,
+          "title": "Last Tango in Lavenham",
+          "tconst": "tt0637204"
+        }
+      ]
+    },
+    {
+      "character": "Beth Taylor",
+      "actor": "Diane Parish",
+      "nconst": "nm0661678",
+      "episodeCount": 19,
+      "seriesAppearances": [
+        5,
+        6
+      ],
+      "episodes": [
+        {
+          "season": 5,
+          "episode": 4,
+          "title": "The Kakiemon Tiger",
+          "tconst": "tt0637235"
+        },
+        {
+          "season": 5,
+          "episode": 5,
+          "title": "Three Men and a Brittle Lady",
+          "tconst": "tt0637246"
+        },
+        {
+          "season": 5,
+          "episode": 6,
+          "title": "Ducking and Diving",
+          "tconst": "tt0637189"
+        },
+        {
+          "season": 5,
+          "episode": 7,
+          "title": "Stones of Destiny",
+          "tconst": "tt0637224"
+        },
+        {
+          "season": 5,
+          "episode": 8,
+          "title": "Poetic Licence",
+          "tconst": "tt0637217"
+        },
+        {
+          "season": 5,
+          "episode": 9,
+          "title": "The Peking Gun",
+          "tconst": "tt0637215"
+        },
+        {
+          "season": 5,
+          "episode": 10,
+          "title": "Goose Bumps",
+          "tconst": "tt0637197"
+        },
+        {
+          "season": 5,
+          "episode": 11,
+          "title": "Swings and Roundabouts",
+          "tconst": "tt0637226"
+        },
+        {
+          "season": 5,
+          "episode": 12,
+          "title": "Never Judge a Book by Its Cover",
+          "tconst": "tt0637211"
+        },
+        {
+          "season": 5,
+          "episode": 13,
+          "title": "The Price of Fish",
+          "tconst": "tt0637241"
+        },
+        {
+          "season": 5,
+          "episode": 14,
+          "title": "The Lost Colony",
+          "tconst": "tt0637237"
+        },
+        {
+          "season": 6,
+          "episode": 1,
+          "title": "Fair Exchange",
+          "tconst": "tt0637191"
+        },
+        {
+          "season": 6,
+          "episode": 2,
+          "title": "Day of Reckoning",
+          "tconst": "tt0637185"
+        },
+        {
+          "season": 6,
+          "episode": 3,
+          "title": "Somewhere - Over the Rainbow?",
+          "tconst": "tt0637223"
+        },
+        {
+          "season": 6,
+          "episode": 4,
+          "title": "Double Edged Sword",
+          "tconst": "tt0637188"
+        },
+        {
+          "season": 6,
+          "episode": 6,
+          "title": "The Last of the Uzkoks",
+          "tconst": "tt0637236"
+        },
+        {
+          "season": 6,
+          "episode": 7,
+          "title": "Breaking the Broker",
+          "tconst": "tt0637183"
+        },
+        {
+          "season": 6,
+          "episode": 9,
+          "title": "Holding the Baby",
+          "tconst": "tt0637200"
+        },
+        {
+          "season": 6,
+          "episode": 10,
+          "title": "Last Tango in Lavenham",
+          "tconst": "tt0637204"
+        }
+      ]
+    },
+    {
+      "character": "Kate Henshaw",
+      "actor": "Maggie Ollerenshaw",
+      "nconst": "nm0647316",
+      "episodeCount": 10,
+      "seriesAppearances": [
+        5,
+        6
+      ],
+      "episodes": [
+        {
+          "season": 5,
+          "episode": 3,
+          "title": "A Going Concern",
+          "tconst": "tt0637178"
+        },
+        {
+          "season": 5,
+          "episode": 6,
+          "title": "Ducking and Diving",
+          "tconst": "tt0637189"
+        },
+        {
+          "season": 5,
+          "episode": 7,
+          "title": "Stones of Destiny",
+          "tconst": "tt0637224"
+        },
+        {
+          "season": 5,
+          "episode": 8,
+          "title": "Poetic Licence",
+          "tconst": "tt0637217"
+        },
+        {
+          "season": 5,
+          "episode": 10,
+          "title": "Goose Bumps",
+          "tconst": "tt0637197"
+        },
+        {
+          "season": 5,
+          "episode": 11,
+          "title": "Swings and Roundabouts",
+          "tconst": "tt0637226"
+        },
+        {
+          "season": 6,
+          "episode": 2,
+          "title": "Day of Reckoning",
+          "tconst": "tt0637185"
+        },
+        {
+          "season": 6,
+          "episode": 5,
+          "title": "Guns and Roses",
+          "tconst": "tt0637198"
+        },
+        {
+          "season": 6,
+          "episode": 9,
+          "title": "Holding the Baby",
+          "tconst": "tt0637200"
+        },
+        {
+          "season": 6,
+          "episode": 10,
+          "title": "Last Tango in Lavenham",
+          "tconst": "tt0637204"
+        }
+      ]
+    },
+    {
+      "character": "Lord Alexander Felsham",
+      "actor": "Pavel Douglas",
+      "nconst": "nm0235206",
+      "episodeCount": 9,
+      "seriesAppearances": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 5,
+          "title": "The Judas Pair",
+          "tconst": "tt0637233"
+        },
+        {
+          "season": 2,
+          "episode": 1,
+          "title": "Just Desserts",
+          "tconst": "tt0637202"
+        },
+        {
+          "season": 2,
+          "episode": 2,
+          "title": "The Italian Venus",
+          "tconst": "tt0637232"
+        },
+        {
+          "season": 2,
+          "episode": 4,
+          "title": "Montezuma's Revenge",
+          "tconst": "tt0637209"
+        },
+        {
+          "season": 2,
+          "episode": 10,
+          "title": "Lily's Pearls",
+          "tconst": "tt0637205"
+        },
+        {
+          "season": 3,
+          "episode": 1,
+          "title": "Friends in High Places",
+          "tconst": "tt0637193"
+        },
+        {
+          "season": 3,
+          "episode": 2,
+          "title": "Out to Lunch",
+          "tconst": "tt0637214"
+        },
+        {
+          "season": 3,
+          "episode": 8,
+          "title": "Loveknots",
+          "tconst": "tt0637207"
+        },
+        {
+          "season": 5,
+          "episode": 2,
+          "title": "Who Is the Fairest of Them All?",
+          "tconst": "tt0637249"
+        }
+      ]
+    },
+    {
+      "character": "Dandy Jack",
+      "actor": "Geoffrey Bateman",
+      "nconst": "nm0060799",
+      "episodeCount": 5,
+      "seriesAppearances": [
+        1
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 2,
+          "title": "The Axeman Cometh",
+          "tconst": "tt0637228"
+        },
+        {
+          "season": 1,
+          "episode": 3,
+          "title": "The Sting",
+          "tconst": "tt0637244"
+        },
+        {
+          "season": 1,
+          "episode": 4,
+          "title": "Friends, Romans and Enemies",
+          "tconst": "tt0637194"
+        },
+        {
+          "season": 1,
+          "episode": 6,
+          "title": "To Sleep No More",
+          "tconst": "tt0637247"
+        },
+        {
+          "season": 1,
+          "episode": 7,
+          "title": "The Real Thing",
+          "tconst": "tt0637242"
+        }
+      ]
+    },
+    {
+      "character": "Amanda",
+      "actor": "Cassie Stuart",
+      "nconst": "nm0835662",
+      "episodeCount": 3,
+      "seriesAppearances": [
+        1
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 1,
+          "title": "The Firefly Cage",
+          "tconst": "tt0637230"
+        },
+        {
+          "season": 1,
+          "episode": 3,
+          "title": "The Sting",
+          "tconst": "tt0637244"
+        },
+        {
+          "season": 1,
+          "episode": 4,
+          "title": "Friends, Romans and Enemies",
+          "tconst": "tt0637194"
+        }
+      ]
+    },
+    {
+      "character": "Det. Insp. Hardwick",
+      "actor": "Eric Deacon",
+      "nconst": "nm0212573",
+      "episodeCount": 3,
+      "seriesAppearances": [
+        4,
+        6
+      ],
+      "episodes": [
+        {
+          "season": 4,
+          "episode": 6,
+          "title": "Judgement of Solomon",
+          "tconst": "tt0637234"
+        },
+        {
+          "season": 6,
+          "episode": 1,
+          "title": "Fair Exchange",
+          "tconst": "tt0637191"
+        },
+        {
+          "season": 6,
+          "episode": 2,
+          "title": "Day of Reckoning",
+          "tconst": "tt0637185"
+        }
+      ]
+    },
+    {
+      "character": "Helen",
+      "actor": "Jo Ross",
+      "nconst": "nm0743529",
+      "episodeCount": 3,
+      "seriesAppearances": [
+        1
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 3,
+          "title": "The Sting",
+          "tconst": "tt0637244"
+        },
+        {
+          "season": 1,
+          "episode": 4,
+          "title": "Friends, Romans and Enemies",
+          "tconst": "tt0637194"
+        },
+        {
+          "season": 1,
+          "episode": 6,
+          "title": "To Sleep No More",
+          "tconst": "tt0637247"
+        }
+      ]
+    },
+    {
+      "character": "Vicky Lovejoy",
+      "actor": "Amelia Shankley",
+      "nconst": "nm0193243",
+      "episodeCount": 3,
+      "seriesAppearances": [
+        2,
+        3
+      ],
+      "episodes": [
+        {
+          "season": 2,
+          "episode": 8,
+          "title": "Sugar & Spice",
+          "tconst": "tt0637225"
+        },
+        {
+          "season": 3,
+          "episode": 7,
+          "title": "Scotch on the Rocks",
+          "tconst": "tt0637220"
+        },
+        {
+          "season": 3,
+          "episode": 10,
+          "title": "Kids",
+          "tconst": "tt0637203"
+        }
+      ]
+    },
+    {
+      "character": "Victoria Cavero",
+      "actor": "Joanna Lumley",
+      "nconst": "nm0525921",
+      "episodeCount": 3,
+      "seriesAppearances": [
+        3
+      ],
+      "episodes": [
+        {
+          "season": 3,
+          "episode": 1,
+          "title": "Friends in High Places",
+          "tconst": "tt0637193"
+        },
+        {
+          "season": 3,
+          "episode": 2,
+          "title": "Out to Lunch",
+          "tconst": "tt0637214"
+        },
+        {
+          "season": 3,
+          "episode": 3,
+          "title": "No Strings",
+          "tconst": "tt0637212"
+        }
+      ]
+    },
+    {
+      "character": "Caterina",
+      "actor": "Gwen Humble",
+      "nconst": "nm0401706",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        1
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 9,
+          "title": "Death and Venice: Part One",
+          "tconst": "tt0637186"
+        },
+        {
+          "season": 1,
+          "episode": 10,
+          "title": "Death and Venice: Part Two",
+          "tconst": "tt0637187"
+        }
+      ]
+    },
+    {
+      "character": "Cosima",
+      "actor": "Haydn Gwynne",
+      "nconst": "nm0006522",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        1
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 9,
+          "title": "Death and Venice: Part One",
+          "tconst": "tt0637186"
+        },
+        {
+          "season": 1,
+          "episode": 10,
+          "title": "Death and Venice: Part Two",
+          "tconst": "tt0637187"
+        }
+      ]
+    },
+    {
+      "character": "Duncan",
+      "actor": "Bill Travers",
+      "nconst": "nm0871272",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        3
+      ],
+      "episodes": [
+        {
+          "season": 3,
+          "episode": 12,
+          "title": "Highland Fling: Part One",
+          "tconst": "tt0637199"
+        },
+        {
+          "season": 3,
+          "episode": 13,
+          "title": "Highland Fling: Part Two",
+          "tconst": "tt0855541"
+        }
+      ]
+    },
+    {
+      "character": "Edward Brooksby",
+      "actor": "Simon Ward",
+      "nconst": "nm0911844",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        3
+      ],
+      "episodes": [
+        {
+          "season": 3,
+          "episode": 12,
+          "title": "Highland Fling: Part One",
+          "tconst": "tt0637199"
+        },
+        {
+          "season": 3,
+          "episode": 13,
+          "title": "Highland Fling: Part Two",
+          "tconst": "tt0855541"
+        }
+      ]
+    },
+    {
+      "character": "Gerald Somers",
+      "actor": "Larry Lamb",
+      "nconst": "nm0482987",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        3
+      ],
+      "episodes": [
+        {
+          "season": 3,
+          "episode": 12,
+          "title": "Highland Fling: Part One",
+          "tconst": "tt0637199"
+        },
+        {
+          "season": 3,
+          "episode": 13,
+          "title": "Highland Fling: Part Two",
+          "tconst": "tt0855541"
+        }
+      ]
+    },
+    {
+      "character": "Jim Leonard",
+      "actor": "Dinsdale Landen",
+      "nconst": "nm0484553",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        4,
+        6
+      ],
+      "episodes": [
+        {
+          "season": 4,
+          "episode": 9,
+          "title": "They Call Me Midas",
+          "tconst": "tt0637245"
+        },
+        {
+          "season": 6,
+          "episode": 4,
+          "title": "Double Edged Sword",
+          "tconst": "tt0637188"
+        }
+      ]
+    },
+    {
+      "character": "Katriona Brooksby",
+      "actor": "Eleanor David",
+      "nconst": "nm0202870",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        3
+      ],
+      "episodes": [
+        {
+          "season": 3,
+          "episode": 12,
+          "title": "Highland Fling: Part One",
+          "tconst": "tt0637199"
+        },
+        {
+          "season": 3,
+          "episode": 13,
+          "title": "Highland Fling: Part Two",
+          "tconst": "tt0855541"
+        }
+      ]
+    },
+    {
+      "character": "Lady Rebecca",
+      "actor": "Adrienne Corri",
+      "nconst": "nm0180920",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        3
+      ],
+      "episodes": [
+        {
+          "season": 3,
+          "episode": 12,
+          "title": "Highland Fling: Part One",
+          "tconst": "tt0637199"
+        },
+        {
+          "season": 3,
+          "episode": 13,
+          "title": "Highland Fling: Part Two",
+          "tconst": "tt0855541"
+        }
+      ]
+    },
+    {
+      "character": "Michael Seymour",
+      "actor": "Anthony Valentine",
+      "nconst": "nm0002242",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        1,
+        2
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 5,
+          "title": "The Judas Pair",
+          "tconst": "tt0637233"
+        },
+        {
+          "season": 2,
+          "episode": 1,
+          "title": "Just Desserts",
+          "tconst": "tt0637202"
+        }
+      ]
+    },
+    {
+      "character": "Nancy",
+      "actor": "Alibe Parsons",
+      "nconst": "nm0019544",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        1
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 9,
+          "title": "Death and Venice: Part One",
+          "tconst": "tt0637186"
+        },
+        {
+          "season": 1,
+          "episode": 10,
+          "title": "Death and Venice: Part Two",
+          "tconst": "tt0637187"
+        }
+      ]
+    },
+    {
+      "character": "Pinder",
+      "actor": "Alexander Knox",
+      "nconst": "nm0461594",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        1
+      ],
+      "episodes": [
+        {
+          "season": 1,
+          "episode": 9,
+          "title": "Death and Venice: Part One",
+          "tconst": "tt0637186"
+        },
+        {
+          "season": 1,
+          "episode": 10,
+          "title": "Death and Venice: Part Two",
+          "tconst": "tt0637187"
+        }
+      ]
+    },
+    {
+      "character": "Robert Fraser",
+      "actor": "Tom Cotcher",
+      "nconst": "nm0182769",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        3
+      ],
+      "episodes": [
+        {
+          "season": 3,
+          "episode": 12,
+          "title": "Highland Fling: Part One",
+          "tconst": "tt0637199"
+        },
+        {
+          "season": 3,
+          "episode": 13,
+          "title": "Highland Fling: Part Two",
+          "tconst": "tt0855541"
+        }
+      ]
+    },
+    {
+      "character": "Rollo",
+      "actor": "Tony Rohr",
+      "nconst": "nm0737575",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        3,
+        5
+      ],
+      "episodes": [
+        {
+          "season": 3,
+          "episode": 9,
+          "title": "Smoke Your Nose",
+          "tconst": "tt0637222"
+        },
+        {
+          "season": 5,
+          "episode": 1,
+          "title": "Pig in a Poke",
+          "tconst": "tt0637216"
+        }
+      ]
+    },
+    {
+      "character": "Sam Cavendish",
+      "actor": "David Ryall",
+      "nconst": "nm0752379",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        6
+      ],
+      "episodes": [
+        {
+          "season": 6,
+          "episode": 2,
+          "title": "Day of Reckoning",
+          "tconst": "tt0637185"
+        },
+        {
+          "season": 6,
+          "episode": 10,
+          "title": "Last Tango in Lavenham",
+          "tconst": "tt0637204"
+        }
+      ]
+    },
+    {
+      "character": "Susan Lovejoy",
+      "actor": "Mel Martin",
+      "nconst": "nm0552774",
+      "episodeCount": 2,
+      "seriesAppearances": [
+        2,
+        3
+      ],
+      "episodes": [
+        {
+          "season": 2,
+          "episode": 8,
+          "title": "Sugar & Spice",
+          "tconst": "tt0637225"
+        },
+        {
+          "season": 3,
+          "episode": 10,
+          "title": "Kids",
+          "tconst": "tt0637203"
+        }
+      ]
+    }
+  ]
+}

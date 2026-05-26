@@ -26,6 +26,7 @@ const STATIC_ROUTES = [
   "/series/6",
   "/archive",
   "/lovejoy-overview",
+  "/characters",
   "/about",
   "/links",
 ];

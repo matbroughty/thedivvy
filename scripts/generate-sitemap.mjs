@@ -76,6 +76,7 @@ async function main() {
   urls.push(urlEntry(`${SITE_URL}/series`, today, "weekly", "0.7"));
   urls.push(urlEntry(`${SITE_URL}/archive`, today, "weekly", "0.6"));
   urls.push(urlEntry(`${SITE_URL}/lovejoy-overview`, today, "monthly", "0.7"));
+  urls.push(urlEntry(`${SITE_URL}/characters`, today, "monthly", "0.7"));
   urls.push(urlEntry(`${SITE_URL}/about`, today, "yearly", "0.4"));
   urls.push(urlEntry(`${SITE_URL}/links`, today, "monthly", "0.4"));
 

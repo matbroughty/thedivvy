@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "tsc && vite build && node scripts/prerender.mjs && node scripts/generate-sitemap.mjs",
     "preview": "vite preview",
-    "routes": "node scripts/print-routes.mjs"
+    "routes": "node scripts/print-routes.mjs",
+    "build:characters": "node scripts/build-characters-from-imdb.mjs"
   },
   "dependencies": {
     "@mdx-js/react": "^3.0.1",

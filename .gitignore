@@ -12,6 +12,10 @@ dist
 dist-ssr
 *.local
 
+# IMDb dataset cache (used by scripts/build-characters-from-imdb.mjs).
+# ~1 GB compressed; one-off, regeneratable, never committed.
+.imdb-cache/
+
 # Editor
 .vscode/*
 !.vscode/extensions.json
