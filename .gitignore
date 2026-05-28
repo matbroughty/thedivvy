@@ -16,6 +16,14 @@ dist-ssr
 # ~1 GB compressed; one-off, regeneratable, never committed.
 .imdb-cache/
 
+# Obsidian vault — ignore per-device state and plugin binaries, but keep
+# markdown content and any vault-level shared config (app.json,
+# appearance.json, core-plugins.json, community-plugins.json).
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+**/.obsidian/cache/
+**/.obsidian/plugins/
+
 # Editor
 .vscode/*
 !.vscode/extensions.json
