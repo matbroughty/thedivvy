@@ -50,7 +50,7 @@ export default function Header() {
       </div>
       <p className="site-header__tagline">
         The Divvy is a weekly review of every episode of Lovejoy — the BBC's
-        finest third wall breaking antiques-dealer
+        finest fourth wall breaking antiques-dealer
       </p>
     </header>
   );
