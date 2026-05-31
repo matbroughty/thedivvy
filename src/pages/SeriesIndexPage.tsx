@@ -29,7 +29,7 @@ export default function SeriesIndexPage() {
               <div className="series-card__meta">
                 {stats.count === 0
                   ? "No reviews yet"
-                  : `${stats.count} review${stats.count === 1 ? "" : "s"} · avg ${stats.averageScore!.toFixed(1)} / 10`}
+                  : `${stats.count} review${stats.count === 1 ? "" : "s"} · avg ${stats.averageScore!.toFixed(1)} / 5`}
               </div>
             </Link>
           );

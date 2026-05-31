@@ -40,7 +40,7 @@ export default function ArchivePage() {
                       {ep.frontmatter.title}
                     </Link>
                     <span className="archive-list__score">
-                      {ep.frontmatter.score} / 10
+                      {ep.frontmatter.score} / 5
                     </span>
                   </li>
                 ))}

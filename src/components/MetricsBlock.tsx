@@ -9,7 +9,7 @@ export default function MetricsBlock({
     <aside className="metrics" aria-label="Episode metrics">
       <div className="metrics__cell">
         <span className="metrics__label">Lovejoy Units</span>
-        <span className="metrics__value">{frontmatter.lovejoyUnits} / 10</span>
+        <span className="metrics__value">{frontmatter.lovejoyUnits} / 5</span>
       </div>
       <div className="metrics__cell">
         <span className="metrics__label">Divvy Moment</span>

@@ -26,7 +26,7 @@ export default function EpisodePage() {
   const reviewed = formatReviewDate(frontmatter.reviewDate);
 
   const seoTitle = `${frontmatter.title} — Lovejoy S${frontmatter.series}E${frontmatter.episode} review`;
-  const seoDescription = `${frontmatter.summary} Score: ${frontmatter.score}/10. Guest stars: ${frontmatter.guestStar}.`;
+  const seoDescription = `${frontmatter.summary} Score: ${frontmatter.score}/5. Guest stars: ${frontmatter.guestStar}.`;
 
   return (
     <article className="article">

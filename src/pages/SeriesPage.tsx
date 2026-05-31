@@ -30,7 +30,7 @@ export default function SeriesPage() {
         description={
           stats.count === 0
             ? `Lovejoy Series ${seriesNum} — episode reviews coming soon to The Divvy.`
-            : `${stats.count} review${stats.count === 1 ? "" : "s"} of Lovejoy Series ${seriesNum}, with an average score of ${stats.averageScore!.toFixed(1)}/10. Read every review on The Divvy.`
+            : `${stats.count} review${stats.count === 1 ? "" : "s"} of Lovejoy Series ${seriesNum}, with an average score of ${stats.averageScore!.toFixed(1)}/5. Read every review on The Divvy.`
         }
       />
       <p>
@@ -47,7 +47,7 @@ export default function SeriesPage() {
         <p className="hero__summary" style={{ marginBottom: "2rem" }}>
           {stats.count} review{stats.count === 1 ? "" : "s"} &middot; average
           score{" "}
-          <strong>{stats.averageScore!.toFixed(1)} / 10</strong> &middot; total
+          <strong>{stats.averageScore!.toFixed(1)} / 5</strong> &middot; total
           Lovejoy Units{" "}
           <strong>{stats.totalLovejoyUnits}</strong>
         </p>

@@ -12,7 +12,7 @@ export default function EpisodeScore({
   /**
    * When provided, render the score as N small round thumbnails of
    * `/images/score-icons/series-${series}-score-icon.jpg` followed by
-   * "/ 10". If that file is missing, falls back to the numeric form.
+   * "/ 5". If that file is missing, falls back to the numeric form.
    */
   series?: number;
 }) {
@@ -25,21 +25,21 @@ export default function EpisodeScore({
     return (
       <span
         className={`score score--${size}`}
-        aria-label={`Score ${display} out of 10`}
+        aria-label={`Score ${display} out of 5`}
       >
         {display}
-        <span className="score__denom"> / 10</span>
+        <span className="score__denom"> / 5</span>
       </span>
     );
   }
 
-  const count = Math.max(0, Math.min(10, Math.round(score)));
+  const count = Math.max(0, Math.min(5, Math.round(score)));
   const iconSrc = `/images/score-icons/series-${series}-score-icon.jpg`;
 
   return (
     <span
       className={`score score--${size} score--icons`}
-      aria-label={`Score ${display} out of 10`}
+      aria-label={`Score ${display} out of 5`}
     >
       <span className="score__num">{display}</span>
       <span className="score__icons" aria-hidden="true">
@@ -53,7 +53,7 @@ export default function EpisodeScore({
           />
         ))}
       </span>
-      <span className="score__denom">/ 10</span>
+      <span className="score__denom">/ 5</span>
     </span>
   );
 }
