@@ -1,27 +1,33 @@
 
 
 ---
-title:
-series:
-episode:
-aired:
-score:
-review_status: draft
-—tags:
+title: The Firefly Cage
+series: 1
+episode: 1
+aired: 9 January 1986
+score: 5
+review_status: live
+tags:
   - lovejoy
   - review
+  - dandy
 ---
 
-Title
+# Title
 
-##  The Firefly Cage
+The Firefly Cage
 
-## Plot Summary
+# SubTitle
 
+First dance in Lavenham. Lovejoy gets dragged into murder and theft before anyone explains what a divvy is. Ends with a boozy mop fight on a boat.
 
-## Main Review
+# One Wink Plot Summary
 
-"Who will start me for a hundred?   Don't lose it for another fifty.  Lovejoy!
+Avengers assemble; then a client asks Lovejoy to authenticate a Japanese firefly cage. By the end of the episode there has been a theft, a murder, a treasure hunt and a whisky-fuelled boat chase.
+
+# Main Review
+
+"Who will start me for a hundred?   Don't lose it for another fifty.  Lovejoy!"
 
 And we are off.   Episode 1, Series 1.  Watching this now—over 40 years later—and I would still be hooked. What a start.
 
