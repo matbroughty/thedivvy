@@ -43,6 +43,21 @@ const linkSections: LinkSection[] = [
     ],
   },
   {
+    title: "Lovejoy Curios",
+    links: [
+      {
+        title: "The Great Lovejoy Spat of 1986",
+        url: "https://curiousbritishtelly.substack.com/p/the-great-lovejoy-spat-of-1986",
+        description: "The story behind the five-year hiatus between series 1 and 2",
+      },
+      {
+        title: "Friedberg's Gold Coins of the World",
+        url: "https://www.amazon.co.uk/Gold-Coins-World-Illustrated-Valuations/dp/0871843099",
+        description: "The real coin-valuation tome Lovejoy consults in The Axeman Cometh (S1E2)",
+      },
+    ],
+  },
+  {
     title: "Watching Lovejoy",
     links: [
       {
