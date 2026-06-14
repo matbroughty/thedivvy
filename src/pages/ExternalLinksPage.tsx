@@ -55,6 +55,21 @@ const linkSections: LinkSection[] = [
         url: "https://www.amazon.co.uk/Gold-Coins-World-Illustrated-Valuations/dp/0871843099",
         description: "The real coin-valuation tome Lovejoy consults in The Axeman Cometh (S1E2)",
       },
+      {
+        title: "Where is Miriam? — Lovejoy's Morris Minor deep dive",
+        url: "https://www.youtube.com/watch?v=3GKpMmumBis",
+        description: "YouTube deep dive tracing the Morris Minor Lovejoy drove in series 2–6",
+      },
+      {
+        title: "Belcham Hall — the Lovejoy connection",
+        url: "https://belchamphall.com/history/the-lovejoy-connection/",
+        description: "The Suffolk country house's own account of its appearances in the series",
+      },
+      {
+        title: "The Lovejoy Trail by Paul Atkinson",
+        url: "https://www.amazon.co.uk/Lovejoy-Trail-Paul-Atkinson/dp/1780353871",
+        description: "Paul Atkinson's companion book tracing the people and locations of the series",
+      },
     ],
   },
   {
