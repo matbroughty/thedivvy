@@ -6,6 +6,7 @@ import {
 } from "../lib/episodes";
 import EpisodeScore from "../components/EpisodeScore";
 import EpisodeImage from "../components/EpisodeImage";
+import EpisodeJsonLd from "../components/EpisodeJsonLd";
 import Seo from "../components/Seo";
 import { formatAirDate, formatReviewDate } from "../lib/dates";
 import NotFoundPage from "./NotFoundPage";
@@ -36,6 +37,7 @@ export default function EpisodePage() {
         image={frontmatter.image}
         type="article"
       />
+      <EpisodeJsonLd frontmatter={frontmatter} />
       <header className="article__head">
         <div className="article__eyebrow">
           <Link to={`/series/${frontmatter.series}`}>
