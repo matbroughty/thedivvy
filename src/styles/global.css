@@ -926,6 +926,68 @@ li {
   }
 }
 
+/* ---------------- Like button ---------------- */
+
+.like-button-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 2.5rem 0 1rem;
+}
+
+.like-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.65rem 1.15rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-card);
+  border-radius: var(--radius);
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: border-color 120ms ease, color 120ms ease, transform 80ms ease;
+}
+
+.like-button:hover:not(:disabled) {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.like-button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+.like-button:disabled {
+  cursor: default;
+}
+
+.like-button--liked {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+.like-button__heart {
+  font-size: 1.15rem;
+  line-height: 1;
+}
+
+.like-button__label {
+  font-weight: 500;
+}
+
+.like-button__count {
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-muted);
+  padding-left: 0.55rem;
+  border-left: 1px solid var(--color-border);
+}
+
+.like-button--liked .like-button__count {
+  color: var(--color-accent);
+  border-left-color: var(--color-accent-soft);
+}
+
 /* ---------------- Episode nav ---------------- */
 
 .episode-nav {

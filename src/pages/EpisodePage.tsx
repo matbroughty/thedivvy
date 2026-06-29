@@ -7,6 +7,7 @@ import {
 import EpisodeScore from "../components/EpisodeScore";
 import EpisodeImage from "../components/EpisodeImage";
 import EpisodeJsonLd from "../components/EpisodeJsonLd";
+import LikeButton from "../components/LikeButton";
 import Seo from "../components/Seo";
 import { formatAirDate, formatReviewDate } from "../lib/dates";
 import NotFoundPage from "./NotFoundPage";
@@ -69,6 +70,8 @@ export default function EpisodePage() {
       <div className="article__body">
         <Component />
       </div>
+
+      <LikeButton slug={frontmatter.slug} />
 
       <nav className="episode-nav" aria-label="Adjacent episodes">
         {prev ? (
