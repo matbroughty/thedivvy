@@ -557,6 +557,26 @@ li {
   height: 20px;
 }
 
+.score__icon-half {
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.score--lg .score__icon-half {
+  width: 19px;
+  height: 38px;
+}
+
+.score--md .score__icon-half {
+  width: 14px;
+  height: 28px;
+}
+
+.score--sm .score__icon-half {
+  width: 10px;
+  height: 20px;
+}
+
 .score--icons .score__denom {
   font-size: 0.85rem;
   font-style: italic;

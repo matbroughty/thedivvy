@@ -1,5 +1,6 @@
 import Seo from "../components/Seo";
 import charactersData from "../data/lovejoy-characters.json";
+import manualCharactersData from "../data/manual-characters.json";
 
 interface CharacterEpisode {
   season: number;
@@ -26,6 +27,18 @@ interface CharactersData {
 }
 
 const data = charactersData as CharactersData;
+const manualData = manualCharactersData as { characters: Character[] };
+
+const mergedCharacters: Character[] = (() => {
+  const key = (c: Character) => `${c.actor.toLowerCase()}::${c.character.toLowerCase()}`;
+  const imdbKeys = new Set(data.characters.map(key));
+  const supplemental = manualData.characters.filter((c) => !imdbKeys.has(key(c)));
+  return [...data.characters, ...supplemental].sort(
+    (a, b) =>
+      b.episodeCount - a.episodeCount ||
+      a.character.localeCompare(b.character),
+  );
+})();
 
 function formatSeriesRange(series: number[]): string {
   if (series.length === 0) return "—";
@@ -61,7 +74,7 @@ export default function CharactersPage() {
 
       <div className="article__body">
         <ol className="character-list">
-          {data.characters.map((c, i) => (
+          {mergedCharacters.map((c, i) => (
             <li key={`${c.nconst}-${c.character}`}>
               <details className="character">
                 <summary className="character__summary">
@@ -104,7 +117,10 @@ export default function CharactersPage() {
             datasets ({data.totalEpisodes} episodes — IMDb counts a two-part
             special separately, so its total is one higher than the BBC's
             official 71). Generated {formattedGeneratedDate(data.generatedAt)}.
-            Rebuild with <code>npm run build:characters</code>.
+            Rebuild with <code>npm run build:characters</code>. A small number
+            of recurring faces missing from IMDb's cast lists (typically
+            uncredited roles) are supplemented from{" "}
+            <code>src/data/manual-characters.json</code>.
           </em>
         </p>
       </div>

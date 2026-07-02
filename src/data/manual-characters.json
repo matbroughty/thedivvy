@@ -1,0 +1,18 @@
+{
+  "note": "Hand-curated recurring characters missing from IMDb's episode-level cast data (usually uncredited roles or credit-name variations across episodes). Merged with IMDb data at render time; entries here take precedence on nconst+character collision.",
+  "characters": [
+    {
+      "character": "Sgt Drabble",
+      "actor": "John Scholes",
+      "nconst": "manual-scholes-drabble",
+      "episodeCount": 4,
+      "seriesAppearances": [1],
+      "episodes": [
+        { "season": 1, "episode": 1, "title": "The Firefly Cage", "tconst": "tt0637230" },
+        { "season": 1, "episode": 6, "title": "To Sleep No More", "tconst": "tt0637247" },
+        { "season": 1, "episode": 8, "title": "The March of Time", "tconst": "tt0637238" },
+        { "season": 1, "episode": 9, "title": "Death and Venice: Part One", "tconst": "tt0637186" }
+      ]
+    }
+  ]
+}

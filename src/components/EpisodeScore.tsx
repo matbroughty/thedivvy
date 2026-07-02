@@ -33,7 +33,10 @@ export default function EpisodeScore({
     );
   }
 
-  const count = Math.max(0, Math.min(5, Math.round(score)));
+  const bounded = Math.max(0, Math.min(5, score));
+  const halved = Math.round(bounded * 2) / 2;
+  const full = Math.floor(halved);
+  const hasHalf = halved % 1 === 0.5;
   const iconSrc = `/images/score-icons/series-${series}-score-icon.jpg`;
 
   return (
@@ -43,15 +46,25 @@ export default function EpisodeScore({
     >
       <span className="score__num">{display}</span>
       <span className="score__icons" aria-hidden="true">
-        {Array.from({ length: count }).map((_, i) => (
+        {Array.from({ length: full }).map((_, i) => (
           <img
-            key={i}
+            key={`f-${i}`}
             src={iconSrc}
             alt=""
             className="score__icon"
             onError={() => setIconFailed(true)}
           />
         ))}
+        {hasHalf && (
+          <span className="score__icon-half">
+            <img
+              src={iconSrc}
+              alt=""
+              className="score__icon"
+              onError={() => setIconFailed(true)}
+            />
+          </span>
+        )}
       </span>
       <span className="score__denom">/ 5</span>
     </span>
