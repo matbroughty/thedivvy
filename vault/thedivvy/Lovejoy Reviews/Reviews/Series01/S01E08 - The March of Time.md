@@ -31,7 +31,7 @@ Lovejoy buys an empty French clock, only to discover it contains a cache of love
 
 This week's review has been written — or "crafted", as Eric would generously insist — from the New Forest. I've spent the past week enjoying breathtaking scenery, dodging wild horses and, if I'm being completely honest, watching far more World Cup football than any responsible adult should in various Hampshire pubs.
 
-It has been a good week. England scraped through, just about, and it turns out our dog Tilly is remarkably relaxed around horses.
+It has been a good week. England scraped through, just about, and it turns out my dog Tilly is remarkably relaxed around horses.
 
 Which is slightly ironic, because while I've spent the week away from home, *The March of Time* does exactly the opposite. Lovejoy stays firmly rooted in Suffolk, and after a few Series One excursions that wandered rather too far afield, that's exactly where the series belongs.
 
@@ -39,29 +39,29 @@ One of my recurring complaints during Series One has been that the further *Love
 
 In many ways, this feels like the simplest *Lovejoy* episode so far.
 
-After some wonderfully authentic haggling with fellow dealer Ricky Price, Lovejoy leaves with two clocks. One becomes a gift for Lady Jane after a charming explanation of why Parliament clocks earned their nickname. The other is little more than an empty shell — Japanese innards are apparently easy to get — destined to receive a modern movement before being sold to "the right punter". Classic Lovejoy.
+After some authentic (?!) haggling with fellow dealer Ricky Price, Lovejoy leaves with two clocks. One becomes a gift for Lady Jane after a charming explanation of why Parliament clocks earned their nickname. The other is little more than an empty shell — Japanese innards are apparently easy to get — destined to receive a modern movement before being sold to "the right punter". Classic Lovejoy.
 
 Thankfully, the empty clock turns out to be anything but.
 
-Hidden inside are beautifully preserved love letters between a young woman named Emma Fairfax and Ensign Richard Parker, written, we are told, in the months leading up to the Battle of Waterloo. It's a sweet premise because, unlike several earlier episodes, the antiques aren't simply window dressing. Remove the clock and the entire story collapses. Without it, the episode would be able to fit on TikTok. This is exactly the sort of plot *Lovejoy* should be telling. The antique isn't valuable because it's old; it's valuable because of the history concealed within it.
+Hidden inside are preserved love letters between a young woman named Emma Fairfax and Ensign Richard Parker, written, we are told, in the months leading up to the Battle of Waterloo. It's a sweet premise because, unlike several earlier episodes, the antiques aren't simply window dressing. Remove the clock and the entire story collapses. Without it, the episode would be able to fit on TikTok. This is exactly the sort of plot *Lovejoy* should be telling. The antique isn't valuable because it's old; it's valuable because of the history concealed within it.
 
-The early scenes are particularly strong. The banter with Ricky Price is Guy Ritchie-esque — maybe Lovejoy is responsible for Guy Ritchie — the Parliament clock explanation suggests Eric may be getting his money's worth off-screen after all, and Tinker immediately springs into life the moment he hears the letters date from the early nineteenth century.
+The early scenes are strong. The quick chat with Ricky Price is Guy Ritchie-esque — maybe Lovejoy is responsible for Guy Ritchie — the Parliament clock explanation suggests Eric may be getting his money's worth off-screen after all, and Tinker immediately springs into life the moment he hears the letters date from the early nineteenth century.
 
-Dudley Sutton is on particularly fine form here. When Lovejoy asks, "Can you hear me?", Tinker's wonderfully deadpan reply from his bar stool is: "I not only hear you, Lovejoy, I can see both of you." Alcoholism as comedy. It was the 80s.
+Dudley Sutton is on fine form here. When Lovejoy asks, "Can you hear me?", Tinker's deadpan reply from his bar stool is: "I not only hear you, Lovejoy, I can see both of you." Alcoholism as comedy. Now That's What I Call the 80s.
 
 Eric also enjoys one of his better outings. His complaint that they should be "back home trying to make a dishonest living" perfectly sums up his role in the partnership, while his ongoing conversations about heavy metal and not knowing who Leonard Cohen is feel nicely rooted in mid-80s Britain.
 
-The episode's guest star is Lysette Anthony as Sophy Fairfax. If you grew up male in Britain during the 1980s, she probably doesn't need an introduction. She seemed to appear in everything for a while, so it's no major surprise that Lovejoy is instantly smitten.
+The episode's guest star is Lysette Anthony as Sophy Fairfax. If you grew up male (or any gender really) in Britain during the 1980s, she probably doesn't need an introduction. She seemed to appear in everything for a while, so it's no major surprise that Lovejoy is instantly smitten.
 
-The romance is perhaps the episode's only slightly awkward note through modern eyes. Sergeant Drabble describes the suspect as "five foot nine and in his late thirties" — a witness statement that generously adds a couple of inches and quietly knocks a few years off Ian McShane — but even then the age difference is noticeable. The script performs one final con by suggesting Lovejoy isn't really in love with Sophy at all, but with Emma Fairfax, whose tragic story Sophy has come to embody.
+The romance is perhaps the episode's only slightly awkward note through modern eyes. Sergeant Drabble describes the suspect as "five foot nine and in his late thirties" — a witness statement that generously adds a couple of inches and knocks a few years off Ian McShane — but even then the age difference is noticeable. The script performs one final con by suggesting Lovejoy isn't really in love with Sophy at all, but with Emma Fairfax, whose tragic story Sophy has come to embody.
 
-Meanwhile, Sophy's brother Michael proves that some mysteries don't require the divvy. Lovejoy eventually concludes that Michael has developed an expensive relationship with Colombian marching powder, although "deduces" feels rather generous. The poor chap spends so much time sniffing he could track bacon through the New Forest, while his frantic arm movements become so theatrical you half expect him to attack the cameraman. If Lovejoy can break the fourth wall, surely this cocaine-deranged man can as well? Even Eric was probably only a scene away from working it out.
+Meanwhile, Sophy's brother Michael proves that some mysteries don't require the divvy. Lovejoy concludes confidently that Michael has developed an expensive relationship with Colombian marching powder, although "deduces" feels rather generous. The poor chap spends so much time theatrically sniffing he could track bacon through the New Forest, while his frantic arm movements become so theatrical you half expect him to attack the cameraman. If Lovejoy can break the fourth wall, surely this cocaine-deranged man can as well? Even Eric was probably only a scene away from working it out.
 
-Sergeant Drabble also deserves an honourable mention for quietly becoming Series One's own *The Thin Blue Line*. He's never quite the hero, never quite the villain and almost always arrives about ten minutes after Lovejoy has already solved everything. He isn't flashy, but he's becoming one of those dependable supporting characters whose arrival instantly makes Lovejoy's East Anglia feel like home.
+Sergeant Drabble also deserves an honourable mention for quietly becoming Series One's own *The Thin Blue Line*. He's never quite the hero, never quite the villain and almost always arrives about ten minutes after Lovejoy has already solved everything. He isn't flashy, but he's becoming one of those dependable supporting characters whose arrival on screen makes Lovejoy's East Anglia feel like home.
 
-The final act is classic *Lovejoy*. Our hero blags his way into a regimental museum by introducing himself as Captain Lovejoy from the Imperial War Museum — a disguise that somehow fools everyone in the building — before orchestrating a wonderfully satisfying auction to raise money for Sophy without forcing her to sell the letters.
+The final act is classic (think Brazil 1970) *Lovejoy*. Our hero blags his way into a regimental museum by introducing himself as Captain Lovejoy from the Imperial War Museum — a disguise that somehow fools everyone in the building — before orchestrating an auction (think Bargain Hunt) to raise money for Sophy without forcing her to sell the letters.
 
-Best of all, Charlie Gimbert finally receives a taste of his own medicine. After spending the episode delighting in Lovejoy's disappointment, he proudly walks away believing he's secured the valuable letters. He has the forgeries, though, while Lovejoy quietly returns the originals to the Fairfax family.
+Best of all, Charlie Gimbert finally receives a taste of his own medicine. After spending the episode delighting in Lovejoy's disappointment, he proudly walks away believing he's secured the valuable letters. He has the forgeries, though, while Lovejoy heroically returns the originals to the Fairfax family.
 
 The closing joke about Basildon Bond paper would need a footnote now to explain to younger viewers who think Kindles are old hat. Time really has marched on.
 
