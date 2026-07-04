@@ -1,5 +1,12 @@
 import type { ComponentType } from "react";
 
+export interface Soundtrack {
+  title: string;
+  artist: string;
+  /** Optional deep link to the track on Spotify. */
+  spotifyUrl?: string;
+}
+
 export interface EpisodeFrontmatter {
   title: string;
   series: number;
@@ -26,6 +33,8 @@ export interface EpisodeFrontmatter {
   image3?: string;
   imageAlt3?: string;
   imageSourceUrl3?: string;
+  /** Song heard somewhere in the episode. Optional. */
+  soundtrack?: Soundtrack;
 }
 
 export interface Episode {

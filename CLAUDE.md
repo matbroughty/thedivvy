@@ -28,7 +28,15 @@ Two image folder patterns are established under `public/images/`:
 - **Instagram post images** live under `public/images/insta/se{S}ep{N}/` (one subfolder per episode, arbitrary filenames inside). These are not referenced by the site — they're staging for Canva carousels.
 
 ### Scoring
-Episode scores are out of 5 — see `src/components/EpisodeScore.tsx` (renders an icon row up to length 5 plus a `/ 5` denominator). Both `score` and `lovejoyUnits` frontmatter fields use the same scale.
+Episode scores are out of 5 — see `src/components/EpisodeScore.tsx` (renders an icon row up to length 5 plus a `/ 5` denominator). Both `score` and `lovejoyUnits` frontmatter fields use the same scale. Half-star scores (e.g. `4.5`) are supported: the row renders `Math.floor(score)` full icons plus a D-shape half icon (left semicircle, clipped via CSS `overflow: hidden`).
+
+### Per-series accent theming
+`EpisodePage` and `SeriesPage` set `data-series={N}` on their root element. `src/styles/global.css` then overrides `--color-accent`, `--color-accent-soft` and `--color-accent-ink` per series (Mahogany / Walnut / Aged brass / Burgundy / Verdigris / Pewter). Other routes (home, archive, characters, curios) inherit the default mahogany.
+
+### Soundtrack ("Heard in the episode")
+Episodes can carry an optional `soundtrack` block in their frontmatter (`title`, `artist`, optional `spotifyUrl`). Rendered by `src/components/SoundtrackLine.tsx` in two variants: `full` (used in the episode-page metadata) and `subtle` (used on `EpisodeCard` for series listings). If the field is absent, nothing renders — existing episodes without a track work unchanged.
+
+The aggregated `/soundtrack` page (`src/pages/SoundtrackPage.tsx`) walks every episode's frontmatter at render time and lists all tracks grouped by series, each linking back to its episode review. It also embeds a Spotify playlist when `SPOTIFY_PLAYLIST_URL` at the top of that file is set to a share URL like `https://open.spotify.com/playlist/{id}` (the component derives the `/embed/playlist/…` URL automatically). Leave it as `""` to hide the embedded player. Route is registered in `scripts/lib/routes.mjs` (`/soundtrack`), so it prerenders and appears in the sitemap.
 
 ### Routes — single source of truth
 `scripts/lib/routes.mjs` is the canonical route list. It is consumed by **both** `prerender.mjs` and `generate-sitemap.mjs`. Static routes are hard-coded; episode routes are derived by walking `src/content/reviews/**/*.mdx` and parsing frontmatter slugs with a tolerant regex-based YAML reader (independent of the Vite/MDX pipeline, because this script runs in plain Node).

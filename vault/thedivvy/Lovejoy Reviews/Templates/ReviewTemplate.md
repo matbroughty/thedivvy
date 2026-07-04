@@ -5,6 +5,10 @@ episode:
 aired:
 score:
 review_status: draft
+soundtrack:
+  title:
+  artist:
+  spotifyUrl:
 tags:
   - lovejoy
   - r

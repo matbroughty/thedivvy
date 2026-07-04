@@ -9,6 +9,7 @@ import EpisodeImage from "../components/EpisodeImage";
 import EpisodeJsonLd from "../components/EpisodeJsonLd";
 import LikeButton from "../components/LikeButton";
 import Seo from "../components/Seo";
+import SoundtrackLine from "../components/SoundtrackLine";
 import { formatAirDate, formatReviewDate } from "../lib/dates";
 import NotFoundPage from "./NotFoundPage";
 
@@ -63,6 +64,9 @@ export default function EpisodePage() {
           />
           <span className="article__score-label">— our score</span>
         </div>
+        {frontmatter.soundtrack && (
+          <SoundtrackLine soundtrack={frontmatter.soundtrack} variant="full" />
+        )}
       </header>
 
       <EpisodeImage frontmatter={frontmatter} />
