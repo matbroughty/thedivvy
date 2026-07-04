@@ -59,6 +59,18 @@ Episode scores are out of 5 — see `src/components/EpisodeScore.tsx` (renders a
 ### Per-series accent theming
 `EpisodePage` and `SeriesPage` set `data-series={N}` on their root element. `src/styles/global.css` then overrides `--color-accent`, `--color-accent-soft` and `--color-accent-ink` per series (Mahogany / Walnut / Aged brass / Burgundy / Verdigris / Pewter). Other routes (home, archive, characters, curios) inherit the default mahogany.
 
+### Cross-episode references (`<Ep>` shortcode)
+Reviews often name-drop other episodes. Wrap the mention in the `<Ep>` MDX shortcode with the target's slug:
+
+```mdx
+Referenced later in the fantastic <Ep slug="series-2-episode-3-bin-divers">Bin Divers</Ep> episode.
+```
+
+- If the target review is published, `<Ep>` renders as a `<Link>` to `/episodes/{slug}`.
+- If the target isn't published yet, it renders the children as plain text — no dead link, no 404. The moment the target review lands, every existing mention auto-lights-up.
+- The component (`src/components/Ep.tsx`) is registered globally via `mdxComponents.tsx`, so `<Ep>` is available in every MDX file without an import.
+- The shortcode is a pure wrapper — it does not italicise. If you want italics on an episode title, add `*asterisks*` inside the tag as normal: `<Ep slug="…">*Bin Divers*</Ep>`.
+
 ### Soundtrack ("Heard in the episode")
 Episodes can carry an optional `soundtrack` block in their frontmatter (`title`, `artist`, optional `spotifyUrl`). Rendered by `src/components/SoundtrackLine.tsx` in two variants: `full` (used in the episode-page metadata) and `subtle` (used on `EpisodeCard` for series listings). If the field is absent, nothing renders — existing episodes without a track work unchanged.
 
