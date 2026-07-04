@@ -4,13 +4,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Commands
 
-- `npm run dev` — Vite dev server (no prerender; renders client-side only).
-- `npm run build` — three sequential steps, all must pass:
-  1. `tsc && vite build` — type-check (strict, `noUnusedLocals`/`noUnusedParameters` on) and bundle to `dist/`.
-  2. `node scripts/prerender.mjs` — boots a static server on `dist/`, drives headless Chromium over every route, writes `dist/{route}/index.html`. Non-zero exit on any route failure or empty `<title>`.
-  3. `node scripts/generate-sitemap.mjs` — emits `dist/sitemap.xml`.
+- `npm run dev` — Vite dev server (no prerender; renders client-side only). A `predev` hook regenerates `public/search-index.json` on startup so `/search` works locally.
+- `npm run build` — sequential chain, all steps must pass:
+  1. `tsc` — type-check (strict, `noUnusedLocals`/`noUnusedParameters` on).
+  2. `node scripts/generate-search-index.mjs` — emits `public/search-index.json` (must run **before** `vite build` so it gets copied into `dist/`).
+  3. `vite build` — bundle to `dist/`.
+  4. `node scripts/prerender.mjs` — boots a static server on `dist/`, drives headless Chromium over every route, writes `dist/{route}/index.html`. Non-zero exit on any route failure or empty `<title>`.
+  5. `node scripts/generate-sitemap.mjs` — emits `dist/sitemap.xml`.
+  6. `node scripts/generate-feed.mjs` — emits `dist/feed.xml` (RSS 2.0).
 - `npm run preview` — serve the built `dist/` locally.
 - `npm run routes` — print the canonical route list (useful for verifying a new episode shows up before a full build).
+- `npm run generate:search` — regenerate `public/search-index.json` on demand (e.g. after adding a review mid dev-session without restarting).
 - `npm run build:characters` — regenerate `src/data/lovejoy-characters.json` from IMDb non-commercial datasets (cached in `.imdb-cache/`, gitignored, ~1 GB on first run).
 
 There is no test suite, no linter, and no formatter configured. Type-checking via `tsc` (run as part of `npm run build`) is the only static check.
@@ -35,7 +39,8 @@ Slug convention: `series-{S}-episode-{N}-{kebab-title}` (e.g. `series-1-episode-
 3. Mirror the same review body into the vault at `vault/thedivvy/Lovejoy Reviews/Reviews/Series{NN}/SXEXX - {Title}.md`. Vault has its own template frontmatter (see `Templates/ReviewTemplate.md`); vault prose can drift slightly from the published MDX if the user's edits accumulate there first.
 4. Create the empty Instagram staging folder `public/images/insta/se{S}ep{N}/` for later Canva carousel work.
 5. Verify with `npm run routes` — the new `/episodes/series-1-episode-N-slug` line should appear.
-6. **Do NOT commit until the user says so** — they preview the rendered page first (dev server on port 5173 or 5174) and often edit the MDX before asking to commit.
+6. **Search / RSS**: nothing manual to do. `npm run build` regenerates `public/search-index.json` (before `vite build`) and `dist/feed.xml` (after prerender). If the dev server is already running, run `npm run generate:search` to make the new episode findable in `/search` without restarting; the feed is a build-only artifact.
+7. **Do NOT commit until the user says so** — they preview the rendered page first (dev server on port 5173 or 5174) and often edit the MDX before asking to commit.
 
 ### Manual character overrides
 `src/data/manual-characters.json` supplements the IMDb-generated cast list at `src/data/lovejoy-characters.json`. Add hand-curated entries here for recurring faces IMDb has as uncredited (currently: John Scholes as Sgt Drabble across S01E01, E06, E08, E09). `CharactersPage` merges the two, deduped by lowercase `actor::character`.
@@ -59,8 +64,21 @@ Episodes can carry an optional `soundtrack` block in their frontmatter (`title`,
 
 The aggregated `/soundtrack` page (`src/pages/SoundtrackPage.tsx`) walks every episode's frontmatter at render time and lists all tracks grouped by series, each linking back to its episode review. It also embeds a Spotify playlist when `SPOTIFY_PLAYLIST_URL` at the top of that file is set to a share URL like `https://open.spotify.com/playlist/{id}` (the component derives the `/embed/playlist/…` URL automatically). Leave it as `""` to hide the embedded player. Route is registered in `scripts/lib/routes.mjs` (`/soundtrack`), so it prerenders and appears in the sitemap.
 
+### Search (`/search`)
+Full-text search runs client-side via [MiniSearch](https://lucaong.github.io/minisearch/) against a build-time JSON index.
+
+- **Generator**: `scripts/generate-search-index.mjs` walks `src/content/reviews/**/*.mdx`, parses frontmatter with the same tolerant reader used elsewhere, strips the MDX body to plain text (headings, blockquotes, links, bold/italic markers stripped; fenced code blocks dropped), and emits `public/search-index.json` — one doc per episode with `slug`, `title`, `series`, `episode`, `summary`, `divvyMoment`, `guestStar`, `body`.
+- **Where it runs**: `predev` (dev startup), `build` (chained after `tsc` and *before* `vite build` so the JSON is copied into `dist/`), and manually via `npm run generate:search`.
+- **UI**: `src/pages/SearchPage.tsx`. The index and MiniSearch library are lazy-loaded on first keystroke (so the empty search page is cheap). Boosts are `title 4 · divvyMoment 3 · summary 2 · guestStar 2 · body 1`, with prefix + fuzzy 0.2 matching. The `?q=` param syncs both ways (URL → input on mount, input → URL on change, `replace` semantics so the back button doesn't fill with history).
+- **Adding a new review**: no manual step. The build regenerates the index; `predev` catches the case where dev is restarted after adding an MDX. If the dev server is already running when you add an episode, run `npm run generate:search` to see it in local search without restarting.
+
+### RSS feed (`/feed.xml`)
+`scripts/generate-feed.mjs` emits `dist/feed.xml` (RSS 2.0) at build time. Items are episode reviews sorted newest-first by `reviewDate` (falling back to series/episode order for undated reviews), pulled via `getEpisodeEntries` from `scripts/lib/routes.mjs` so the feed shares its source of truth with the sitemap and prerender.
+
+Discovery is via `<link rel="alternate" type="application/rss+xml" href="/feed.xml">` in `index.html`, so feed readers auto-detect it from any page. Public URL: <https://thedivvy.co.uk/feed.xml>.
+
 ### Routes — single source of truth
-`scripts/lib/routes.mjs` is the canonical route list. It is consumed by **both** `prerender.mjs` and `generate-sitemap.mjs`. Static routes are hard-coded; episode routes are derived by walking `src/content/reviews/**/*.mdx` and parsing frontmatter slugs with a tolerant regex-based YAML reader (independent of the Vite/MDX pipeline, because this script runs in plain Node).
+`scripts/lib/routes.mjs` is the canonical route list. It is consumed by `prerender.mjs`, `generate-sitemap.mjs`, and `generate-feed.mjs` (all three share `getEpisodeEntries` + `getSiteUrl`). Static routes are hard-coded; episode routes are derived by walking `src/content/reviews/**/*.mdx` and parsing frontmatter slugs with a tolerant regex-based YAML reader (independent of the Vite/MDX pipeline, because this script runs in plain Node).
 
 If you add a new top-level page in `src/App.tsx`, you must also add it to `STATIC_ROUTES` in `scripts/lib/routes.mjs` or it will not be prerendered or appear in the sitemap.
 
@@ -73,7 +91,7 @@ If you add a new top-level page in `src/App.tsx`, you must also add it to `STATI
 `public/_redirects` declares `/* /index.html 200` (Netlify-style). Amplify Hosting does not parse this file; the equivalent rule must be set manually in the Amplify console (**App settings → Rewrites and redirects**). After a successful prerender, Amplify serves `dist/{route}/index.html` directly for known routes; the fallback only fires for unknown paths (where `NotFoundPage` then renders client-side).
 
 ### Env vars
-Production site URL lives in `.env.production` (`VITE_SITE_URL`). Both the React app (via Vite) and `generate-sitemap.mjs` read this file — the sitemap script parses it directly so no extra Amplify console env var is required.
+Production site URL lives in `.env.production` (`VITE_SITE_URL`). Both the React app (via Vite) and the Node build scripts read this file — `getSiteUrl` in `scripts/lib/routes.mjs` resolves `SITE_URL` env var → `.env.production` → placeholder, and is shared by the sitemap and feed generators so no extra Amplify console env var is required.
 
 ### Vault (Obsidian, not part of the build)
 `vault/thedivvy/` is an Obsidian vault used for drafting reviews. **Vite does not load it, prerender does not see it, and the sitemap does not list it.** Per-episode `.md` drafts live in `vault/thedivvy/Lovejoy Reviews/Reviews/Series{NN}/SXEXX - {Title}.md`; templates (`ReviewTemplate.md`, `CanvaPromptTemplate.md`) live in `Templates/`. The vault prose is the working copy — when ready to publish, port it into the matching `src/content/reviews/series-XX/NN-slug.mdx` and apply typography normalisation (single spaces between sentences, em-dashes with spaces around them, straight quotes, italicise titles with `*…*`).
