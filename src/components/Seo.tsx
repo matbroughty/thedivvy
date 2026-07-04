@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 
 const SITE_NAME = "The Divvy";
 const DEFAULT_DESCRIPTION =
-  "Weekly reviews of every episode of Lovejoy — the BBC's finest dodgy-antiques-dealer drama. Ian McShane, Tinker, Eric, Lady Jane, and a respectable amount of dodgy provenance.";
+  "Lovejoy reviews on The Divvy — a weekly walk-through of every episode of the BBC's finest dodgy-antiques-dealer drama, starring Ian McShane. Antiques, Eric, Tinker, Lady Jane, and a respectable amount of dodgy provenance.";
 const DEFAULT_OG_IMAGE = "/og-default.jpg";
 
 // Configure your production hostname in `.env.production` as
@@ -37,7 +37,7 @@ export default function Seo({
   const url = `${SITE_URL}${pathname}`;
   const fullTitle = title
     ? `${title} · ${SITE_NAME}`
-    : `${SITE_NAME} — weekly Lovejoy episode reviews`;
+    : `${SITE_NAME} — Lovejoy reviews, weekly`;
   const desc = description ?? DEFAULT_DESCRIPTION;
   const imgPath = image ?? DEFAULT_OG_IMAGE;
   const imgAbs = imgPath.startsWith("http") ? imgPath : `${SITE_URL}${imgPath}`;

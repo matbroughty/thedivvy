@@ -19,9 +19,10 @@ export default function HomePage() {
   return (
     <div className="page">
       <Seo
-        description="Weekly reviews of every episode of Lovejoy — the BBC's finest dodgy-antiques-dealer drama, starring Ian McShane. Antiques, Eric, Tinker, Lady Jane, and the occasional murder."
+        description="Lovejoy reviews on The Divvy — a weekly walk-through of every episode of the BBC's finest dodgy-antiques-dealer drama, starring Ian McShane. Antiques, Eric, Tinker, Lady Jane, and the occasional murder."
         image={latest?.frontmatter.image}
       />
+      <h1 className="sr-only">Lovejoy reviews</h1>
       {latest ? (
         <section className="hero" aria-labelledby="latest-title">
           <div className="hero__layout">
@@ -30,9 +31,9 @@ export default function HomePage() {
                 Latest review &middot; Series {latest.frontmatter.series},
                 Episode {latest.frontmatter.episode}
               </div>
-              <h1 className="hero__title" id="latest-title">
+              <h2 className="hero__title" id="latest-title">
                 {latest.frontmatter.title}
-              </h1>
+              </h2>
               {(() => {
                 const aired = formatAirDate(latest.frontmatter.airDate);
                 const reviewed = formatReviewDate(latest.frontmatter.reviewDate);
@@ -73,7 +74,7 @@ export default function HomePage() {
       ) : (
         <section className="hero">
           <div className="hero__eyebrow">No reviews yet</div>
-          <h1 className="hero__title">Drop an MDX file in to begin</h1>
+          <h2 className="hero__title">Drop an MDX file in to begin</h2>
           <p className="hero__summary">
             Add a file under <code>src/content/reviews/</code> and it'll appear
             here.
