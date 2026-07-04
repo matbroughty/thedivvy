@@ -22,6 +22,7 @@ export default function Header() {
           <NavLink to="/lovejoy-overview">Overview</NavLink>
           <NavLink to="/characters">Cast</NavLink>
           <NavLink to="/soundtrack">Soundtrack</NavLink>
+          <NavLink to="/search">Search</NavLink>
           <NavLink to="/links">Links</NavLink>
           <NavLink to="/about">About</NavLink>
           <a

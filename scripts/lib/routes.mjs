@@ -1,13 +1,14 @@
 // Single source of truth for the site's route list.
 // Used by:
 //   - scripts/generate-sitemap.mjs  (sitemap.xml URLs)
+//   - scripts/generate-feed.mjs     (feed.xml items)
 //   - scripts/prerender.mjs         (build-time prerendering targets)
 //
 // Routes are returned as absolute paths beginning with "/". Order is stable
 // and deterministic so the sitemap and prerender output are reproducible.
 
 import { readdir, readFile } from "node:fs/promises";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -28,6 +29,7 @@ const STATIC_ROUTES = [
   "/lovejoy-overview",
   "/characters",
   "/soundtrack",
+  "/search",
   "/about",
   "/links",
 ];
@@ -96,7 +98,7 @@ export async function getAllRoutes() {
 
 /**
  * Return episode routes along with their parsed frontmatter (for callers that
- * need per-episode metadata, e.g. sitemap lastmod).
+ * need per-episode metadata, e.g. sitemap lastmod or feed items).
  */
 export async function getEpisodeEntries() {
   if (!existsSync(REVIEWS_DIR)) return [];
@@ -109,9 +111,32 @@ export async function getEpisodeEntries() {
     entries.push({
       slug: fm.slug,
       series: Number(fm.series),
+      episode: Number(fm.episode),
+      title: fm.title,
+      summary: fm.summary,
       reviewDate: fm.reviewDate,
     });
   }
   entries.sort((a, b) => a.slug.localeCompare(b.slug));
   return entries;
+}
+
+/**
+ * Resolve the production site URL: SITE_URL env var, then VITE_SITE_URL from
+ * .env.production (the same value Vite gives the frontend), then a placeholder.
+ * Trailing slash is stripped.
+ */
+export function getSiteUrl() {
+  const envPath = path.join(ROOT, ".env.production");
+  let fromFile;
+  if (existsSync(envPath)) {
+    const contents = readFileSync(envPath, "utf-8");
+    const match = contents.match(/^VITE_SITE_URL\s*=\s*(.+?)\s*$/m);
+    if (match) fromFile = match[1].replace(/^["']|["']$/g, "");
+  }
+  return (
+    process.env.SITE_URL ??
+    fromFile ??
+    "https://thedivvy.example.com"
+  ).replace(/\/$/, "");
 }

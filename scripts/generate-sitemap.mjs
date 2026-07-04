@@ -4,35 +4,19 @@
 // and the build-time prerender share a single source of truth.
 //
 // Set the production hostname via the SITE_URL env var, the VITE_SITE_URL
-// entry in .env.production, or edit the default.
+// entry in .env.production, or edit the default in scripts/lib/routes.mjs.
 
 import { writeFile } from "node:fs/promises";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { getEpisodeEntries } from "./lib/routes.mjs";
+import { getEpisodeEntries, getSiteUrl } from "./lib/routes.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const DIST_DIR = path.join(ROOT, "dist");
 
-// Fall back to .env.production so the site URL has a single source of truth.
-// Vite reads VITE_SITE_URL from .env.production for the frontend; we read the
-// same file here so the sitemap stays in sync without an extra env var on
-// Amplify.
-function readSiteUrlFromEnvFile() {
-  const envPath = path.join(ROOT, ".env.production");
-  if (!existsSync(envPath)) return undefined;
-  const contents = readFileSync(envPath, "utf-8");
-  const match = contents.match(/^VITE_SITE_URL\s*=\s*(.+?)\s*$/m);
-  return match ? match[1].replace(/^["']|["']$/g, "") : undefined;
-}
-
-const SITE_URL = (
-  process.env.SITE_URL ??
-  readSiteUrlFromEnvFile() ??
-  "https://thedivvy.example.com"
-).replace(/\/$/, "");
+const SITE_URL = getSiteUrl();
 
 // ---------------------------------------------------------------- helpers
 

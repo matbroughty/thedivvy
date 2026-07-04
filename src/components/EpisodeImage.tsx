@@ -43,12 +43,15 @@ export default function EpisodeImage({
 
   return (
     <div className="episode-images">
-      {validImages.map((img) => (
+      {validImages.map((img, idx) => (
         <figure key={img.src} className="episode-image">
+          {/* The first image is usually the page's LCP element — load it
+              eagerly at high priority; only lazy-load the rest. */}
           <img
             src={img.src}
             alt={img.alt}
-            loading="lazy"
+            loading={idx === 0 ? "eager" : "lazy"}
+            {...(idx === 0 ? { fetchpriority: "high" as const } : {})}
             onError={() => handleImageError(img.src)}
           />
           {img.sourceUrl && (

@@ -5,14 +5,17 @@
   "type": "module",
   "description": "A weekly Lovejoy episode review site.",
   "scripts": {
+    "predev": "node scripts/generate-search-index.mjs",
     "dev": "vite",
-    "build": "tsc && vite build && node scripts/prerender.mjs && node scripts/generate-sitemap.mjs",
+    "build": "tsc && node scripts/generate-search-index.mjs && vite build && node scripts/prerender.mjs && node scripts/generate-sitemap.mjs && node scripts/generate-feed.mjs",
     "preview": "vite preview",
     "routes": "node scripts/print-routes.mjs",
+    "generate:search": "node scripts/generate-search-index.mjs",
     "build:characters": "node scripts/build-characters-from-imdb.mjs"
   },
   "dependencies": {
     "@mdx-js/react": "^3.0.1",
+    "minisearch": "^7.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet-async": "^2.0.5",
