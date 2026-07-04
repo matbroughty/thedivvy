@@ -22,6 +22,27 @@ Episodes are MDX files at `src/content/reviews/series-XX/NN-slug.mdx`. They are 
 
 Frontmatter parsing uses `remark-frontmatter` + `remark-mdx-frontmatter` (configured in `vite.config.ts`) which exposes the YAML block as a named `frontmatter` export from the MDX module.
 
+### Required frontmatter fields
+`title`, `series`, `episode`, `slug`, `score`, `summary`, `lovejoyUnits`, `divvyMoment`, `guestStar`. Missing any of these drops the episode from the site.
+
+Optional but conventional: `airDate` (ISO `"YYYY-MM-DD"`), `reviewDate` (`"YYYY-MM"` or `"YYYY-MM-DD"`), `image`/`imageAlt`/`image2`/`imageAlt2`/`image3`/`imageAlt3`, `imageSourceUrl` (+ `…2`, `…3`), `soundtrack: { title, artist, spotifyUrl? }`.
+
+Slug convention: `series-{S}-episode-{N}-{kebab-title}` (e.g. `series-1-episode-4-friends-romans-and-enemies`). Air-date cadence is weekly (Friday nights in the UK — S01E01 aired 1986-01-09, so E09 = 1986-03-07 and so on).
+
+### Publishing a new episode review (standard workflow)
+1. Confirm the four decision fields with the user *before* writing files: `score` (0–5, halves allowed), `divvyMoment` (usually the review's headline pull-quote), `guestStar` (an actor name — if there's no natural one, a witty in-character stand-in is fine, e.g. `"None — Dandy Jack still convalescing"` for S01E05), and whether the hero images and Instagram folder are already staged.
+2. Create the MDX at `src/content/reviews/series-01/NN-slug.mdx`. Body follows `## One Wink Plot` then `## Review`. Longer reviews may use `### Favourite Moment` / `### Good Quote` / `### Guest Focus — {Name}` / `### The Divvy Verdict` subsections within Review. Some episodes use an opening pull-quote as a `>` blockquote directly under `## Review`.
+3. Mirror the same review body into the vault at `vault/thedivvy/Lovejoy Reviews/Reviews/Series{NN}/SXEXX - {Title}.md`. Vault has its own template frontmatter (see `Templates/ReviewTemplate.md`); vault prose can drift slightly from the published MDX if the user's edits accumulate there first.
+4. Create the empty Instagram staging folder `public/images/insta/se{S}ep{N}/` for later Canva carousel work.
+5. Verify with `npm run routes` — the new `/episodes/series-1-episode-N-slug` line should appear.
+6. **Do NOT commit until the user says so** — they preview the rendered page first (dev server on port 5173 or 5174) and often edit the MDX before asking to commit.
+
+### Manual character overrides
+`src/data/manual-characters.json` supplements the IMDb-generated cast list at `src/data/lovejoy-characters.json`. Add hand-curated entries here for recurring faces IMDb has as uncredited (currently: John Scholes as Sgt Drabble across S01E01, E06, E08, E09). `CharactersPage` merges the two, deduped by lowercase `actor::character`.
+
+### JSON-LD and likes
+Every episode page renders `Review` + `BreadcrumbList` JSON-LD via `src/components/EpisodeJsonLd.tsx` (author `"Mat Broughton"`, publisher `"The Divvy"`, `bestRating: 5`, `worstRating: 0`). Every episode page also renders a `LikeButton` backed by the third-party Abacus counter (`src/lib/likes.ts`) — `localStorage` dedupes per device; graceful fallback if the service is unreachable.
+
 ### Image assets
 Two image folder patterns are established under `public/images/`:
 - **Site hero / gallery images** for an episode review live flat under `public/images/episodes/`, named `series-{S}-episode-{N}-{slug}.jpg` (plus `…2.jpg` and `…3.jpg` siblings). Up to three are referenced via the `image` / `image2` / `image3` frontmatter fields and rendered as a gallery by `src/components/EpisodeImage.tsx`.
@@ -58,6 +79,12 @@ Production site URL lives in `.env.production` (`VITE_SITE_URL`). Both the React
 `vault/thedivvy/` is an Obsidian vault used for drafting reviews. **Vite does not load it, prerender does not see it, and the sitemap does not list it.** Per-episode `.md` drafts live in `vault/thedivvy/Lovejoy Reviews/Reviews/Series{NN}/SXEXX - {Title}.md`; templates (`ReviewTemplate.md`, `CanvaPromptTemplate.md`) live in `Templates/`. The vault prose is the working copy — when ready to publish, port it into the matching `src/content/reviews/series-XX/NN-slug.mdx` and apply typography normalisation (single spaces between sentences, em-dashes with spaces around them, straight quotes, italicise titles with `*…*`).
 
 `.gitignore` filters per-device Obsidian state (`workspace.json`, `cache/`, `plugins/`) while keeping markdown content and shared config.
+
+## Commit conventions
+- Only commit when the user explicitly asks (`commit`, `commit and push`, etc.). They preview first and often edit MDX after review-generation.
+- Episode publishes follow the pattern `Publish {Title} review (SXXEYY)`; other commits use a concise summary of what changed.
+- Every commit message ends with a `Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>` trailer.
+- Never skip hooks (`--no-verify`) or push without explicit `and push` in the instruction.
 
 ## Review writing style
 
