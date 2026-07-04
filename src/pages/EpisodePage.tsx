@@ -31,7 +31,7 @@ export default function EpisodePage() {
   const seoDescription = `${frontmatter.summary} Score: ${frontmatter.score}/5. Guest stars: ${frontmatter.guestStar}.`;
 
   return (
-    <article className="article">
+    <article className="article" data-series={frontmatter.series}>
       <Seo
         title={seoTitle}
         description={seoDescription}

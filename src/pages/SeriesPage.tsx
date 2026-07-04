@@ -24,7 +24,7 @@ export default function SeriesPage() {
   const stats = getSeriesStats(seriesNum);
 
   return (
-    <div className="page page--narrow">
+    <div className="page page--narrow" data-series={seriesNum}>
       <Seo
         title={`Lovejoy Series ${seriesNum} reviews`}
         description={
