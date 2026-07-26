@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 import type { EpisodeFrontmatter } from "../types";
+import { episodeCode, episodeNumberLabel } from "../lib/episodeLabel";
 
 const SITE_NAME = "The Divvy";
 const AUTHOR_NAME = "Mat Broughton";
@@ -21,7 +22,7 @@ export default function EpisodeJsonLd({
       : `${SITE_URL}${frontmatter.image}`
     : undefined;
 
-  const reviewName = `${frontmatter.title} — Lovejoy S${frontmatter.series}E${frontmatter.episode} review`;
+  const reviewName = `${frontmatter.title} — Lovejoy ${episodeCode(frontmatter)} review`;
 
   const review = {
     "@context": "https://schema.org",
@@ -44,7 +45,9 @@ export default function EpisodeJsonLd({
     itemReviewed: {
       "@type": "TVEpisode",
       name: frontmatter.title,
-      episodeNumber: frontmatter.episode,
+      episodeNumber: frontmatter.episodeEnd
+        ? episodeNumberLabel(frontmatter)
+        : frontmatter.episode,
       ...(frontmatter.airDate && { datePublished: frontmatter.airDate }),
       ...(imgAbs && { image: imgAbs }),
       partOfSeason: {

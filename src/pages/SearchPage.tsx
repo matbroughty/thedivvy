@@ -3,12 +3,14 @@ import { Link, useSearchParams } from "react-router-dom";
 import type MiniSearchType from "minisearch";
 import type { SearchResult } from "minisearch";
 import Seo from "../components/Seo";
+import { episodeCode } from "../lib/episodeLabel";
 
 interface Doc {
   slug: string;
   title: string;
   series: number;
   episode: number;
+  episodeEnd?: number;
   summary: string;
   divvyMoment: string;
   guestStar: string;
@@ -36,6 +38,7 @@ const STORE_FIELDS = [
   "title",
   "series",
   "episode",
+  "episodeEnd",
   "summary",
   "divvyMoment",
   "guestStar",
@@ -218,8 +221,7 @@ export default function SearchPage() {
                       className="search-result__link"
                     >
                       <div className="search-result__eyebrow">
-                        S{r.series}E
-                        {String(r.episode).padStart(2, "0")}
+                        {episodeCode(r, { pad: true })}
                       </div>
                       <h2 className="search-result__title">{r.title}</h2>
                       {snippet.html && (

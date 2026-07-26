@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Seo from "../components/Seo";
 import { getAllEpisodes } from "../lib/episodes";
+import { episodeCode } from "../lib/episodeLabel";
 import type { Episode, Soundtrack } from "../types";
 
 /**
@@ -102,8 +103,7 @@ export default function SoundtrackPage() {
                       </div>
                       <div className="soundtrack-list__episode">
                         <Link to={`/episodes/${episode.frontmatter.slug}`}>
-                          S{episode.frontmatter.series}E
-                          {String(episode.frontmatter.episode).padStart(2, "0")}
+                          {episodeCode(episode.frontmatter, { pad: true })}
                           {" · "}
                           {episode.frontmatter.title}
                         </Link>

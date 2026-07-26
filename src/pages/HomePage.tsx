@@ -10,6 +10,7 @@ import EpisodeScore from "../components/EpisodeScore";
 import EpisodeThumbnail from "../components/EpisodeThumbnail";
 import Seo from "../components/Seo";
 import { formatAirDate, formatReviewDate } from "../lib/dates";
+import { episodeHeading } from "../lib/episodeLabel";
 
 export default function HomePage() {
   const latest = getLatestEpisode();
@@ -28,8 +29,8 @@ export default function HomePage() {
           <div className="hero__layout">
             <div className="hero__text">
               <div className="hero__eyebrow">
-                Latest review &middot; Series {latest.frontmatter.series},
-                Episode {latest.frontmatter.episode}
+                Latest review &middot; Series {latest.frontmatter.series},{" "}
+                {episodeHeading(latest.frontmatter)}
               </div>
               <h2 className="hero__title" id="latest-title">
                 {latest.frontmatter.title}

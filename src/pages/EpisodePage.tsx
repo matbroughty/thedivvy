@@ -11,6 +11,7 @@ import LikeButton from "../components/LikeButton";
 import Seo from "../components/Seo";
 import SoundtrackLine from "../components/SoundtrackLine";
 import { formatAirDate, formatReviewDate } from "../lib/dates";
+import { episodeCode, episodeHeading } from "../lib/episodeLabel";
 import NotFoundPage from "./NotFoundPage";
 
 export default function EpisodePage() {
@@ -28,7 +29,7 @@ export default function EpisodePage() {
   const aired = formatAirDate(frontmatter.airDate);
   const reviewed = formatReviewDate(frontmatter.reviewDate);
 
-  const seoTitle = `${frontmatter.title} — Lovejoy S${frontmatter.series}E${frontmatter.episode} review`;
+  const seoTitle = `${frontmatter.title} — Lovejoy ${episodeCode(frontmatter)} review`;
   const seoDescription = `${frontmatter.summary} Score: ${frontmatter.score}/5. Guest stars: ${frontmatter.guestStar}.`;
 
   return (
@@ -45,7 +46,7 @@ export default function EpisodePage() {
           <Link to={`/series/${frontmatter.series}`}>
             Series {frontmatter.series}
           </Link>{" "}
-          &middot; Episode {frontmatter.episode}
+          &middot; {episodeHeading(frontmatter)}
         </div>
         <h1 className="article__title">{frontmatter.title}</h1>
         {(aired || reviewed) && (

@@ -106,6 +106,7 @@ async function main() {
       title: fm.title,
       series: Number(fm.series),
       episode: Number(fm.episode),
+      ...(fm.episodeEnd ? { episodeEnd: Number(fm.episodeEnd) } : {}),
       summary: fm.summary ?? "",
       divvyMoment: fm.divvyMoment ?? "",
       guestStar: fm.guestStar ?? "",

@@ -11,6 +11,8 @@ export interface EpisodeFrontmatter {
   title: string;
   series: number;
   episode: number;
+  /** Last episode number for multi-part stories (e.g. 10 for a 9–10 two-parter). */
+  episodeEnd?: number;
   slug: string;
   score: number;
   summary: string;

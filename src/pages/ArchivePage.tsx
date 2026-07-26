@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ALL_SERIES, getEpisodesBySeries } from "../lib/episodes";
+import { episodeNumberLabel } from "../lib/episodeLabel";
 import Seo from "../components/Seo";
 
 export default function ArchivePage() {
@@ -31,7 +32,7 @@ export default function ArchivePage() {
                 {episodes.map((ep) => (
                   <li key={ep.frontmatter.slug}>
                     <span className="archive-list__num">
-                      Ep {ep.frontmatter.episode}
+                      Ep {episodeNumberLabel(ep.frontmatter)}
                     </span>
                     <Link
                       to={`/episodes/${ep.frontmatter.slug}`}
