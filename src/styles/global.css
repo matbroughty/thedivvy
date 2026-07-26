@@ -23,43 +23,59 @@
     0 2px 6px rgba(36, 28, 21, 0.06);
 }
 
-/* Per-series accent theming. Applied by setting data-series="N" on the
-   article / series-page root. Every non-series page keeps :root defaults. */
+/* Per-series accent theming. useSeriesTheme mirrors data-series="N" onto
+   <html> on series/episode pages, so the bg tint colours the whole viewport;
+   the attribute also appears on smaller scopes (series-index cards, article
+   roots) where only the accent/card vars matter. Every non-series page keeps
+   :root defaults. Tints are deliberately subtle — same lightness as the base
+   paper (#f6f0e3), hue nudged toward the series accent. */
 [data-series="1"] {
   /* Mahogany (site default — restated for symmetry) */
   --color-accent: #8a4b2a;
   --color-accent-soft: #b5895a;
   --color-accent-ink: #6e3a1e;
+  --color-bg: #f6f0e3;
+  --color-bg-card: #fbf7ec;
 }
 [data-series="2"] {
   /* Walnut */
   --color-accent: #6b4a2f;
   --color-accent-soft: #9a7d5c;
   --color-accent-ink: #4a331f;
+  --color-bg: #f4ecdb;
+  --color-bg-card: #f9f3e6;
 }
 [data-series="3"] {
   /* Aged brass */
   --color-accent: #9d7833;
   --color-accent-soft: #c4a56a;
   --color-accent-ink: #7a5b22;
+  --color-bg: #f7f1da;
+  --color-bg-card: #fcf7e5;
 }
 [data-series="4"] {
   /* Burgundy */
   --color-accent: #7a2f2c;
   --color-accent-soft: #a86261;
   --color-accent-ink: #5a1e1c;
+  --color-bg: #f7ede3;
+  --color-bg-card: #fcf4ec;
 }
 [data-series="5"] {
   /* Verdigris */
   --color-accent: #4a6a5a;
   --color-accent-soft: #7a9585;
   --color-accent-ink: #324a3f;
+  --color-bg: #eff1e3;
+  --color-bg-card: #f5f7ec;
 }
 [data-series="6"] {
   /* Pewter */
   --color-accent: #5a5044;
   --color-accent-soft: #8a8072;
   --color-accent-ink: #3f3830;
+  --color-bg: #f1efe8;
+  --color-bg-card: #f7f5ef;
 }
 
 .sr-only {
@@ -509,6 +525,7 @@ li {
 .series-card {
   display: block;
   border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent-soft);
   background: var(--color-bg-card);
   border-radius: var(--radius);
   padding: 1rem 1.2rem;
@@ -525,6 +542,7 @@ li {
   font-weight: 700;
   font-size: 1.1rem;
   margin: 0 0 0.2rem;
+  color: var(--color-accent-ink);
 }
 .series-card__meta {
   font-size: 0.85rem;

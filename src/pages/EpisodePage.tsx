@@ -12,6 +12,7 @@ import Seo from "../components/Seo";
 import SoundtrackLine from "../components/SoundtrackLine";
 import { formatAirDate, formatReviewDate } from "../lib/dates";
 import { episodeCode, episodeHeading } from "../lib/episodeLabel";
+import { useSeriesTheme } from "../lib/useSeriesTheme";
 import NotFoundPage from "./NotFoundPage";
 
 export default function EpisodePage() {
@@ -21,6 +22,8 @@ export default function EpisodePage() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "auto" });
   }, [slug]);
+
+  useSeriesTheme(episode?.frontmatter.series);
 
   if (!episode) return <NotFoundPage />;
 

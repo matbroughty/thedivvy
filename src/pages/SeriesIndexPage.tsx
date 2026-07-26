@@ -23,6 +23,7 @@ export default function SeriesIndexPage() {
             <Link
               key={s}
               to={`/series/${s}`}
+              data-series={s}
               className={`series-card ${stats.count === 0 ? "series-card--empty" : ""}`}
             >
               <div className="series-card__title">Series {s}</div>

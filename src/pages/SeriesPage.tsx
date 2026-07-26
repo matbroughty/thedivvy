@@ -6,17 +6,20 @@ import {
 } from "../lib/episodes";
 import EpisodeCard from "../components/EpisodeCard";
 import Seo from "../components/Seo";
+import { useSeriesTheme } from "../lib/useSeriesTheme";
 import NotFoundPage from "./NotFoundPage";
 
 export default function SeriesPage() {
   const { id } = useParams();
   const seriesNum = Number(id);
+  const valid =
+    !!id &&
+    Number.isFinite(seriesNum) &&
+    (ALL_SERIES as readonly number[]).includes(seriesNum);
 
-  if (
-    !id ||
-    !Number.isFinite(seriesNum) ||
-    !(ALL_SERIES as readonly number[]).includes(seriesNum)
-  ) {
+  useSeriesTheme(valid ? seriesNum : undefined);
+
+  if (!valid) {
     return <NotFoundPage />;
   }
 
