@@ -10,7 +10,7 @@ import { writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { getEpisodeEntries, getSiteUrl } from "./lib/routes.mjs";
+import { getAllRoutes, getEpisodeEntries, getSiteUrl } from "./lib/routes.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -27,6 +27,34 @@ function urlEntry(loc, lastmod, changefreq = "monthly", priority = "0.5") {
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`;
+}
+
+// Per-route changefreq/priority hints. Anything prerendered but not listed
+// here still gets into the sitemap on the default below — the list is for
+// tuning, not for deciding membership, so a new page can never be silently
+// left out again.
+const ROUTE_HINTS = {
+  "/": ["weekly", "1.0"],
+  "/series": ["weekly", "0.7"],
+  "/archive": ["weekly", "0.6"],
+  "/lovejoy-overview": ["monthly", "0.7"],
+  "/characters": ["monthly", "0.7"],
+  "/soundtrack": ["monthly", "0.6"],
+  "/novels": ["monthly", "0.6"],
+  "/about": ["yearly", "0.4"],
+  "/links": ["monthly", "0.4"],
+};
+const DEFAULT_HINT = ["monthly", "0.5"];
+
+// /search is a client-side search box with no content of its own — the one
+// route we deliberately keep out of the sitemap.
+const SITEMAP_EXCLUDE = new Set(["/search"]);
+
+function hintFor(route) {
+  if (ROUTE_HINTS[route]) return ROUTE_HINTS[route];
+  if (/^\/series\/\d+$/.test(route)) return ["weekly", "0.6"];
+  if (/^\/series\/\d+\/overview$/.test(route)) return ["monthly", "0.7"];
+  return DEFAULT_HINT;
 }
 
 function reviewDateToIso(input) {
@@ -51,30 +79,37 @@ async function main() {
   const seriesWithReviews = [
     ...new Set(episodes.map((e) => e.series).filter((n) => Number.isFinite(n))),
   ].sort((a, b) => a - b);
-  const allSeries = [1, 2, 3, 4, 5, 6];
+
+  // Episode reviews carry their own lastmod, so index them by route.
+  const episodeByRoute = new Map(
+    episodes.map((ep) => [`/episodes/${ep.slug}`, ep]),
+  );
 
   const today = new Date().toISOString().slice(0, 10);
+  const routes = await getAllRoutes();
   const urls = [];
 
-  urls.push(urlEntry(`${SITE_URL}/`, today, "weekly", "1.0"));
-  urls.push(urlEntry(`${SITE_URL}/series`, today, "weekly", "0.7"));
-  urls.push(urlEntry(`${SITE_URL}/archive`, today, "weekly", "0.6"));
-  urls.push(urlEntry(`${SITE_URL}/lovejoy-overview`, today, "monthly", "0.7"));
-  urls.push(urlEntry(`${SITE_URL}/characters`, today, "monthly", "0.7"));
-  urls.push(urlEntry(`${SITE_URL}/about`, today, "yearly", "0.4"));
-  urls.push(urlEntry(`${SITE_URL}/links`, today, "monthly", "0.4"));
-
-  for (const s of allSeries) {
-    urls.push(urlEntry(`${SITE_URL}/series/${s}`, today, "weekly", "0.6"));
-  }
-
-  for (const ep of episodes) {
+  for (const route of routes) {
+    if (SITEMAP_EXCLUDE.has(route)) continue;
+    const episode = episodeByRoute.get(route);
+    if (episode) {
+      urls.push(
+        urlEntry(
+          `${SITE_URL}${route}`,
+          reviewDateToIso(episode.reviewDate) ?? today,
+          "monthly",
+          "0.8",
+        ),
+      );
+      continue;
+    }
+    const [changefreq, priority] = hintFor(route);
     urls.push(
       urlEntry(
-        `${SITE_URL}/episodes/${ep.slug}`,
-        reviewDateToIso(ep.reviewDate) ?? today,
-        "monthly",
-        "0.8",
+        `${SITE_URL}${route === "/" ? "/" : route}`,
+        today,
+        changefreq,
+        priority,
       ),
     );
   }
