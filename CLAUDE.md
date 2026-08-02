@@ -33,6 +33,12 @@ Optional but conventional: `airDate` (ISO `"YYYY-MM-DD"`), `reviewDate` (`"YYYY-
 
 Slug convention: `series-{S}-episode-{N}-{kebab-title}` (e.g. `series-1-episode-4-friends-romans-and-enemies`). Air-date cadence is weekly (Friday nights in the UK — S01E01 aired 1986-01-09, so E09 = 1986-03-07 and so on).
 
+### Research sources (do this first, every episode)
+Before drafting or scaffolding a review, gather the episode's facts from these three, in this order:
+1. **IMDb** — episode page for cast, character names and trivia. Note that `imdb.com` returns HTTP 403 to WebFetch; use WebSearch to surface the page and pull details from the snippets, or fetch a mirror.
+2. **TVmaze** — `https://www.tvmaze.com/shows/2168/lovejoy/episodes` → the episode page. Reliable for original transmission date/time, runtime and guest cast (actor → character). This is the source of truth for `airDate`.
+3. **subslikescript** — full episode transcript at `https://subslikescript.com/series/Lovejoy-90477/season-{S}/episode-{N}-{Title_With_Underscores}` (e.g. season-2/episode-1-Just_Desserts). Read this for background: exact quotes for `divvyMoment` and the "Good Quote" section, plot beats, running gags and any detail worth a joke. Never paste large stretches of transcript into the review — quote sparingly, in the style of a newspaper column.
+
 ### Publishing a new episode review (standard workflow)
 1. Confirm the four decision fields with the user *before* writing files: `score` (0–5, halves allowed), `divvyMoment` (usually the review's headline pull-quote), `guestStar` (an actor name — if there's no natural one, a witty in-character stand-in is fine, e.g. `"None — Dandy Jack still convalescing"` for S01E05), and whether the hero images and Instagram folder are already staged.
 2. Create the MDX at `src/content/reviews/series-01/NN-slug.mdx`. Body follows `## One Wink Plot` then `## Review`. Longer reviews may use `### Favourite Moment` / `### Good Quote` / `### Guest Focus — {Name}` / `### The Divvy Verdict` subsections within Review. Some episodes use an opening pull-quote as a `>` blockquote directly under `## Review`.
@@ -72,7 +78,9 @@ Referenced later in the fantastic <Ep slug="series-2-episode-3-bin-divers">Bin D
 - The shortcode is a pure wrapper — it does not italicise. If you want italics on an episode title, add `*asterisks*` inside the tag as normal: `<Ep slug="…">*Bin Divers*</Ep>`.
 
 ### Soundtrack ("Heard in the episode")
-Episodes can carry an optional `soundtrack` block in their frontmatter (`title`, `artist`, optional `spotifyUrl`). Rendered by `src/components/SoundtrackLine.tsx` in two variants: `full` (used in the episode-page metadata) and `subtle` (used on `EpisodeCard` for series listings). If the field is absent, nothing renders — existing episodes without a track work unchanged.
+Episodes can carry an optional `soundtrack` block in their frontmatter (`title`, `artist`, optional `spotifyUrl`).
+
+**House rule — episodes with no song.** Some episodes have no usable song in them at all. When that happens, substitute a track from Ian McShane's own album *From Both Sides Now* so the playlist stays one-song-per-episode. Established so far: S01E09-10 *Death in Venice* → "I'd Really Love to See You Tonight"; S02E01 *Just Desserts* → "Avalon". Don't reuse a track already spent on an earlier episode. The rule is explained to readers in the note under the `/soundtrack` page header (`article__note` in `SoundtrackPage.tsx`), and each substituted episode carries a YAML comment above its `soundtrack` block saying why. Rendered by `src/components/SoundtrackLine.tsx` in two variants: `full` (used in the episode-page metadata) and `subtle` (used on `EpisodeCard` for series listings). If the field is absent, nothing renders — existing episodes without a track work unchanged.
 
 The aggregated `/soundtrack` page (`src/pages/SoundtrackPage.tsx`) walks every episode's frontmatter at render time and lists all tracks grouped by series, each linking back to its episode review. It also embeds a Spotify playlist when `SPOTIFY_PLAYLIST_URL` at the top of that file is set to a share URL like `https://open.spotify.com/playlist/{id}` (the component derives the `/embed/playlist/…` URL automatically). Leave it as `""` to hide the embedded player. Route is registered in `scripts/lib/routes.mjs` (`/soundtrack`), so it prerenders and appears in the sitemap.
 

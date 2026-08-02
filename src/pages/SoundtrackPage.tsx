@@ -55,6 +55,13 @@ export default function SoundtrackPage() {
           Each entry links back to the review it came from. If a Spotify link
           is set, the track name is clickable.
         </p>
+        <p className="article__note">
+          A house rule: not every episode has a song in it. When an episode
+          passes without one, we borrow a track from Ian McShane's own album{" "}
+          <em>From Both Sides Now</em> instead — so the playlist stays a
+          complete set, one song per episode, and the man himself fills the
+          gaps.
+        </p>
       </header>
 
       {embed && (

@@ -102,7 +102,6 @@ The other notable piece of casting is Gwen Humble, who plays both Caterina and L
 
 # Trivia & Observations
 
-- This is the only two-part story *Lovejoy* ever attempted — effectively a feature-length episode split across two Friday nights.
 - Part One aired on 7 March 1986 and Part Two on 14 March 1986, the week after *The March of Time*.
 - It was also the Series One finale — and the last new *Lovejoy* on British television for nearly five years. The BBC didn't bring the series back until January 1991.
 - The story draws on Jonathan Gash's 1984 novel *The Gondola Scam*, while the title tips its hat to Thomas Mann's novella (and Visconti's 1971 film) — lofty company for a show about a Suffolk antiques dealer.

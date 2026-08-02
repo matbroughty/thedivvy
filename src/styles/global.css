@@ -701,6 +701,16 @@ li {
   margin: 0 0 1.3rem;
 }
 
+/* Standing editorial aside under a page summary (e.g. the "no song in the
+   episode" house rule on /soundtrack). Quieter than the summary above it. */
+.article__note {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  border-left: 3px solid var(--color-accent-soft);
+  padding-left: 0.85rem;
+  margin: 0 0 1.3rem;
+}
+
 .article__dates {
   font-family: var(--font-serif);
   font-style: italic;
