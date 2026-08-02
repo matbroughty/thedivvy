@@ -8,6 +8,7 @@ import ArchivePage from "./pages/ArchivePage";
 import OverviewPage from "./pages/OverviewPage";
 import CharactersPage from "./pages/CharactersPage";
 import SoundtrackPage from "./pages/SoundtrackPage";
+import NovelsPage from "./pages/NovelsPage";
 import SearchPage from "./pages/SearchPage";
 import AboutPage from "./pages/AboutPage";
 import ExternalLinksPage from "./pages/ExternalLinksPage";
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/lovejoy-overview" element={<OverviewPage />} />
         <Route path="/characters" element={<CharactersPage />} />
         <Route path="/soundtrack" element={<SoundtrackPage />} />
+        <Route path="/novels" element={<NovelsPage />} />
         <Route path="/search" element={<SearchPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/links" element={<ExternalLinksPage />} />

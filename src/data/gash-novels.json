@@ -1,0 +1,167 @@
+{
+  "note": "Jonathan Gash's Lovejoy novels in publication order, mapped to the TV episodes that adapted them. Bibliography is solid fact (Wikipedia / Fantastic Fiction). The MAPPING is not: the BBC never credited source novels on screen, and neither IMDb nor TMDB records a 'novel' writing credit for any episode. So each mapping carries an explicit status. Promote 'probable' to 'adapted' only when you find a citable source or have read the book and the correspondence is beyond argument.",
+  "statuses": {
+    "adapted": "A published source states the episode was based on this novel.",
+    "probable": "Strong plot/title correspondence, but no citable source confirms it.",
+    "none": "No known TV adaptation."
+  },
+  "novels": [
+    {
+      "order": 1,
+      "title": "The Judas Pair",
+      "year": 1977,
+      "status": "adapted",
+      "episodeSlug": "series-1-episode-5-the-judas-pair",
+      "note": "Gash's first Lovejoy novel and the one the series named an episode after. Wikipedia states the episode is based on it.",
+      "source": "https://en.wikipedia.org/wiki/List_of_Lovejoy_episodes"
+    },
+    {
+      "order": 2,
+      "title": "Gold by Gemini",
+      "altTitle": "Gold from Gemini",
+      "year": 1978,
+      "status": "adapted",
+      "episodeSlug": "series-1-episode-4-friends-romans-and-enemies",
+      "note": "Retitled for television. Wikipedia states the episode is based on this novel.",
+      "source": "https://en.wikipedia.org/wiki/List_of_Lovejoy_episodes"
+    },
+    {
+      "order": 3,
+      "title": "The Grail Tree",
+      "year": 1979,
+      "status": "none",
+      "note": "Third of the three novels collected in the Lovejoy at Large Again omnibus. No known episode."
+    },
+    {
+      "order": 4,
+      "title": "Spend Game",
+      "year": 1980,
+      "status": "none"
+    },
+    {
+      "order": 5,
+      "title": "The Vatican Rip",
+      "year": 1981,
+      "status": "none"
+    },
+    {
+      "order": 6,
+      "title": "Firefly Gadroon",
+      "year": 1982,
+      "status": "probable",
+      "episodeSlug": "series-1-episode-1-the-firefly-cage",
+      "note": "The series opener's title is a near-miss on the novel's. Suggestive, but no source confirms the adaptation."
+    },
+    {
+      "order": 7,
+      "title": "The Sleepers of Erin",
+      "year": 1983,
+      "status": "none"
+    },
+    {
+      "order": 8,
+      "title": "The Gondola Scam",
+      "year": 1984,
+      "status": "probable",
+      "episodeSlug": "series-1-episode-9-10-death-in-venice",
+      "note": "Venice, forged Old Masters and a conspiracy around fake Renaissance art. The correspondence is strong and The Divvy's own review makes the attribution, but no external source confirms it."
+    },
+    {
+      "order": 9,
+      "title": "Pearlhanger",
+      "year": 1985,
+      "status": "none"
+    },
+    {
+      "order": 10,
+      "title": "The Tartan Ringers",
+      "altTitle": "The Tartan Sell",
+      "year": 1986,
+      "status": "none"
+    },
+    {
+      "order": 11,
+      "title": "Moonspender",
+      "year": 1986,
+      "status": "none"
+    },
+    {
+      "order": 12,
+      "title": "Jade Woman",
+      "year": 1988,
+      "status": "none"
+    },
+    {
+      "order": 13,
+      "title": "The Very Last Gambado",
+      "year": 1989,
+      "status": "none"
+    },
+    {
+      "order": 14,
+      "title": "The Great California Game",
+      "year": 1991,
+      "status": "none"
+    },
+    {
+      "order": 15,
+      "title": "The Lies of Fair Ladies",
+      "year": 1992,
+      "status": "none"
+    },
+    {
+      "order": 16,
+      "title": "Paid and Loving Eyes",
+      "year": 1993,
+      "status": "none"
+    },
+    {
+      "order": 17,
+      "title": "The Sin Within Her Smile",
+      "year": 1993,
+      "status": "none"
+    },
+    {
+      "order": 18,
+      "title": "The Grace in Older Women",
+      "year": 1995,
+      "status": "none"
+    },
+    {
+      "order": 19,
+      "title": "The Possessions of a Lady",
+      "year": 1995,
+      "status": "none"
+    },
+    {
+      "order": 20,
+      "title": "The Rich and the Profane",
+      "year": 1998,
+      "status": "none"
+    },
+    {
+      "order": 21,
+      "title": "A Rag, a Bone and a Hank of Hair",
+      "year": 1999,
+      "status": "none"
+    },
+    {
+      "order": 22,
+      "title": "Every Last Cent",
+      "year": 2001,
+      "status": "none"
+    },
+    {
+      "order": 23,
+      "title": "Ten Word Game",
+      "year": 2003,
+      "status": "none"
+    },
+    {
+      "order": 24,
+      "title": "Faces in the Pool",
+      "year": 2008,
+      "status": "none"
+    }
+  ]
+}

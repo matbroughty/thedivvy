@@ -711,6 +711,89 @@ li {
   margin: 0 0 1.3rem;
 }
 
+/* /novels — Gash bibliography mapped to episodes. Wide table, so it scrolls
+   inside its own container rather than pushing the page sideways. */
+.table-scroll {
+  overflow-x: auto;
+  margin: 0 0 1.5rem;
+}
+
+.novels-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+  min-width: 640px;
+}
+
+.novels-table th {
+  text-align: left;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  border-bottom: 2px solid var(--color-rule);
+  padding: 0.5rem 0.7rem;
+}
+
+.novels-table td {
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.65rem 0.7rem;
+  vertical-align: top;
+}
+
+/* Unadapted novels recede — the eye should land on the four that made it. */
+.novels-table tr[data-status="none"] td {
+  color: var(--color-text-muted);
+}
+
+.novels-table__num {
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.novels-table__alt,
+.novels-table__note {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.novels-table__note {
+  margin-top: 0.3rem;
+  line-height: 1.45;
+}
+
+.novels-table__dash {
+  color: var(--color-text-muted);
+}
+
+.novels-status {
+  display: inline-block;
+  white-space: nowrap;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-border);
+}
+
+.novels-status--adapted {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg-card);
+}
+
+.novels-status--probable {
+  border-color: var(--color-accent-soft);
+  color: var(--color-accent-ink);
+}
+
+.novels-status--none {
+  color: var(--color-text-muted);
+}
+
 .article__dates {
   font-family: var(--font-serif);
   font-style: italic;

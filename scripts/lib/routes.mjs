@@ -29,6 +29,7 @@ const STATIC_ROUTES = [
   "/lovejoy-overview",
   "/characters",
   "/soundtrack",
+  "/novels",
   "/search",
   "/about",
   "/links",
