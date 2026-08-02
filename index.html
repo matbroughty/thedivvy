@@ -6,10 +6,10 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Lovejoy reviews on The Divvy — a weekly walk-through of every episode of the BBC's finest dodgy-antiques-dealer drama. Ian McShane, Tinker, Eric, Lady Jane, and a respectable amount of dodgy provenance."
-    />
+    <!-- No static description meta tag here on purpose. React Helmet renders
+         one per page via src/components/Seo.tsx; a hard-coded tag in this file
+         is not Helmet-managed, so it would survive alongside the real one and
+         leave every page emitting two competing descriptions. -->
     <link
       rel="alternate"
       type="application/rss+xml"
