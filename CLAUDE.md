@@ -80,9 +80,34 @@ Referenced later in the fantastic <Ep slug="series-2-episode-3-bin-divers">Bin D
 ### Soundtrack ("Heard in the episode")
 Episodes can carry an optional `soundtrack` block in their frontmatter (`title`, `artist`, optional `spotifyUrl`).
 
-**House rule — episodes with no song.** Some episodes have no usable song in them at all. When that happens, substitute a track from Ian McShane's own album *From Both Sides Now* so the playlist stays one-song-per-episode. Established so far: S01E09-10 *Death in Venice* → "I'd Really Love to See You Tonight"; S02E01 *Just Desserts* → "Avalon". Don't reuse a track already spent on an earlier episode. The rule is explained to readers in the note under the `/soundtrack` page header (`article__note` in `SoundtrackPage.tsx`), and each substituted episode carries a YAML comment above its `soundtrack` block saying why. Rendered by `src/components/SoundtrackLine.tsx` in two variants: `full` (used in the episode-page metadata) and `subtle` (used on `EpisodeCard` for series listings). If the field is absent, nothing renders — existing episodes without a track work unchanged.
+**House rule — episodes with no song.** Some episodes have no usable song in them at all. When that happens, substitute a track from Ian McShane's own album *From Both Sides Now* so the playlist stays one-song-per-episode. Established so far: S01E09-10 *Death in Venice* → "I'd Really Love to See You Tonight"; S02E01 *Just Desserts* → "Avalon". Don't reuse a track already spent on an earlier episode.
+
+**You must set `substitute: true` on the soundtrack block when you do this.** Without it the episode page announces the track as "Heard in the episode", which is the one thing a substitute demonstrably wasn't:
+
+```yaml
+soundtrack:
+  title: Avalon
+  artist: Ian McShane
+  spotifyUrl: "https://open.spotify.com/track/3nSo9ZfNNunFJLhL7Hb5bB"
+  substitute: true
+```
+
+With the flag set, `SoundtrackLine` renders "No song in this episode" plus an aside explaining the borrow and linking to `/soundtrack`; `/soundtrack` rows and `EpisodeCard` both gain a small STAND-IN pill. Nothing keys off the artist or album name, so a substitute from elsewhere would only need the aside sentence in `SoundtrackLine.tsx` revisiting. The rule is also explained to readers in the note under the `/soundtrack` page header (`article__note` in `SoundtrackPage.tsx`).
+
+Strip the `?si=…` tracking parameter from Spotify share links before pasting them into `spotifyUrl`. Rendered by `src/components/SoundtrackLine.tsx` in two variants: `full` (used in the episode-page metadata) and `subtle` (used on `EpisodeCard` for series listings). If the field is absent, nothing renders — existing episodes without a track work unchanged.
 
 The aggregated `/soundtrack` page (`src/pages/SoundtrackPage.tsx`) walks every episode's frontmatter at render time and lists all tracks grouped by series, each linking back to its episode review. It also embeds a Spotify playlist when `SPOTIFY_PLAYLIST_URL` at the top of that file is set to a share URL like `https://open.spotify.com/playlist/{id}` (the component derives the `/embed/playlist/…` URL automatically). Leave it as `""` to hide the embedded player. Route is registered in `scripts/lib/routes.mjs` (`/soundtrack`), so it prerenders and appears in the sitemap.
+
+### Gash novels (`/novels`)
+`src/data/gash-novels.json` holds all 24 Jonathan Gash Lovejoy novels in publication order; `src/pages/NovelsPage.tsx` renders them against the episodes that adapted them. Episode links resolve through `getEpisodeBySlug`, so they only light up once the target review is published (same behaviour as `<Ep>`).
+
+The mapping **cannot be derived mechanically** — the BBC never credited source novels on screen, and neither IMDb nor TMDB records a "novel" writing credit for any episode (*The Judas Pair* is credited simply "Written by Ian La Frenais"). So every row carries an explicit `status`:
+
+- `adapted` — a published source, or Mat having read the book, confirms it.
+- `probable` — strong title/plot correspondence, nothing citable.
+- `none` — no known TV adaptation.
+
+Only promote `probable` → `adapted` on actual evidence; the page's value rests on those labels meaning something. Currently 3 adapted, 1 probable, 20 unadapted — all the mappings fall in Series One, since the show ran on original scripts from Series Two onwards.
 
 ### Search (`/search`)
 Full-text search runs client-side via [MiniSearch](https://lucaong.github.io/minisearch/) against a build-time JSON index.
