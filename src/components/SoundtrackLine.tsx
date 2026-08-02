@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { Soundtrack } from "../types";
 
 export default function SoundtrackLine({
@@ -7,7 +8,7 @@ export default function SoundtrackLine({
   soundtrack: Soundtrack;
   variant?: "full" | "subtle";
 }) {
-  const { title, artist, spotifyUrl } = soundtrack;
+  const { title, artist, spotifyUrl, substitute } = soundtrack;
 
   const titleEl = spotifyUrl ? (
     <a
@@ -27,6 +28,7 @@ export default function SoundtrackLine({
       <p className="soundtrack soundtrack--subtle">
         <span aria-hidden>🎵</span> {titleEl} –{" "}
         <span className="soundtrack__artist">{artist}</span>
+        {substitute && <span className="soundtrack__standin"> stand-in</span>}
       </p>
     );
   }
@@ -35,11 +37,20 @@ export default function SoundtrackLine({
     <p className="soundtrack soundtrack--full">
       <span className="soundtrack__label">
         <span aria-hidden>🎵</span>{" "}
-        <strong>Heard in the episode</strong>
+        <strong>
+          {substitute ? "No song in this episode" : "Heard in the episode"}
+        </strong>
       </span>
       <span className="soundtrack__track">
         {titleEl} – <span className="soundtrack__artist">{artist}</span>
       </span>
+      {substitute && (
+        <span className="soundtrack__aside">
+          Nothing worth picking out plays in this one, so we borrow from Ian
+          McShane's own album <em>From Both Sides Now</em> instead —{" "}
+          <Link to="/soundtrack">the house rule</Link>.
+        </span>
+      )}
     </p>
   );
 }

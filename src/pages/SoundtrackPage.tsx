@@ -107,6 +107,9 @@ export default function SoundtrackPage() {
                     <li key={episode.frontmatter.slug}>
                       <div className="soundtrack-list__track">
                         {label} <span className="soundtrack__artist">– {artist}</span>
+                        {soundtrack.substitute && (
+                          <span className="soundtrack__standin"> stand-in</span>
+                        )}
                       </div>
                       <div className="soundtrack-list__episode">
                         <Link to={`/episodes/${episode.frontmatter.slug}`}>

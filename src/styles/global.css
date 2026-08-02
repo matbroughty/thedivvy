@@ -711,6 +711,31 @@ li {
   margin: 0 0 1.3rem;
 }
 
+/* Marks a track that isn't actually in the episode — the From Both Sides Now
+   house substitute. Small enough not to shout on a card or list row. */
+.soundtrack__standin {
+  display: inline-block;
+  margin-left: 0.4rem;
+  font-family: var(--font-sans);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 0.1rem 0.4rem;
+  vertical-align: 0.1em;
+}
+
+/* Explanation under the episode-page soundtrack block. */
+.soundtrack__aside {
+  display: block;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: var(--color-text-muted);
+}
+
 /* /novels — Gash bibliography mapped to episodes. Wide table, so it scrolls
    inside its own container rather than pushing the page sideways. */
 .table-scroll {

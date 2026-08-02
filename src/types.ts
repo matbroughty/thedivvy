@@ -5,6 +5,12 @@ export interface Soundtrack {
   artist: string;
   /** Optional deep link to the track on Spotify. */
   spotifyUrl?: string;
+  /**
+   * True when no song features in the episode and this is the house
+   * substitute from Ian McShane's own album. Changes the label from
+   * "Heard in the episode" to something honest.
+   */
+  substitute?: boolean;
 }
 
 export interface EpisodeFrontmatter {
