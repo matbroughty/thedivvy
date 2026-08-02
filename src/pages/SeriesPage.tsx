@@ -5,6 +5,7 @@ import {
   getSeriesStats,
 } from "../lib/episodes";
 import EpisodeCard from "../components/EpisodeCard";
+import { getSeriesOverview } from "../lib/seriesOverviews";
 import Seo from "../components/Seo";
 import { useSeriesTheme } from "../lib/useSeriesTheme";
 import NotFoundPage from "./NotFoundPage";
@@ -25,6 +26,7 @@ export default function SeriesPage() {
 
   const episodes = getEpisodesBySeries(seriesNum);
   const stats = getSeriesStats(seriesNum);
+  const overview = getSeriesOverview(seriesNum);
 
   return (
     <div className="page page--narrow" data-series={seriesNum}>
@@ -53,6 +55,15 @@ export default function SeriesPage() {
           <strong>{stats.averageScore!.toFixed(1)} / 5</strong> &middot; total
           Lovejoy Units{" "}
           <strong>{stats.totalLovejoyUnits}</strong>
+        </p>
+      )}
+
+      {overview && (
+        <p className="series-overview-link">
+          <Link to={`/series/${seriesNum}/overview`}>
+            <strong>{overview.title}</strong>
+          </Link>{" "}
+          <span className="series-overview-link__blurb">{overview.summary}</span>
         </p>
       )}
 

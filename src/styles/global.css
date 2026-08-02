@@ -711,6 +711,23 @@ li {
   margin: 0 0 1.3rem;
 }
 
+/* Link from /series/{N} up to that series' overview essay. Sits above the
+   episode grid, so it reads as an invitation rather than a nav crumb. */
+.series-overview-link {
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-bg-card);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 0.8rem 1rem;
+  margin: 0 0 2rem;
+}
+
+.series-overview-link__blurb {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
 /* Marks a track that isn't actually in the episode — the From Both Sides Now
    house substitute. Small enough not to shout on a card or list row. */
 .soundtrack__standin {

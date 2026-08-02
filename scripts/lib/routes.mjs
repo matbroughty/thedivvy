@@ -15,6 +15,7 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..", "..");
 const REVIEWS_DIR = path.join(ROOT, "src", "content", "reviews");
+const SERIES_DIR = path.join(ROOT, "src", "content", "series");
 
 const STATIC_ROUTES = [
   "/",
@@ -89,12 +90,33 @@ async function getEpisodeRoutes() {
 }
 
 /**
+ * Per-series overview essays live at src/content/series/{NN}-overview.mdx and
+ * render at /series/{N}/overview. Derived rather than hard-coded, so dropping
+ * in a new overview registers its route with no further wiring.
+ */
+async function getSeriesOverviewRoutes() {
+  if (!existsSync(SERIES_DIR)) return [];
+  const entries = await readdir(SERIES_DIR, { withFileTypes: true });
+  const numbers = [];
+  for (const entry of entries) {
+    if (!entry.isFile()) continue;
+    const match = entry.name.match(/^(\d+)-overview\.mdx$/);
+    if (!match) continue;
+    numbers.push(Number(match[1]));
+  }
+  numbers.sort((a, b) => a - b);
+  return numbers.map((n) => `/series/${n}/overview`);
+}
+
+/**
  * Return the full canonical list of routes for the site.
- * Static routes first (in fixed order), then episode routes (sorted by slug).
+ * Static routes first (in fixed order), then series overviews, then episode
+ * routes (sorted by slug).
  */
 export async function getAllRoutes() {
+  const overviews = await getSeriesOverviewRoutes();
   const episodes = await getEpisodeRoutes();
-  return [...STATIC_ROUTES, ...episodes];
+  return [...STATIC_ROUTES, ...overviews, ...episodes];
 }
 
 /**

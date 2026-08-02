@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import EpisodePage from "./pages/EpisodePage";
 import SeriesIndexPage from "./pages/SeriesIndexPage";
 import SeriesPage from "./pages/SeriesPage";
+import SeriesOverviewPage from "./pages/SeriesOverviewPage";
 import ArchivePage from "./pages/ArchivePage";
 import OverviewPage from "./pages/OverviewPage";
 import CharactersPage from "./pages/CharactersPage";
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/series" element={<SeriesIndexPage />} />
         <Route path="/series/:id" element={<SeriesPage />} />
+        <Route path="/series/:id/overview" element={<SeriesOverviewPage />} />
         <Route path="/episodes/:slug" element={<EpisodePage />} />
         <Route path="/archive" element={<ArchivePage />} />
         <Route path="/lovejoy-overview" element={<OverviewPage />} />
