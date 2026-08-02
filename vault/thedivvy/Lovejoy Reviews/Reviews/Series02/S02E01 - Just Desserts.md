@@ -28,11 +28,40 @@ TODO — the one-paragraph, one-wink summary. Lovejoy is released from an open p
 
 # Main Review
 
-TODO — cold open (150–250 words). Something topical, nostalgic or personal from the week of writing, ending with a natural bridge into the episode.
+"Woolworth's used to sell these for thruppence.  
+That's about what they're worth now."
 
-TODO — first impressions. Series Two opens five years after Series One ended, with the core four intact (McShane, Sutton, Jury, Logan), no Charlie Gimbert — he doesn't come back until Series Four — and a Lovejoy who has spent eight months at Her Majesty's pleasure. Is this a reboot, a return to form, or both?
+It is August 2026 and most of England is in the worst drought since.. well a long time ago.  I for one am sick of the heat and so seeing Lovejoy emerge from an Open Prison into an overcast afternoon and an awaiting Janey (in her green Range Rover) makes me long for autumn and an end to this hot horror.
 
-TODO — the Divvy walkthrough. Roughly 30% plot, 70% commentary.
+Lovejoy is back after a 5 year episode drought and McShane emerges into the 90's with more mullet and a little extra body timber.  I exited the 90's in similar fashion.
+
+McShane had starred in texan soap opera behemouth Dallas in between and - this is some trivia - had married Sue Ellen Ewing as the english charactor Don Lockwood.  So a busy man.
+
+Where we left series 1 with Fulton Mckay and the Porridge link (Clement, La Frenais) we reappear with a great set-up.  Lovejoy in prison and with a score to settle.  Luckily this episode stays almost entirely in Suffolk.  There is a brief flirtation with Brussels  but then I iamgine the controller at BBC radio'd them in to call McShane back after the Death in Venice debacle (claude link back to this episode) and reminded the writers where their strength lay.
+
+This episode is a corker.  It opens with Lovejoy holding court to a group of womens institute members in a hall that resembles one found in any market town. In this cut price antiques roadshow setting we get an antique condom joke and in my mind after 5 years away that is quite a ballsy opening if you will.
+
+The crew are back.  Mainly.  We seem to have lost Gimbert, but Jane, Eric, Tinker and Lovejoy are all back and looking great.  We also get introduced to a new character - Muriel the Morris Minor - who will stay with us till the last episode.  Shame about the Volvo estate - but this is the 90's and that is progress I guess.
+
+Onto - the plot (claude summarise plot in a couple of funny sentences).
+
+Eric appears in a Lazer crash helme (still with motorcyle and sidecar).  I know of these as they were the cheapest crash helmets you could get in the early 90's and i had one to accompany the Yamaha DT 50 that was my pride and joy when i turned 16.  50cc of pure trial bike power.  0-30 in about a minute.  Sixth form let me ride it in.  At 17 got to move up to a RD125 (lqiuid cooled no less).  This got stolen but I had fallen off about 10 times by this point so probably for the best.  The Lazer crash helmet survived. 
+
+Anyway.  Michael - it was obvious from the wonderful season 1 episode The Judas Pair that this friend of the Felshams was a wrong-un, so when he appears in this episdoe (nice bit of continuity and a great call back to the highlight of series 1) it is no real surprise when the whole set-up of Lovejoy over the antique dresser is lead by this bloke.
+
+The flash backs to the sting that got Lovejoy incarcerated are well executed.  A subtle call back with a brief interlude and fade in and out of back and white.  I wish the live cricket on Sky would do the same.  Lost count of number of times celebrating a wicket in the pub only to realise they are showing a previously taken wicket. Sky take note - do replays in black and white so we can differestitate between live action and replays.
+
+Talking of cricket we do get a little cricket in this episode and a truly strage scene where Lovejoy's fellow ex con Mavis (a bloke) is tied up in a cricket changing room about to be toturned by one of Micheles accomllices.  Mavis is saved by Lovejoy who throws cricket balls at the torturer and then drinks Fosters cans with Mavis - which in my book feels like a unecessary form of continued torture for Mavis.
+
+The episode keeps up a nice pace as Lovejoy zones in on his hapless quarry.  The first visit to Michels gaff where it is Lovejoy professing his innocence is well handled and the not so subtle interloping of some cockney chimney sweepers leads us onto the comedy moment where Lovejoy breaks in Santa Clause style to Micheles house to prove he was the one who set-up Lovejoy.
+
+The final denoument of Michael is a little anti-climatic - but shows up Lovejoy as the bigger man.
+
+So the drought is over and this episode is a welcome shower of Lovejoy...joy to get us going again.  Lovejoy has his cottage back, the gang are back and I am back.  Lets go.
+
+
+
+
 
 ## Favourite Moment
 
@@ -40,7 +69,15 @@ TODO
 
 ## Good Quote
 
-TODO
+From Lovejoy to the womens institure - "I have enjoyed these quiet afternoons.  
+  
+Surrounded by nice people talking about their  
+hydrangeas and swapping chutney recipes.  
+  
+Makes a welcome change from the conniving  
+backstabbing avaricious alcoholics  
+  
+that populate the antique trade."
 
 ## Guest Focus — Anthony Valentine
 
@@ -50,7 +87,7 @@ Also worth a mention: Christine Kavanagh as Renata Van Der Zee and Maxine Audley
 
 ## The Divvy Verdict
 
-TODO — why it works, what it's really about underneath the plot, and a callback to the cold open.
+A great return.  Good to see Michael get his comeuppance
 
 # Post Episode Thoughts
 
