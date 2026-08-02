@@ -7,9 +7,21 @@ import type { ComponentType } from "react";
 // These live OUTSIDE /src/content/reviews so the episode loader's
 // required-frontmatter check never sees them.
 
+export interface RankingEntry {
+  name: string;
+  slug: string;
+}
+
 type OverviewModule = {
   default: ComponentType;
-  frontmatter?: { title?: string; series?: number; summary?: string };
+  frontmatter?: {
+    title?: string;
+    heading?: string;
+    seoTitle?: string;
+    series?: number;
+    summary?: string;
+    ranking?: RankingEntry[];
+  };
 };
 
 const modules = import.meta.glob<OverviewModule>(
@@ -19,8 +31,15 @@ const modules = import.meta.glob<OverviewModule>(
 
 export interface SeriesOverview {
   series: number;
+  /** Editorial title, e.g. "Series One — The Divvy Verdict". Used as the eyebrow. */
   title: string;
+  /** Descriptive <h1>. Falls back to `title`. */
+  heading: string;
+  /** <title> tag. Falls back to `heading`. Keep it under ~48 chars — Seo appends " · The Divvy". */
+  seoTitle: string;
   summary: string;
+  /** Best-first ranking, if the overview contains one. Drives ItemList JSON-LD. */
+  ranking: RankingEntry[];
   Component: ComponentType;
 }
 
@@ -45,7 +64,10 @@ for (const [filePath, mod] of Object.entries(modules)) {
   overviews.set(series, {
     series,
     title: fm.title,
+    heading: fm.heading ?? fm.title,
+    seoTitle: fm.seoTitle ?? fm.heading ?? fm.title,
     summary: fm.summary,
+    ranking: fm.ranking ?? [],
     Component: mod.default,
   });
 }

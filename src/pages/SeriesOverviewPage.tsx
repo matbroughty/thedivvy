@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import Seo from "../components/Seo";
+import SeriesRankingJsonLd from "../components/SeriesRankingJsonLd";
 import { ALL_SERIES, getSeriesStats } from "../lib/episodes";
 import { getSeriesOverview } from "../lib/seriesOverviews";
 import { useSeriesTheme } from "../lib/useSeriesTheme";
@@ -23,13 +24,15 @@ export default function SeriesOverviewPage() {
   }
 
   const stats = getSeriesStats(seriesNum);
-  const { title, summary, Component } = overview;
+  const { title, heading, seoTitle, summary, ranking, Component } = overview;
 
   return (
     <article className="article" data-series={seriesNum}>
-      <Seo
-        title={`${title} — Lovejoy Series ${seriesNum} on The Divvy`}
-        description={summary}
+      <Seo title={seoTitle} description={summary} type="article" />
+      <SeriesRankingJsonLd
+        series={seriesNum}
+        name={seoTitle}
+        ranking={ranking}
       />
       <p>
         <Link to={`/series/${seriesNum}`}>
@@ -37,8 +40,8 @@ export default function SeriesOverviewPage() {
         </Link>
       </p>
       <header className="article__head">
-        <div className="article__eyebrow">Series {seriesNum}</div>
-        <h1 className="article__title">{title}</h1>
+        <div className="article__eyebrow">{title}</div>
+        <h1 className="article__title">{heading}</h1>
         <p className="article__summary">{summary}</p>
         {stats.count > 0 && (
           <p className="article__dates">
