@@ -105,7 +105,7 @@ port
 
 ## What worked / what didn't
 
-- **No Tinker.** Dudley Sutton is absent from this episode entirely — in *Just Desserts*, back for *Bin Divers*, not here. Eric carries the whole sidekick load, a chunk of it spent barking at the door and being told to fetch himself a bone.
+- **No Tinker.** Dudley Sutton is absent from this episode entirely — in *Just Desserts*, back for *Bin Diving*, not here. Eric carries the whole sidekick load, a chunk of it spent barking at the door and being told to fetch himself a bone.
 - **Oxfordshire.** Series Two was shot in Oxfordshire as a cost saving before the production returned to Suffolk for Series Three and stayed. ⚠️ Needs a second source before it goes on the site — locations are a known gap.
 - **Unnecessary detail slot:** the FTSE bulletin on the television has the 100 Share Index closing at 2346.2, "its highest since early February".
 - **Continuity wobble:** the Grand Tour is Hugo's great-great-grandfather in the catalogue scene, but by the drawing room it's "your great-grandfather", and the man who sawed the bronze up is "Grandpa Carey-Holden". Three generations for the price of one.

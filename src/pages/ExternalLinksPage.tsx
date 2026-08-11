@@ -121,6 +121,12 @@ const linkSections: LinkSection[] = [
         description: "Eric Catchpole",
       },
       {
+        title: "Chris Jury interview — Adventures in Prime Time",
+        url: "https://adventuresinprimetime.wordpress.com/2011/09/12/chris-jury-lovejoy-interview/",
+        description:
+          "Jonathan Melville's 2011 interview, in which Jury calls Series Two his favourite time on the show",
+      },
+      {
         title: "Phyllis Logan",
         url: "https://www.imdb.com/name/nm0517643/",
         description: "Lady Jane Felsham",

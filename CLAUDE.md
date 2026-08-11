@@ -73,13 +73,13 @@ Episode scores are out of 5 — see `src/components/EpisodeScore.tsx` (renders a
 Reviews often name-drop other episodes. Wrap the mention in the `<Ep>` MDX shortcode with the target's slug:
 
 ```mdx
-Referenced later in the fantastic <Ep slug="series-2-episode-3-bin-divers">Bin Divers</Ep> episode.
+Referenced later in the fantastic <Ep slug="series-2-episode-3-bin-diving">Bin Diving</Ep> episode.
 ```
 
 - If the target review is published, `<Ep>` renders as a `<Link>` to `/episodes/{slug}`.
 - If the target isn't published yet, it renders the children as plain text — no dead link, no 404. The moment the target review lands, every existing mention auto-lights-up.
 - The component (`src/components/Ep.tsx`) is registered globally via `mdxComponents.tsx`, so `<Ep>` is available in every MDX file without an import.
-- The shortcode is a pure wrapper — it does not italicise. If you want italics on an episode title, add `*asterisks*` inside the tag as normal: `<Ep slug="…">*Bin Divers*</Ep>`.
+- The shortcode is a pure wrapper — it does not italicise. If you want italics on an episode title, add `*asterisks*` inside the tag as normal: `<Ep slug="…">*Bin Diving*</Ep>`.
 
 ### Soundtrack ("Heard in the episode")
 Episodes can carry an optional `soundtrack` block in their frontmatter (`title`, `artist`, optional `spotifyUrl`).
