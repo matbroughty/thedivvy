@@ -150,7 +150,7 @@ Production site URL lives in `.env.production` (`VITE_SITE_URL`). Both the React
 ## Commit conventions
 - Only commit when the user explicitly asks (`commit`, `commit and push`, etc.). They preview first and often edit MDX after review-generation.
 - Episode publishes follow the pattern `Publish {Title} review (SXXEYY)`; other commits use a concise summary of what changed.
-- Every commit message ends with a `Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>` trailer.
+- Every commit message ends with a `Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>` trailer. Use whichever model actually did the work — history before August 2026 is attributed to Opus 4.7.
 - Never skip hooks (`--no-verify`) or push without explicit `and push` in the instruction.
 
 ## Review writing style
