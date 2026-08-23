@@ -120,7 +120,22 @@ soundtrack:
   substitute: true
 ```
 
-With the flag set, `SoundtrackLine` renders "No song in this episode" plus an aside explaining the borrow and linking to `/soundtrack`; `/soundtrack` rows and `EpisodeCard` both gain a small STAND-IN pill. Nothing keys off the artist or album name, so a substitute from elsewhere would only need the aside sentence in `SoundtrackLine.tsx` revisiting. The rule is also explained to readers in the note under the `/soundtrack` page header (`article__note` in `SoundtrackPage.tsx`).
+With the flag set, `SoundtrackLine` renders "No song in this episode" plus an aside explaining the borrow and linking to `/soundtrack`; `/soundtrack` rows and `EpisodeCard` both gain a small STAND-IN pill. The rule is also explained to readers in the note under the `/soundtrack` page header (`article__note` in `SoundtrackPage.tsx`).
+
+**Breaking the rule.** Occasionally an episode offers a better joke than a McShane track, and the joke wins. Established: S02E04 *Montezuma's Revenge* → Def Leppard, "Pour Some Sugar on Me", because the episode's fictional band Ded Lizards is one letter off them.
+
+When a stand-in comes from anywhere other than *From Both Sides Now*, set the optional `substituteNote` alongside `substitute: true`. It replaces the default aside — which names McShane's album — so the page doesn't claim a borrow it never made:
+
+```yaml
+soundtrack:
+  title: Pour Some Sugar on Me
+  artist: Def Leppard
+  spotifyUrl: "https://open.spotify.com/track/1aZLIbKEdsyqxyD6iNcrbA"
+  substitute: true
+  substituteNote: "Not a note of this plays in the episode. But Ded Lizards are one letter off Def Leppard…"
+```
+
+Write it as a plain sentence with no trailing full stop — `SoundtrackLine` appends " — the house rule." itself. Nothing else keys off the artist or album, so the three existing McShane substitutes are unaffected. Note that a rule-break does **not** spend a McShane track: "This Guy's In Love With You" was earmarked for S02E04 and is still available.
 
 Strip the `?si=…` tracking parameter from Spotify share links before pasting them into `spotifyUrl`. Rendered by `src/components/SoundtrackLine.tsx` in two variants: `full` (used in the episode-page metadata) and `subtle` (used on `EpisodeCard` for series listings). If the field is absent, nothing renders — existing episodes without a track work unchanged.
 

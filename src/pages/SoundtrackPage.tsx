@@ -60,7 +60,8 @@ export default function SoundtrackPage() {
           passes without one, we borrow a track from Ian McShane's own album{" "}
           <em>From Both Sides Now</em> instead — so the playlist stays a
           complete set, one song per episode, and the man himself fills the
-          gaps.
+          gaps. Very occasionally an episode makes a better joke available and
+          we break our own rule. Those are marked too.
         </p>
       </header>
 

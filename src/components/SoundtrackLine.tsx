@@ -8,7 +8,7 @@ export default function SoundtrackLine({
   soundtrack: Soundtrack;
   variant?: "full" | "subtle";
 }) {
-  const { title, artist, spotifyUrl, substitute } = soundtrack;
+  const { title, artist, spotifyUrl, substitute, substituteNote } = soundtrack;
 
   const titleEl = spotifyUrl ? (
     <a
@@ -46,9 +46,13 @@ export default function SoundtrackLine({
       </span>
       {substitute && (
         <span className="soundtrack__aside">
-          Nothing worth picking out plays in this one, so we borrow from Ian
-          McShane's own album <em>From Both Sides Now</em> instead —{" "}
-          <Link to="/soundtrack">the house rule</Link>.
+          {substituteNote ?? (
+            <>
+              Nothing worth picking out plays in this one, so we borrow from Ian
+              McShane's own album <em>From Both Sides Now</em> instead
+            </>
+          )}{" "}
+          — <Link to="/soundtrack">the house rule</Link>.
         </span>
       )}
     </p>

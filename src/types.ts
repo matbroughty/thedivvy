@@ -6,11 +6,18 @@ export interface Soundtrack {
   /** Optional deep link to the track on Spotify. */
   spotifyUrl?: string;
   /**
-   * True when no song features in the episode and this is the house
-   * substitute from Ian McShane's own album. Changes the label from
-   * "Heard in the episode" to something honest.
+   * True when no song features in the episode and this is a stand-in.
+   * Changes the label from "Heard in the episode" to something honest.
    */
   substitute?: boolean;
+  /**
+   * Overrides the explanation shown beneath a substitute track.
+   *
+   * The default wording names Ian McShane's From Both Sides Now, which is the
+   * house rule. Set this when the stand-in comes from somewhere else, so the
+   * page doesn't claim a borrow it didn't make. Plain text, one sentence.
+   */
+  substituteNote?: string;
 }
 
 export interface EpisodeFrontmatter {
