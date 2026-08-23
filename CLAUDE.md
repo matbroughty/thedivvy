@@ -45,7 +45,7 @@ One offline source may close the gap: *The Lovejoy Trail: Locations from the Lov
 
 ### Publishing a new episode review (standard workflow)
 1. Confirm the four decision fields with the user *before* writing files: `score` (0–5, halves allowed), `divvyMoment` (usually the review's headline pull-quote), `guestStar` (an actor name — if there's no natural one, a witty in-character stand-in is fine, e.g. `"None — Dandy Jack still convalescing"` for S01E05), and whether the hero images and Instagram folder are already staged.
-2. Create the MDX at `src/content/reviews/series-01/NN-slug.mdx`. Body follows `## One Wink Plot` then `## Review`. Longer reviews may use `### Favourite Moment` / `### Good Quote` / `### Guest Focus — {Name}` / `### The Divvy Verdict` subsections within Review. Some episodes use an opening pull-quote as a `>` blockquote directly under `## Review`.
+2. Create the MDX at `src/content/reviews/series-XX/NN-slug.mdx`. See **Review headings** below for the required structure. Some episodes use an opening pull-quote as a `>` blockquote directly under `## Review`.
 3. Mirror the same review body into the vault at `vault/thedivvy/Lovejoy Reviews/Reviews/Series{NN}/SXEXX - {Title}.md`. Vault has its own template frontmatter (see `Templates/ReviewTemplate.md`); vault prose can drift slightly from the published MDX if the user's edits accumulate there first.
 4. Create the empty Instagram staging folder `public/images/insta/se{S}ep{N}/` for later Canva carousel work.
 5. Verify with `npm run routes` — the new `/episodes/series-1-episode-N-slug` line should appear.
@@ -57,6 +57,30 @@ One offline source may close the gap: *The Lovejoy Trail: Locations from the Lov
 
 ### JSON-LD and likes
 Every episode page renders `Review` + `BreadcrumbList` JSON-LD via `src/components/EpisodeJsonLd.tsx` (author `"Mat Broughton"`, publisher `"The Divvy"`, `bestRating: 5`, `worstRating: 0`). Every episode page also renders a `LikeButton` backed by the third-party Abacus counter (`src/lib/likes.ts`) — `localStorage` dedupes per device; graceful fallback if the service is unreachable.
+
+### Review headings
+Every review body opens with two `##` headings, in this order and with these exact words:
+
+```mdx
+## One Wink Plot
+## Review
+```
+
+Inside `## Review`, new reviews carry these four `###` subsections, in this order, spelled exactly like this:
+
+```mdx
+### Favourite Moment
+### Good Quote
+### Guest Focus — {Actor Name}
+### The Divvy Verdict
+```
+
+Notes:
+- **Order is fixed.** Verdict always last. `Guest Focus` always sits between `Good Quote` and `The Divvy Verdict`.
+- **`Guest Focus` takes an em-dash and the actor's name**, matching the `guestStar` frontmatter field — e.g. `### Guest Focus — Warren Clarke`. If the review has no Guest Focus section, `guestStar` is promising a guest the prose never delivers, so add one or change the field.
+- **Optional extras are allowed** where an episode earns one. Established so far: `### Antique Lesson` (S01E06) and `### Trivia & Observations` (S01E09-10). Place an extra before `### The Divvy Verdict`. Reuse an existing name rather than inventing a synonym.
+- **Do not retrofit the early reviews.** S01E01–E05 and E08 are deliberately continuous prose with no subsections, which is a decision, not an oversight. Leave them alone.
+- Watch for near-miss headings — a stray `### Gold Quote` has slipped in before. The four names above are the only spellings.
 
 ### Image assets
 Two image folder patterns are established under `public/images/`:
