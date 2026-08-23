@@ -6,11 +6,12 @@ aired: 27 January 1991
 score: 4.5
 review_status: draft
 soundtrack:
-  title: This Guy's In Love With You
-  artist: Ian McShane
-  album: From Both Sides Now (1992)
-  spotifyUrl: https://open.spotify.com/track/5nN6feQaSU10D9PhFTObTI
+  title: Pour Some Sugar on Me
+  artist: Def Leppard
+  album: Hysteria (1987)
+  spotifyUrl: https://open.spotify.com/track/1aZLIbKEdsyqxyD6iNcrbA
   substitute: true
+  rule_break: true
 tags:
   - lovejoy
   - review
@@ -39,83 +40,77 @@ A solid gold Colombian king, a heavy metal band called Ded Lizards, and a blowpi
 
 ## Cold open
 
-> STILL TO WORK UP — the holiday-ailment opening below is a placeholder.
-> Alternative hooks available from the episode itself: paper tax discs,
-> air rifle darts, or The Crystal Maze.
+So the heatwave has broken and the Premier League is back. For the opening Saturday I went down to watch Whitstable first, an FA Cup preliminary round, which they won comfortably against Newhaven, 5-0. Then it was off to the pub for Spurs' first game of the season, away at Brentford. Spurs lost 3-0. Millions spent, and they looked like absolute tat.
 
-August is the month the country stops having opinions and starts having stomach complaints. Everybody I know is either away, just back, or in that grey fortnight afterwards where they keep saying the word "resort" and showing you a photograph of a swimming pool at night. The heat has finally broken, the Grooverider expedition passed off without medical incident, and I have spent most of the week receiving updates from friends abroad about matters I would rather not have been told.
+Which brings me neatly to the main artefact in what is the silliest hour *Lovejoy* has produced across two series. The Aztec-ish gold raft that everybody spends *Montezuma's Revenge* chasing is meant to look priceless. It looks cheap. It looks like tat. Like Spurs.
 
-Because that is the other great British holiday tradition: the ailment. We are a nation that will fly four hours to somewhere magnificent and then come home and describe, at length, a bathroom. Delhi belly. Gyppy tummy. Montezuma's revenge — which, if you want the pedantry, is named after an Aztec emperor who died in 1520 and has nothing whatever to do with your all-inclusive in Cancún, but the phrase stuck because it sounds like the gods getting even.
-
-I mention all this because the BBC, on the evening of Sunday 27 January 1991, put out an episode of *Lovejoy* called *Montezuma's Revenge* in which nobody is ill, nobody goes to Mexico, and nothing Aztec appears at any point. What appears instead is a Colombian one. Which, honestly, sets the tone rather well.
+Off to watch Spurs' first home game against Newcastle next Saturday — so I think I will review *Who Dares Sings* before I go, on the grounds that I could be a little grumpy come the Sunday.
 
 ## The review
 
-This is the silliest hour the programme has produced across two series, and I want to be clear that I mean that as a recommendation. After the reach of *The Italian Venus* and the beautifully small, rain-sodden *Bin Diving*, Series Two now swings the other way entirely and imports a poisoned dart assassin into East Anglia. It should not work. It absolutely does, because for the first time in a while everybody is present and correct — Tinker is back, Eric has a plot of his own, Jane has the best material she has had all series, and Lovejoy spends the entire hour with no idea what is going on around him.
+After the reach of *The Italian Venus* and the beautifully small, rain-sodden *Bin Diving*, Series Two now swings the other way entirely and imports a poisoned dart assassin into East Anglia.
 
-It opens, boldly, with a dream. Lovejoy is having a rather promising one about Lady Jane, which is interrupted at gone ten in the morning by Eric, who has something to show him. Hold that thought, because the episode is going to come back to it in a way I did not expect.
+It should not work. It rolls along very nicely, because for the first time in a while everybody is present and correct — Tinker is back, and Janey gets amorous.
 
-What Eric has is a small solid gold figure obtained from a friend called Jason, a roadie with the heavy metal band Ded Lizards, and Eric has decided this is the moment to strike out on his own. "I can't be Lovejoy's second-in-command for the rest of me life." "Can I have that in writing, Eric?" He has also been told the thing carries a curse, which he relays in the tone of a man passing on a weather warning.
+It opens with a dream sequence, which I suppose is another *Dallas* callback. Lovejoy is having a rather promising one about Lady Jane, interrupted at gone ten in the morning by Eric, who has something to show him.
 
-Tinker takes the curse business seriously enough to build a theory out of it, and it is the best thing anyone says all hour: that even in the Middle Ages there were blokes like him flogging things to the gentry and adding a bit extra for an ancient curse invented the previous Tuesday. Nothing like an old curse to add a bob or two to the price. Then he adds that of course nothing ever comes of it — never — well, hardly ever, which is *HMS Pinafore*, and I refuse to believe that was an accident.
+What Eric has is a small solid gold figure obtained from a friend called Jason, a roadie with the heavy metal band Ded Lizards, and Eric has decided this is the moment to strike out on his own. "I can't be Lovejoy's second-in-command for the rest of me life."
 
-Two people are dead within twenty minutes, so the curse is at least keeping up appearances.
+"Can I have that in writing, Eric?" He has also been told the thing carries a curse.
 
-## The mythology, briefly
+The figurine is wrapped in a *Melody Maker*, and Eric is into heavy metal. In the early nineties the *Melody Maker* was all shoegaze — think Chapterhouse, Slowdive, Ride, My Bloody Valentine — and most definitely not hair metal, so I think the researcher or the props person got this one wrong.
 
-I am going to do this bit properly, because it is the funniest thing about the episode and it is entirely unintentional.
+I was an avid reader. Gutted when it folded and got 'merged' into the more mainstream and less good *NME*. Loved *Melody Maker*, I did. Even though it annoyed me by refusing to cover any rave music whatsoever. My missives on the subject did not help.
 
-The title says Montezuma, who was Aztec, in Mexico. Lovejoy, holding the figure, dates it to the fifteenth or sixteenth century and calls it Colombian, which is right. Later, describing the same object, he calls it a solid gold Inca statue, and the Inca were in Peru. That is three separate civilisations, several thousand miles apart, in one episode, about one small gold man. I will admit that when I came to write this up I found I had put "Mayan" in my own notes, which makes four, and which I offer as evidence that the confusion is catching.
+But Eric would definitely not have been reading it. That figure should have been wrapped in *Kerrang!*. If there is ever a reboot, I hope they get this sorted. Very important.
+
+Anyway. Even if the prop department isn't paying attention, Tinker takes the curse business seriously enough, and there is nothing like an old curse to add a bob or two to the price.
+
+Two people are then dead inside twenty minutes — this may or may not be *Melody Maker* related — so the curse is working.
+
+The title says Montezuma, who was Aztec, in Mexico. Lovejoy, holding the figure, dates it to the fifteenth or sixteenth century and calls it Colombian, which is right. Later, describing the same object, he calls it a solid gold Inca statue, and the Inca were in Peru. That is three separate civilisations, several thousand miles apart. It doesn't really matter. This is all-round silly.
 
 The only person who gets it right is Professor David Hayward, who takes Lovejoy to a museum in Cambridge and explains that every year at the winter solstice a king would be rowed out onto a lake on a raft and would throw gold offerings into the water — and that very occasionally a gold raft would be made and thrown in too. What Lovejoy has is the king off one of those.
 
-That is the Muisca, and the object is the Muisca raft, the single most famous thing in the Museo del Oro in Bogotá, which the episode calls the Golden Museum and which is, to be fair, exactly what that translates to. The real one is about nineteen centimetres long and weighs 287 grams, it is made of tumbaga rather than pure gold, and — this is my favourite part — it was not fished out of a lake at all. It turned up in 1969 in a cave near Pasca. Rosita tells Lovejoy her museum has one other piece like it, only smaller, which is precisely backwards; there is one, and this is it.
-
-So the professor is the only character in the episode who knows what he is talking about, and the episode murders him for it. I do not think there is a moral there, but there might be.
-
-I should add that when the raft is finally revealed in full, it looks like a flimsy gold Lego kit assembled at speed by a toddler. Thousands of years of Andean goldsmithing, and the props department has produced something you would hesitate to float in the bath.
-
-## The walkthrough
-
-Eric takes the figure to a dealer for a second opinion and is politely turned over, which is the whole of his business career in a single scene. He and Lovejoy are then bundled into a car by two heavies and delivered to a rehearsal room where Ded Lizards are grinding away at full volume, and this is one of those moments where 1991 arrives with a thump.
-
-A word on Ded Lizards. It is a perfectly serviceable joke — one letter off Def Leppard, one lizard off the Doors — but the episode has a far better band name sitting right there in its own dialogue and never notices. Apostle Spoons. Put that on a poster at the Hammersmith Odeon and I would go.
+Onto the rest of the plot. Eric takes the figure to a dealer for a second opinion and is politely turned over. He and Lovejoy are then bundled into a car by two heavies and delivered to a rehearsal room where Ded Lizards are grinding away at full volume. Ded Lizards is presumably meant as a playful Def Leppard reference — but unlike the Hothouse Flowers, who turn up as themselves next series in *No Strings*, and about whom I have an anecdote, so stay tuned, I assume the BBC couldn't afford the actual Def Leppard.
 
 Jeff Diamond, their manager, explains that the statue is stolen, that he has kept the police out of it, and that he now wants shot of the thing entirely — because since it arrived his drummer Archie has been killed in a car crash and his bands have gone off the boil.
 
-Then comes the detail that justifies the entire episode. Archie had wanted to mount the figure on his dashboard. It would not fit with the raft attached, so he cut the king off — off a pre-Columbian votive offering — and stuck him down with a spot of superglue under each foot. Somewhere in 1990, a heavy metal drummer drove around Britain with the treasure of the Muisca glued to his dash like a nodding dog. I have thought about this more than is reasonable.
+All very suspicious, but at least this isn't Janey getting the gang into a scrape.
 
-The cars are worth a look generally, because every windscreen in this episode has a tax disc in the corner of it. Little paper circle, perforated edge, sat in a plastic holder going slowly orange in the sun. They were killed off on 1 October 2014 and I miss them more than I can properly justify, given that all they ever did was tell a policeman something a database now tells him faster. But you could read a street with them. You knew, at a glance, who was chancing it.
+Then comes the detail that possibly — well — justifies the entire episode. Archie had wanted to mount the figure on his dashboard. It would not fit with the raft attached, so he cut the king off, off a pre-Columbian votive offering, and stuck him down with a spot of superglue under each foot.
 
-Jason, meanwhile, turns up dead on Lovejoy's doorstep in a thunderstorm, killed by a dart. The Detective Inspector calls the weapon a blowpipe and notes that the poison acts almost instantly and that ballistics reckon you need to be practically standing on top of someone to hit them with one at all — which is the episode quietly admitting it knows how daft this is and pressing on regardless. What we actually see later is a pistol, and it is a lovely bit of kit. It also unlocked something I had entirely forgotten: air pistols and air rifles were everywhere around then, and darts were one of the things you fired out of them, alongside pellets and slugs. Half the sheds in Britain had a tin of them on a shelf. Nobody thought this remarkable. We have, on balance, probably improved.
+The cars are worth a look generally, because every windscreen in this episode has a tax disc in the corner of it. Little paper circle, perforated edge, sat in a plastic holder going slowly orange in the sun. They were killed off on 1 October 2014 and I miss them like I miss the *Melody Maker*.
 
-The statue goes to Nick Bellenger's for auction, into a glass case with unsmashable glass, electronic beams and a pressure sensor, all described by Nick with enormous pride. It is the single least convincing security arrangement I have seen on television, and it looks for all the world like the Crystal Dome — which, given *The Crystal Maze* had launched on Channel 4 eleven months before this went out, I cannot believe nobody on set said out loud. All it needs is Richard O'Brien on a gantry playing a harmonica while somebody's dad fails to grab enough gold tokens. Nick finishes his tour roughly forty seconds before a total stranger walks in behind Lovejoy through the door he has just used.
+Jason, meanwhile, turns up dead on Lovejoy's doorstep in a thunderstorm, killed by a dart from an air gun.
 
-That stranger is Rosita Lujemillo, a dealer who buys Colombian and Peruvian pieces to send home, and who has the sharpest line in the hour: that she at least pays for them, whereas we simply stole them. On BBC1 on a Sunday evening in 1991. That is a good decade or more before that argument became ordinary dinner-party conversation in this country, and the episode has the nerve to put it in the mouth of the one person who turns out to be robbing everybody. Make of that what you will; I suspect the script did not agonise over it for long.
+The Detective Inspector calls the weapon a blowpipe and notes that the poison acts almost instantly, and that ballistics reckon you need to be practically standing on top of someone to hit them with one at all — which is the episode quietly admitting it knows how daft this is and pressing on regardless.
 
-Lovejoy's own break-in is where the plotting gets a bit generous with itself. He had arranged to read the code off a mirror, and the mirror has gone, so he does the whole thing from memory anyway — one, nine, three, diagonally to seven, up to four — which does rather raise the question of why he needed a mirror in the first place. The man can date a fifteenth-century Colombian casting by eye across a room in his dressing gown. He can remember five numbers. The snatch itself is pure Indiana Jones, hand hovering over the pressure sensor, and I mean that as praise.
+What we actually see later is a pistol. Air powered. An air pistol. A killer air pistol. It also unlocked something I had entirely forgotten: air pistols and air rifles were everywhere back then, and darts were one of the things you could fire out of them. Point two two calibre. I think shotguns and air rifles were the sole reason I briefly joined the Young Farmers at school.
 
-And running underneath all of it: apostle spoons. Lovejoy sends Tinker to Ronnie Bassett with the phrase, Ronnie is having none of it, and then — "Apostle spoons." "Let him in, Frank." That is the whole gag and it works three times, because it is never once explained. Tinker asks outright, twice, and gets "Ronnie knows. That's all that matters." Eric repeats it without understanding it. Nobody tells the audience. Correct.
+The statue goes to Nick Bellenger's for auction, into a glass case with unsmashable glass, electronic beams and a pressure sensor, all described by Nick with enormous pride. It is the least convincing security arrangement since the Popemobile, and it resembles the final bit of *The Crystal Maze* without the confetti. I think if Nick's safe had confetti swirling about in it like a snow globe it would have been considerably better, and might even have fended off a burglar by inducing confusion.
 
-For those who want the antique rather than the password: apostle spoons are real, and about as Lovejoy an object as exists. Silver, with the finial cast as one of the Twelve Apostles, each holding his own emblem so you can tell them apart. The ideal set runs to thirteen — the twelve plus a Master spoon of Christ himself — and in Tudor England a well-off godparent gave a set to a godchild at the christening, which is where being born with a silver spoon in your mouth comes from. Complete sixteenth-century sets by a single maker are vanishingly rare. Individual spoons of that date go for thousands; a Master spoon from the reign of Mary Tudor will cost you the price of a decent car.
+Lovejoy gets round it all later to steal back his own artefact, having memorised the code off a mirror. Not that he memorises the whole thing, mind — five actual numbers would clearly have been too much to ask, so we get "one, nine, three, now go diagonally" and Eric is left to work out the rest.
 
-None of which the episode says, and none of which is the point. Whatever happened between Lovejoy and Ronnie Bassett over a set of apostle spoons happened long before the credits rolled, and we are not being told about it. This is a programme that trusts you to accept that its hero has a past full of small debts and stranger favours, and it is much better for keeping most of them to itself.
+Next we are introduced to Rosita Lujemillo, a dealer who buys Colombian and Peruvian pieces to send home. Or so she says. By this point it matters little.
 
-## Jane, and the crew as contraception
+Then, apropos of nothing, some apostle spoons. Lovejoy sends Tinker to Ronnie Bassett with the phrase, Ronnie is having none of it, and then — "Apostle spoons." "Let him in, Frank." That is the whole gag and it works three times, because it is never once explained. Tinker asks outright, twice, and gets "Ronnie knows. That's all that matters." Eric repeats it without understanding it. Nobody tells the audience. So I looked it up.
 
-This is the funniest thread in the episode and it is nothing to do with the gold at all.
+Apostle spoons are real, and about as Lovejoy an object as exists. Silver, with the finial cast as one of the Twelve Apostles, each holding his own emblem so you can tell them apart. The ideal set runs to thirteen — the twelve plus a Master spoon of Christ himself — and in Tudor England a well-off godparent gave a set to a godchild at the christening, which is apparently where being born with a silver spoon in your mouth comes from.
 
-Alexander announces he is off to Paris on business. Jane, dropping Lovejoy at a hotel in Cambridge, watches her husband walk out of it and is told by the receptionist that Lord Felsham and the lady stayed one night. She phones him that evening and he tells her he is going into a meeting at nine o'clock. Phyllis Logan plays it with barely a raised voice, and what follows is Jane becoming steadily, deliberately amorous, for reasons she has no intention of sharing.
+Whatever happened between Lovejoy and Ronnie Bassett over a set of apostle spoons happened long before the credits rolled, and we are not being told about it. This is a programme that trusts you to accept that its hero has a past full of small debts and stranger favours, and it is much better for keeping most of them to itself.
 
-Lovejoy hasn't the faintest idea what is happening to him. He circles it for two full scenes like a man trying to describe a smell. There is something different about her lately. It is just, erm, different. She is more friendly. And Jane, deadpan, gives him the best line she has had all series: that he has such a way with words. Then she asks whether he has ever thought about their relationship, tells him it is a funny sort of one for a man and a woman to have, listens to him insist that it isn't, and kisses him anyway. "I've always wanted to do that."
+Onto amorous Janey.
 
-At which point the doorbell goes and Rosita walks in.
+Alexander announces he is off to Paris on business. Jane, dropping Lovejoy at a hotel in Cambridge, watches her husband walk out of it. Not in Paris, then. She phones him that evening and he tells her he is going into a meeting at nine o'clock. Phyllis Logan plays it with barely a raised voice, and what follows is Jane becoming steadily, deliberately amorous with our mullet-haired hero.
 
-Because that is the other running gag here, and I do not think it is accidental. Tinker and Eric spend this episode functioning as the world's least discreet contraception. Lovejoy gets Rosita to the point of the evening going somewhere and Tinker arrives with news about a drummer's dashboard. Jane gets Lovejoy to the point of the morning going somewhere and Eric arrives to say the police are on their way. Two grown men, immaculately timed, ruining everything. Coitus interruptus, in a barn, in Suffolk.
+Lovejoy hasn't the faintest idea what is happening to him. There is something different about her lately. It is just, erm, different. She is more friendly. And Jane, deadpan, tells him he has such a way with words. Then she asks whether he has ever thought about their relationship, tells him it is a funny sort of one for a man and a woman to have, listens to him insist that it isn't, and kisses him anyway. "I've always wanted to do that."
 
-The payoff on Alexander is a beauty: he was never in Paris. He was in Cambridge closing a secret takeover of Mrs Irene May's company, the Paris story was cover, and he is thoroughly delighted with himself. He calls it a bit Boy's Own. So Jane's suspicion was entirely unfounded, the kiss is still on the record, and the episode simply lets that sit there and moves on. Ninety minutes of *Lovejoy* have been built on less.
+At which point the doorbell goes and in walks Rosita. Lovejoy's date for the evening.
 
-Note also that the dream in the very first scene has now been paid off in the last act, which for an episode this daft is genuinely tidy construction.
+Tinker and Eric spend this episode functioning as the world's least discreet contraception. Lovejoy gets Rosita to the point where the evening is going somewhere and Tinker arrives with news about a drummer's dashboard. Jane gets Lovejoy to the point where the morning is going somewhere and Eric arrives to say the police are on their way. Continuous coitus interruptus, in a barn, in Suffolk.
+
+And Alexander was never in Paris. He was in Cambridge closing a secret takeover of Mrs Irene May's company, the Paris story was cover, and he is thoroughly delighted with himself. He calls it a bit Boy's Own. So Jane's suspicion was entirely unfounded, the kiss is still on the record, and the episode simply lets that sit there and moves on.
 
 ## Favourite Moment
 
@@ -133,37 +128,37 @@ And as he comes round, Chris Jury raises his eyebrows, and for about a third of 
 
 ## Guest Focus — Roger Ashton-Griffiths
 
-He is credited as Antique Shop Owner. He has one scene. Eric brings him the golden king, he holds it up to the light, he says he will do some homework and get back to him — and then he goes straight to the phone and dobs Eric in, which sets the entire plot moving.
+He is credited as Antique Shop Owner. He has one scene. Eric brings him the golden king, he holds it up to the light, says he will do some homework and get back to him — and then goes straight to the phone and dobs Eric in, which is what sets the whole plot moving.
 
-I have picked him for the guest spot partly out of mischief. Last time out I said the two Hooray Henrys who wander in with a rhino horn would be cast today as third and fourth Targaryen from the left. A fortnight later an actual Tyrell turns up behind a counter in Suffolk. Roger Ashton-Griffiths is Lord Mace Tyrell in *Game of Thrones*, and if you have been anywhere near a screen since 1985 you have seen him without necessarily noticing: *Brazil*, *Young Sherlock Holmes*, *The Cook, the Thief, His Wife & Her Lover*, *A Knight's Tale*, *Gangs of New York*, *Mr. Turner*.
+I have picked him partly out of mischief. Last time out I said the two Hooray Henrys who wander in with a rhino horn would be cast today as third and fourth Targaryen from the left. A fortnight later an actual Tyrell turns up behind a counter in Suffolk. Roger Ashton-Griffiths is Lord Mace Tyrell in *Game of Thrones*, and if you have been anywhere near a screen since 1985 you have seen him without necessarily clocking him: *Brazil*, *Young Sherlock Holmes*, *The Cook, the Thief, His Wife & Her Lover*, *A Knight's Tale*, *Gangs of New York*, *Mr. Turner*.
 
-He also began as a singer with English National Opera at the Coliseum, and has since collected an MA in Fine Art and a PhD in Creative Writing from the University of East Anglia — which makes him, by some distance, the best qualified person to appear in this episode, including the professor who correctly identifies the Muisca raft.
+He also started out singing with English National Opera at the Coliseum, and has since collected an MA in Fine Art and a PhD in Creative Writing from the University of East Anglia. Which makes him, comfortably, the best qualified person in this episode — including the professor who is the only one who knows what the gold raft actually is.
 
-A word for that professor too. John Stratton had been a familiar British screen face since *The Cruel Sea* in 1953, took Captain Potter in *Quatermass and the Pit*, and was Shockeye in *Doctor Who*'s *The Two Doctors* — a part that mostly involved wanting to eat people. Here he wants a gold raft badly enough to kill for it, so the range was consistent. He died in October 1991, nine months after this went out.
+A word for that professor too, while we are here. John Stratton had been a familiar face since *The Cruel Sea* in 1953, played Captain Potter in *Quatermass and the Pit*, and was Shockeye in *Doctor Who*'s *The Two Doctors* — a part that mostly involved wanting to eat people. Here he wants a gold raft badly enough to kill for it, so the range was consistent. He died in October 1991, nine months after this went out.
 
-And in the smallest part of all, the hotel receptionist who tells Jane her husband stayed the night with a lady is Jessica Carney — William Hartnell's granddaughter, and later the author of the only proper biography of him. The line is about four seconds long and it turns the whole subplot.
+And in the smallest part of the lot, the hotel receptionist who tells Jane that her husband stayed the night with a lady is Jessica Carney — William Hartnell's granddaughter, and later the author of the only proper biography of him. The line runs about four seconds and it turns the entire Janey subplot.
 
 ## The Divvy Verdict
 
-Four and a half out of five for an hour of complete nonsense, and I will defend every part of it.
+Four and a half out of five for an hour of very enjoyable nonsense. Not sure I would point a Lovejoy newbie at this one and expect them to be convinced, but I like it a lot.
 
-It is nonsense. The title is wrong, the mythology is wrong three times over, the murder weapon requires the assassin to be standing close enough to shake hands, the safe belongs on Channel 4 at half five, and the raft looks like a toy. The final scrap comes with sound effects that would not have shamed *Batman* in 1966 — you can practically see the caption cards. And the motive, when it finally arrives with about four minutes left on the clock, is drugs. All of it, the whole elaborate business of curses and solstices and Andean kings, comes down to a bloke who owes money to unpleasant people over a deal that went wrong. Which is, if you think about it, exactly what Tinker told us in the first ten minutes: the curse is a sales technique, and underneath it there is only ever somebody wanting paying.
+The title is wrong, the mythology is wrong a few times over and the murder weapon requires the assassin to be standing close enough to shake hands.
 
-Then Rosita simply drives off with the lot, and Lovejoy — who has worked the whole thing out — is left with nothing, which he does not often allow to happen.
+The final scrap comes with sound effects that would not have shamed *Batman* in 1966. And the motive, when it finally arrives, is... drugs.
 
-But the crew is whole again, and that is what buys the extra half star. *Bin Diving* was a five with no Tinker in it and I said at the time I had no defence for that. Here Tinker gets the best speech in the episode, and then emerges from a spell shut in a cellar with the drink, humming, entirely unrepentant and graciously informing Lovejoy that no apology is necessary.
+Tinker told us in the first ten minutes: the curse is a sales technique, and underneath it there is only ever somebody wanting paying.
 
-Which is *Porridge: The Movie*, almost move for move. Fletcher and Godber find themselves accidentally outside Slade during Oakes's escape, Fletcher works out that being picked up beyond the wall makes them escapees, and concludes that the only sane option is to break back in. They hide in the officers' club storeroom, where Fletcher proceeds to drink a serious quantity of the stock — deliberately, because being discovered legless in a cellar is a vastly better story than being discovered on the run. Mackay tells them at the end that he does not believe a syllable of it, and lets it go anyway, and the two of them bite into the apples they picked up outside.
+Then Rosita simply drives off with the lot.
 
-I am pleased about this out of all proportion, because a few reviews ago, watching Fulton Mackay walk off with the back half of *Death in Venice*, I said out loud that what I really wanted was a Norman Stanley Fletcher crossover. I am not going to get one. But Series Two opened with Lovejoy in prison, written by the men who wrote the definitive British prison sitcom, and now its fourth episode has Tinker Dill running Fletcher's cellar alibi in a Suffolk barn. That will do.
+But the crew is whole again, and that is what buys the extra half star. *Bin Diving* was a five with no Tinker in it and I said at the time I had no defence for that.
 
-Eric gets an arc that runs from ambition to unconsciousness without the programme ever being cruel about him. Jane gets a real emotional beat and the funniest scenes. Lovejoy gets to be comprehensively out-thought by a woman he never once suspected. Everyone has something to do, which is rarer than it sounds.
+Here Tinker emerges from a spell shut in a cellar with the drink and is looking 'loose'.
 
-And it ends with Alexander explaining about Paris and the entire lot of them heading off to celebrate, which is the correct ending for this episode and possibly for most episodes.
+Which seems to be taken from *Porridge: The Movie*, almost move for move. Fletcher and Godber. Tinker and Lovejoy.
 
-Which brings us back to where we started. A holiday ailment named after an emperor who never went near it, attached to a country he never ruled, blamed on a revenge he never took — and an episode named after that ailment, about a curse nobody in it actually believes in, concerning a statue from the wrong civilisation entirely, resolved by a drug debt. Everything here is named after the wrong thing, and everything here works anyway.
+It all ends with Alexander explaining about Paris and the entire lot of them heading off to celebrate, which is the correct ending for this episode and possibly for most episodes.
 
-Rosita takes the gold home. On the evidence of the museum labelling in this episode, that was probably for the best.
+Rosita takes the gold home. The team look as happy as I have seen them. Hopefully the Spurs squad will look as euphoric come the end of the 2026/27 season.
 
 # Post Episode Thoughts
 
@@ -185,6 +180,27 @@ Verified against the episode script and external sources:
 - Real Muisca raft: c.19.5cm, 287g, tumbaga, found 1969 in a cave near
   Pasca, Cundinamarca — not recovered from the lake. Sole example.
 - Hayward's pre-sale offer is £40,000; Jeff asks Lovejoy for two grand.
+- Melody Maker ran weekly from 1926 and published its final issue in
+  December 2000, merging into NME in January 2001 — not the mid-nineties.
+  Corrected in the copy above.
+- Kerrang! launched in 1981, so it was on the shelves in 1991 and the
+  "should have been wrapped in Kerrang!" gag holds.
+- Soundtrack breaks the house rule on purpose. The rule says a songless
+  episode borrows from Ian McShane's From Both Sides Now; this one takes Def
+  Leppard's "Pour Some Sugar on Me" (Hysteria, 1987) instead, because Ded
+  Lizards are one letter off. substitute: true still applies, and the new
+  substituteNote field overrides the aside so the page does not claim a
+  McShane borrow it never made. "This Guy's In Love With You" is therefore
+  unspent and available for a future episode.
+- The Hothouse Flowers appear as themselves in "No Strings", Series 3
+  Episode 3, first shown Sunday 26 January 1992 — their roadie Declan being
+  a friend of Tinker's. Soft-linked as series-3-episode-3-no-strings.
+- Series 2 Episode 5 is "Who Dares Sings", first shown 3 February 1991.
+  Soft-linked as series-2-episode-5-who-dares-sings. Note that epguides
+  punctuates it "Who Dares, Sings"; Wikipedia and the slug do not.
+- The safe code is five digits, not four: Lovejoy calls "one, nine, three",
+  then "go diagonally" to seven, then "up" to four. The joke about him not
+  naming them all survives; the count was corrected.
 - The Crystal Maze launched on Channel 4 on 15 February 1990, eleven months
   before this episode aired, so the comparison is contemporaneous rather
   than anachronistic. Richard O'Brien hosted until 1993.
@@ -205,6 +221,15 @@ Verified against the episode script and external sources:
   The Life and Career of William Hartnell".
 - Roger Ashton-Griffiths: b. 19 January 1957, ENO singer, MA Fine Art 2003,
   PhD Creative Writing (UEA) 2016, Mace Tyrell in Game of Thrones.
+
+Unverified, left as written because they are Mat's own recollections:
+- Whitstable 5-0 v Newhaven in an FA Cup preliminary round, and Spurs 0-3
+  away at Brentford, on the opening Saturday of the 2026-27 season.
+- The anecdote promised against the Hothouse Flowers. The episode itself is
+  now confirmed (below); the story is Mat's own and still to come.
+- Melody Maker's shoegaze coverage and its refusal to cover rave. The
+  shoegaze roster named (Chapterhouse, Slowdive, Ride, My Bloody Valentine)
+  is right for the paper and the period.
 
 Deliberately not asserted:
 - Filming locations. Still a known gap; nothing sources the Cambridge
@@ -273,3 +298,135 @@ Written by Alan Clews. Directed by William Brayne. First shown Sunday 27 January
 - Wikipedia entries for Roger Ashton-Griffiths, John Stratton, Jessica Carney
 - The Crystal Maze (Channel 4, from 15 February 1990); DVLA / Finance Act 2014 on tax discs
 - Apostle spoons: Grokipedia, antiquesilverspoons.co.uk, 1stdibs (Mary Tudor Master spoon, London 1555)
+
+# Social
+
+Generated from [[CanvaPromptTemplate]] and [[InstagramCaptionPrompt]].
+Instagram stills are staged in `public/images/insta/se2ep4/`.
+
+Decisions for this episode: no per-series recolour (walnut was set at S02E01,
+and the rule is once per series), and six slides rather than five — the
+Melody Maker slip earns its own panel, following S02E01's "PERIOD DETAIL:
+THE LAZER CRASH HELMET".
+
+## Canva prompt
+
+```
+This is a copy of episode 3 template that needs updating for episode 4.
+**Update the text only. Do not generate, create, replace or move any images.**
+Any existing image placeholder on each slide should stay exactly where it is —
+I will add my own screenshots afterwards. The "Image slot" lines below are
+notes for me, not instructions for you. For Montezuma's Revenge, adapt the
+template like this:
+
+**Add one slide.** This episode needs six slides rather than five. Insert a new
+slide between the Divvy Observation and the Verdict, using the same layout as
+the Divvy Observation slide (text block plus one empty image placeholder).
+
+**Slide 1**
+
+MONTEZUMA'S REVENGE
+
+Lovejoy Series 2 Episode 4
+
+Image slot (my reference — leave the slide's placeholder empty): the small
+solid gold king held up to the light, or Lovejoy in his dressing gown
+examining it.
+
+**Slide 2**
+
+PLOT IN ONE WINK
+
+A solid gold Colombian king, a heavy metal band called Ded Lizards, and a
+blowpipe in Suffolk. The silliest hour Lovejoy has produced so far, and all
+the better for having the whole crew back to enjoy it.
+
+Image slot (my reference — leave the slide's placeholder empty): Eric
+presenting the figure + Ded Lizards mid-grind in the rehearsal room.
+
+**Slide 3**
+
+DIVVY OBSERVATION
+
+Nothing like an old curse to add a bob or two to the price — the whole trade
+in a single sentence.
+
+or
+
+A pre-Columbian votive offering, superglued to a heavy metal drummer's
+dashboard like a nodding dog.
+
+Image slot (my reference — leave the slide's placeholder empty): Tinker
+mid-riff with a mug, or the gold raft revealed in full.
+
+**Slide 4**
+
+PROP DEPARTMENT SLIP: THE MELODY MAKER
+
+Eric's gold figure comes wrapped in a Melody Maker.
+
+In 1991 that paper was all shoegaze. It should have been Kerrang!.
+
+Image slot (my reference — leave the slide's placeholder empty): close-up of
+the newspaper the figure is unwrapped from.
+
+**Slide 5**
+
+VERDICT
+
+An hour of very enjoyable nonsense.
+
+Wrong civilisation, wrong century, wrong continent.
+
+But the whole crew is back, and that buys the extra half star.
+
+⭐⭐⭐⭐½
+
+Image slot (my reference — leave the slide's placeholder empty): the four of
+them together — Lovejoy, Tinker, Eric, Lady Jane.
+
+**Slide 6**
+
+QUOTE + SCORE
+
+"Nothing like an old curse to add a bob or two to the price."
+
+⭐⭐⭐⭐½
+
+Then underneath:
+
+Full review at TheDivvy.co.uk
+```
+
+Alternatives held back:
+- Slide 6 quote could be "Are you Lovejoy?" / "Not necessarily." — funnier, but
+  needs both lines so it makes a busier slide.
+- Slide 4 could instead be the tax discs, or the Def Leppard soundtrack
+  rule-break (which would let the carousel point at /soundtrack).
+- First half-star to reach a carousel — S02E01-03 were 4, 4 and 5 — so check
+  ⭐⭐⭐⭐½ renders properly in the deck before posting.
+
+## Instagram caption
+
+```
+🎩 Montezuma's Revenge
+
+Aztec in the title. Colombian in Lovejoy's hands. Inca ten minutes later.
+Three civilisations, several thousand miles apart, over one small gold man,
+and nobody on the production remotely bothered.
+
+Tinker supplies the thesis inside ten minutes: nothing like an old curse to
+add a bob or two to the price. He is right. Two bodies later it turns out to
+be a drug debt.
+
+Very enjoyable nonsense. 4.5 out of 5. Swipe for the prop department's finest
+hour.
+
+Full review on The Divvy. Link in bio.
+
+#Lovejoy #IanMcShane #TheDivvy #Antiques #ClassicTV
+```
+
+Caption notes: 84 words, inside the 50-100 rule. #EightiesTV was ruled out —
+this one went out in January 1991. #Antiques earns its place on the gold raft
+and the apostle spoons.
