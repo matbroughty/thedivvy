@@ -31,6 +31,8 @@ const STATIC_ROUTES = [
   "/characters",
   "/soundtrack",
   "/novels",
+  "/word-map",
+  "/image-wall",
   "/search",
   "/about",
   "/links",

@@ -14,6 +14,12 @@ import { existsSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+// Shared with scripts/generate-word-stats.mjs so search results and word
+// counts are derived from an identical view of each review. Note that search
+// deliberately keeps headings — a reader looking for "Favourite Moment"
+// should find it — whereas the word counts drop them as structural.
+import { parseFrontmatter, mdxToPlainText } from "./lib/mdx-text.mjs";
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const REVIEWS_DIR = path.join(ROOT, "src", "content", "reviews");
@@ -31,58 +37,6 @@ async function walk(dir) {
     }),
   );
   return files.flat();
-}
-
-// Same tolerant frontmatter reader as scripts/lib/routes.mjs.
-function parseFrontmatter(source) {
-  const match = source.match(/^---\s*\n([\s\S]*?)\n---/);
-  if (!match) return { fm: {}, body: source };
-  const fm = {};
-  for (const line of match[1].split("\n")) {
-    const m = line.match(/^([A-Za-z0-9_]+):\s*(.+?)\s*$/);
-    if (!m) continue;
-    let value = m[2];
-    if (
-      (value.startsWith('"') && value.endsWith('"')) ||
-      (value.startsWith("'") && value.endsWith("'"))
-    ) {
-      value = value.slice(1, -1);
-    }
-    fm[m[1]] = value;
-  }
-  const body = source.slice(match[0].length);
-  return { fm, body };
-}
-
-// Reduce MDX/markdown to plain text. We only need enough fidelity that
-// searching for phrases in the rendered prose finds them.
-function mdxToPlainText(mdx) {
-  let text = mdx;
-  // Strip fenced code blocks entirely — irrelevant to prose search.
-  text = text.replace(/```[\s\S]*?```/g, " ");
-  // JSX/HTML tags → space.
-  text = text.replace(/<\/?[a-zA-Z][^>]*>/g, " ");
-  // Images.
-  text = text.replace(/!\[[^\]]*\]\([^)]*\)/g, " ");
-  // Links → keep the label.
-  text = text.replace(/\[([^\]]+)\]\([^)]*\)/g, "$1");
-  // Heading markers.
-  text = text.replace(/^#{1,6}\s+/gm, "");
-  // Blockquote markers.
-  text = text.replace(/^>\s?/gm, "");
-  // Bold / italic / strikethrough markers (leave the words).
-  text = text.replace(/\*\*(.+?)\*\*/g, "$1");
-  text = text.replace(/\*(.+?)\*/g, "$1");
-  text = text.replace(/__(.+?)__/g, "$1");
-  text = text.replace(/_(.+?)_/g, "$1");
-  text = text.replace(/~~(.+?)~~/g, "$1");
-  // Inline code.
-  text = text.replace(/`([^`]+)`/g, "$1");
-  // Horizontal rules.
-  text = text.replace(/^-{3,}$/gm, " ");
-  // Collapse whitespace.
-  text = text.replace(/\s+/g, " ").trim();
-  return text;
 }
 
 async function main() {

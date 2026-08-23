@@ -1638,3 +1638,469 @@ li {
   padding: 0 0.15em;
   border-radius: 2px;
 }
+
+/* ---------------- Word Map (/word-map) ---------------- */
+
+.word-map {
+  max-width: var(--max-page);
+}
+
+/* Running totals. Same visual language as .metrics on an episode page, but
+   five cells rather than three, so it wraps instead of using fixed columns. */
+.word-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem 1.4rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-card);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.4rem;
+  margin: 2rem 0;
+}
+
+.word-stats__cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  min-width: 0;
+}
+
+.word-stats__label {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  letter-spacing: 0.02em;
+}
+
+.word-stats__value {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+}
+
+.word-stats__aside {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* ---- Controls ---- */
+
+.word-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem 2.4rem;
+  margin: 0 0 1.6rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px dotted var(--color-rule);
+}
+
+.word-controls__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.word-controls__legend {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--color-accent);
+}
+
+.word-controls__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.word-chip {
+  font-family: var(--font-sans);
+  font-size: 0.86rem;
+  line-height: 1;
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg-card);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: border-color 120ms ease, color 120ms ease, background 120ms ease;
+}
+
+.word-chip:hover {
+  border-color: var(--color-accent-soft);
+  color: var(--color-text);
+}
+
+.word-chip[aria-pressed="true"] {
+  border-color: var(--color-accent);
+  background: var(--color-accent);
+  color: var(--color-bg-card);
+}
+
+/* ---- Cloud ---- */
+
+/* Flex-wrapped text rather than a canvas layout: deterministic between
+   builds, responsive without measurement, and readable with JavaScript off.
+   Word order comes from a hash of the word itself (see scatterForCloud), so
+   adding a review slots new words in without reshuffling the rest. */
+.word-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.15em 0.55em;
+  padding: 1.6rem 1rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-card);
+  border-radius: var(--radius-lg);
+}
+
+.word-cloud__word {
+  font-family: var(--font-serif);
+  line-height: 1.15;
+  background: none;
+  border: 0;
+  padding: 0.05em 0.1em;
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  transition: color 120ms ease, background 120ms ease;
+}
+
+.word-cloud__word:hover {
+  color: var(--color-accent-ink);
+  background: color-mix(in srgb, var(--color-accent) 12%, transparent);
+}
+
+.word-cloud__word[aria-pressed="true"] {
+  color: var(--color-bg-card);
+  background: var(--color-accent);
+}
+
+/* Seven tiers, square-rooted in weightTier(). Ink darkens with size so the
+   cloud reads as one restrained palette rather than a rainbow. */
+.word-cloud__word[data-tier="1"] { font-size: 0.9rem;  color: var(--color-text-muted); }
+.word-cloud__word[data-tier="2"] { font-size: 1.05rem; color: var(--color-text-muted); }
+.word-cloud__word[data-tier="3"] { font-size: 1.25rem; color: var(--color-accent-soft); }
+.word-cloud__word[data-tier="4"] { font-size: 1.5rem;  color: var(--color-accent-soft); }
+.word-cloud__word[data-tier="5"] { font-size: 1.85rem; color: var(--color-accent); }
+.word-cloud__word[data-tier="6"] { font-size: 2.3rem;  color: var(--color-accent); font-weight: 700; }
+.word-cloud__word[data-tier="7"] { font-size: 2.9rem;  color: var(--color-accent-ink); font-weight: 700; }
+
+.word-cloud__hint {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin: 0.7rem 0 0;
+}
+
+/* ---- Detail panel ---- */
+
+.word-detail {
+  margin: 1.6rem 0 0;
+  border: 1px solid var(--color-border);
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-bg-card);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1rem 1.2rem;
+}
+
+.word-detail__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.word-detail__word {
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  margin: 0;
+  color: var(--color-accent-ink);
+}
+
+.word-detail__close {
+  border: 0;
+  background: none;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 0 0.2rem;
+}
+
+.word-detail__close:hover { color: var(--color-accent); }
+
+.word-detail__summary {
+  font-family: var(--font-serif);
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin: 0.2rem 0 0.8rem;
+}
+
+.word-detail__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.word-detail__list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  border-top: 1px dotted var(--color-rule);
+}
+
+.word-detail__code {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  color: var(--color-text-muted);
+}
+
+.word-detail__count {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+/* ---- Heat map ---- */
+
+.word-heat {
+  margin: 2.6rem 0 0;
+}
+
+.word-heat h2 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  margin: 0 0 0.3rem;
+}
+
+.word-heat__intro {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  margin: 0 0 1.1rem;
+}
+
+/* Wide content scrolls inside its own box so the page body never does. */
+.word-heat__scroll {
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-bg-card);
+}
+
+.word-heat__table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+}
+
+.word-heat__table th,
+.word-heat__table td {
+  padding: 0.5rem 0.7rem;
+  text-align: center;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.word-heat__table thead th {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.85rem;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.word-heat__table tbody tr:last-child th,
+.word-heat__table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.word-heat__table th[scope="row"] {
+  text-align: left;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.word-heat__word {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  border: 0;
+  background: none;
+  padding: 0;
+  color: var(--color-text);
+  cursor: pointer;
+  text-align: left;
+}
+
+.word-heat__word:hover {
+  color: var(--color-accent);
+  text-decoration: underline;
+}
+
+.word-heat__cell {
+  min-width: 3.4rem;
+}
+
+/* Sits above the tint so the number stays legible in the darkest cells. */
+.word-heat__value {
+  position: relative;
+  mix-blend-mode: multiply;
+}
+
+.word-heat__total {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  color: var(--color-accent-ink);
+}
+
+@media (max-width: 600px) {
+  .word-cloud {
+    padding: 1.1rem 0.6rem;
+  }
+  .word-cloud__word[data-tier="6"] { font-size: 1.9rem; }
+  .word-cloud__word[data-tier="7"] { font-size: 2.3rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .word-chip,
+  .word-cloud__word {
+    transition: none;
+  }
+}
+
+/* ---------------- Image wall (/image-wall) ---------------- */
+
+.image-wall {
+  max-width: var(--max-page);
+}
+
+.image-wall__series {
+  margin: 2.4rem 0 0;
+}
+
+.image-wall__heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  margin: 0 0 0.9rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--color-rule);
+  color: var(--color-accent-ink);
+}
+
+.image-wall__count {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+}
+
+.image-wall__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 0.9rem;
+}
+
+.image-wall__item {
+  margin: 0;
+}
+
+.image-wall__link {
+  display: block;
+  position: relative;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--color-bg-card);
+  text-decoration: none;
+  transition: border-color 140ms ease, box-shadow 140ms ease,
+    transform 140ms ease;
+}
+
+.image-wall__link:hover,
+.image-wall__link:focus-visible {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-card);
+  transform: translateY(-2px);
+}
+
+/* Stills come in assorted sizes; a fixed ratio keeps the wall tidy. */
+.image-wall__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  /* Sepia'd back a touch so the wall reads as one set rather than 40
+     competing screengrabs. Full colour on hover. */
+  filter: saturate(0.88) contrast(1.02);
+  transition: filter 140ms ease;
+}
+
+.image-wall__link:hover .image-wall__img,
+.image-wall__link:focus-visible .image-wall__img {
+  filter: none;
+}
+
+.image-wall__caption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.5rem 0.65rem 0.6rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.image-wall__code {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.image-wall__title {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  line-height: 1.25;
+  color: var(--color-text);
+}
+
+@media (max-width: 520px) {
+  .image-wall__grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.6rem;
+  }
+  .image-wall__title {
+    font-size: 0.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .image-wall__link,
+  .image-wall__img {
+    transition: none;
+  }
+  .image-wall__link:hover,
+  .image-wall__link:focus-visible {
+    transform: none;
+  }
+}
