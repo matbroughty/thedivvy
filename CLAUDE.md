@@ -4,20 +4,23 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Commands
 
-- `npm run dev` — Vite dev server (no prerender; renders client-side only). A `predev` hook regenerates `public/search-index.json` on startup so `/search` works locally.
+- `npm run dev` — Vite dev server (no prerender; renders client-side only). A `predev` hook regenerates `src/data/word-stats.json` and `public/search-index.json` on startup so `/word-map` and `/search` work locally.
 - `npm run build` — sequential chain, all steps must pass:
-  1. `tsc` — type-check (strict, `noUnusedLocals`/`noUnusedParameters` on).
-  2. `node scripts/generate-search-index.mjs` — emits `public/search-index.json` (must run **before** `vite build` so it gets copied into `dist/`).
-  3. `vite build` — bundle to `dist/`.
-  4. `node scripts/prerender.mjs` — boots a static server on `dist/`, drives headless Chromium over every route, writes `dist/{route}/index.html`. Non-zero exit on any route failure or empty `<title>`.
-  5. `node scripts/generate-sitemap.mjs` — emits `dist/sitemap.xml`.
-  6. `node scripts/generate-feed.mjs` — emits `dist/feed.xml` (RSS 2.0).
+  1. `node scripts/generate-word-stats.mjs` — emits `src/data/word-stats.json`. **Runs before `tsc`** because the page imports the JSON as a module and TypeScript type-checks that import.
+  2. `tsc` — type-check (strict, `noUnusedLocals`/`noUnusedParameters` on).
+  3. `node scripts/generate-search-index.mjs` — emits `public/search-index.json` (must run **before** `vite build` so it gets copied into `dist/`).
+  4. `vite build` — bundle to `dist/`.
+  5. `node scripts/prerender.mjs` — boots a static server on `dist/`, drives headless Chromium over every route, writes `dist/{route}/index.html`. Non-zero exit on any route failure or empty `<title>`.
+  6. `node scripts/generate-sitemap.mjs` — emits `dist/sitemap.xml`.
+  7. `node scripts/generate-feed.mjs` — emits `dist/feed.xml` (RSS 2.0).
+- `npm test` — the word-analysis test suite, via Node's built-in runner (`node --test`). No test dependency is installed and none is needed.
 - `npm run preview` — serve the built `dist/` locally.
 - `npm run routes` — print the canonical route list (useful for verifying a new episode shows up before a full build).
 - `npm run generate:search` — regenerate `public/search-index.json` on demand (e.g. after adding a review mid dev-session without restarting).
+- `npm run generate:words` — regenerate `src/data/word-stats.json` on demand, same reason.
 - `npm run build:characters` — regenerate `src/data/lovejoy-characters.json` from IMDb non-commercial datasets (cached in `.imdb-cache/`, gitignored, ~1 GB on first run).
 
-There is no test suite, no linter, and no formatter configured. Type-checking via `tsc` (run as part of `npm run build`) is the only static check.
+No linter and no formatter are configured. Static checks are `tsc` and `npm test`, both of which the build chain covers (`tsc` directly; run `npm test` yourself before committing changes to `scripts/lib/`).
 
 ## Architecture
 
@@ -48,9 +51,10 @@ One offline source may close the gap: *The Lovejoy Trail: Locations from the Lov
 2. Create the MDX at `src/content/reviews/series-XX/NN-slug.mdx`. See **Review headings** below for the required structure. Some episodes use an opening pull-quote as a `>` blockquote directly under `## Review`.
 3. Mirror the same review body into the vault at `vault/thedivvy/Lovejoy Reviews/Reviews/Series{NN}/SXEXX - {Title}.md`. Vault has its own template frontmatter (see `Templates/ReviewTemplate.md`); vault prose can drift slightly from the published MDX if the user's edits accumulate there first.
 4. Create the empty Instagram staging folder `public/images/insta/se{S}ep{N}/` for later Canva carousel work.
-5. Verify with `npm run routes` — the new `/episodes/series-1-episode-N-slug` line should appear.
-6. **Search / RSS**: nothing manual to do. `npm run build` regenerates `public/search-index.json` (before `vite build`) and `dist/feed.xml` (after prerender). If the dev server is already running, run `npm run generate:search` to make the new episode findable in `/search` without restarting; the feed is a build-only artifact.
-7. **Do NOT commit until the user says so** — they preview the rendered page first (dev server on port 5173 or 5174) and often edit the MDX before asking to commit.
+5. **Wire up the hero images.** Dropping the three files into `public/images/episodes/` is not enough — the frontmatter must name them via `image` / `imageAlt` (+ `…2`, `…3`). `EpisodeImage` returns `null` when those fields are absent, so a review with unreferenced images shows **no gallery at all, with no error and no broken-image icon**. This has already bitten once on S02E05, where the MDX was written before the files were staged. If the images arrive after the MDX, go back and add the fields. Write real `imageAlt` text describing what is actually in the shot — it is the accessible name on the episode page *and* the caption source for `/image-wall`, so "Still from X" is a wasted opportunity.
+6. Verify with `npm run routes` — the new `/episodes/series-N-episode-N-slug` line should appear.
+7. **Search, Word Map, image wall, RSS**: nothing manual to do for any of them. `npm run build` regenerates `src/data/word-stats.json` (first, before `tsc`), `public/search-index.json` (before `vite build`) and `dist/feed.xml` (after prerender). `/image-wall` needs no generation step at all — it reads the `image` / `image2` / `image3` frontmatter at render time, so step 5 is what feeds it. If the dev server is already running, `npm run generate:search` and `npm run generate:words` bring `/search` and `/word-map` up to date without a restart; the feed is a build-only artifact.
+8. **Do NOT commit until the user says so** — they preview the rendered page first (dev server on port 5173 or 5174) and often edit the MDX before asking to commit.
 
 ### Manual character overrides
 `src/data/manual-characters.json` supplements the IMDb-generated cast list at `src/data/lovejoy-characters.json`. Add hand-curated entries here for recurring faces IMDb has as uncredited (currently: John Scholes as Sgt Drabble across S01E01, E06, E08, E09). `CharactersPage` merges the two, deduped by lowercase `actor::character`.
@@ -159,6 +163,24 @@ Full-text search runs client-side via [MiniSearch](https://lucaong.github.io/min
 - **Where it runs**: `predev` (dev startup), `build` (chained after `tsc` and *before* `vite build` so the JSON is copied into `dist/`), and manually via `npm run generate:search`.
 - **UI**: `src/pages/SearchPage.tsx`. The index and MiniSearch library are lazy-loaded on first keystroke (so the empty search page is cheap). Boosts are `title 4 · divvyMoment 3 · summary 2 · guestStar 2 · body 1`, with prefix + fuzzy 0.2 matching. The `?q=` param syncs both ways (URL → input on mount, input → URL on change, `replace` semantics so the back button doesn't fill with history).
 - **Adding a new review**: no manual step. The build regenerates the index; `predev` catches the case where dev is restarted after adding an MDX. If the dev server is already running when you add an episode, run `npm run generate:search` to see it in local search without restarting.
+
+### Word Map (`/word-map`)
+A word cloud, a per-series heat map, a Characters mode and a few running totals, all counted from the published reviews.
+
+- **Config first.** `scripts/lib/word-map-config.mjs` is the file to edit: stop words, `PROJECT_EXCLUSIONS`, the `CHARACTERS` list with aliases, `TUNING` thresholds, and `EXCLUDE_CHARACTERS_FROM_CLOUD`. Nothing else should need touching to change what the page shows.
+- **Analysis** lives in `scripts/lib/word-analysis.mjs` — pure functions, no IO, deterministic. `scripts/generate-word-stats.mjs` is the thin IO wrapper that walks the MDX and writes `src/data/word-stats.json`. Tests are `scripts/lib/word-analysis.test.mjs` (`npm test`); run them after any change in `scripts/lib/`.
+- **The JSON is imported, not fetched.** `src/lib/wordStats.ts` imports it so React renders synchronously and `prerender.mjs` captures the cloud as static HTML — that is what gives the page a no-JavaScript fallback. Do **not** convert this to a runtime `fetch` like `SearchPage` does; it would prerender as an empty shell.
+- **No cloud library.** The cloud is flex-wrapped `<span>`s sized by a square-rooted frequency tier, ordered by a hash of the word so the layout is identical between builds. `d3-cloud` was rejected: canvas measurement, non-deterministic without a seeded PRNG, and renders nothing without JS.
+- Counting drops markdown headings (`mdxToPlainText(body, { dropHeadings: true })`) because every review repeats the same section titles. Search deliberately keeps them.
+- `src/data/word-stats.json` is committed *and* regenerated at build, so expect a diff whenever review prose changes. That is normal.
+
+### Image wall (`/image-wall`)
+Every still on the site in one grid, each tile linking back to its review. `src/pages/ImageWallPage.tsx` reads `image` / `image2` / `image3` off each episode's frontmatter at render time — **there is no generation step and no data file**, so publishing a review with its images wired up (workflow step 5) is the only action needed.
+
+Images are pinned to 16:9 with `object-fit: cover` so assorted screengrab sizes don't make a ragged grid, and carry a slight desaturation that lifts to full colour on hover so the wall reads as one set. A tile whose file 404s is dropped via `onError` rather than left as a broken icon, same approach as `EpisodeImage`.
+
+### Shared MDX text extraction
+`scripts/lib/mdx-text.mjs` holds `parseFrontmatter` and `mdxToPlainText`, shared by the search-index and word-stats generators so both derive from an identical view of each review. It strips `{/* … */}` JSX comments — important, because every review carries a research trail in one, and before this was shared those notes were leaking into the search index.
 
 ### RSS feed (`/feed.xml`)
 `scripts/generate-feed.mjs` emits `dist/feed.xml` (RSS 2.0) at build time. Items are episode reviews sorted newest-first by `reviewDate` (falling back to series/episode order for undated reviews), pulled via `getEpisodeEntries` from `scripts/lib/routes.mjs` so the feed shares its source of truth with the sitemap and prerender.
@@ -276,3 +298,7 @@ Finally, bring the review full circle by referencing the opening anecdote or obs
 - Don't be afraid to wander briefly if it produces a good joke or observation.
 - Every review should feel like spending ten minutes in the pub with someone who loves television and notices odd little details.
 - Above all, the review should feel like a column that happens to be about *Lovejoy*, not just a review of an episode.
+
+**Dial down the superlatives.** This is the most common note Mat gives on drafted prose. When writing *for* him, avoid reaching for "the best scene in the hour", "the best-looking thing in the episode", "genuinely remarkable", "I have never been so…", "the most X all series". State the observation and let it stand — "Palmer gets a good scene with Eric" beats "Palmer gets the best scene with Eric", and dropping the ranking entirely is usually better still.
+
+Two caveats. Mat's *own* superlatives stay exactly as written — "an absolute banger", "she is great", "Perfect Lovejoy", "it was magnificent" are his voice and are not to be sanded down. And a superlative that is doing real work is fine: the Divvy Verdict is a judgement, so it is allowed to judge. The rule is about padding, not about opinions.
