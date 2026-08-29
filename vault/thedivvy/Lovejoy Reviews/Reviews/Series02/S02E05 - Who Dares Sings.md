@@ -35,7 +35,7 @@ Tinker's old army mate opens a restaurant with no money in it. A £300 piano, a 
 
 ## Cold open
 
-As promised, I am hacking out this review for a lovely episode before I head off to White Hart Lane — aka the Tottenham Hotspur Stadium — for the first home game of the season. Well, the first EPL home game. Spurs beat the Charlton B-side in the League Cup on Wednesday, at home.
+As promised, I am hacking out this review for a lovely episode before I head off to White Hart Lane — aka the Tottenham Hotspur Stadium — for the first home game of the season. Well, the first Premier League home game. Spurs beat the Charlton B-side in the League Cup on Wednesday, at home.
 
 It has been a busy week that got off on the wrong foot with a Monday night curry and far too many beers. Far too many pubs in the days after, and a general feeling of malaise by the time I write this.
 
@@ -404,3 +404,168 @@ the Janey thread from Montezuma's Revenge.
 - Wikipedia, List of Lovejoy episodes; Wikipedia, John Wells (satirist); Wikipedia, Peter Armitage (actor)
 - Essex Gazette, "Recalling Lovejoy filming in north Essex"
 - Waymarking, Three Horseshoes Hazel End entries (unverified location lead)
+
+# Social
+
+Generated from [[CanvaPromptTemplate]] and [[InstagramCaptionPrompt]].
+Instagram stills staged in `public/images/insta/se2ep5/`.
+
+Decisions: no per-series recolour (walnut set at S02E01, once per series), and
+six slides again. Last week's extra panel was PROP DEPARTMENT SLIP for the
+Melody Maker; this week the props got it right, so the two pair up.
+
+## Canva prompt
+
+```
+This is a copy of episode 4 template that needs updating for episode 5.
+**Update the text only. Do not generate, create, replace or move any images.**
+Do not use the AI image generator, the AI photo editor or any background
+generation tool anywhere in this design — every image is my own screenshot and
+must stay untouched. Any existing image placeholder on each slide should stay
+exactly where it is. The "Image slot" lines below are notes for me, not
+instructions for you. For Who Dares Sings, adapt the template like this:
+
+**Add one slide.** This episode needs six slides rather than five. Insert a new
+slide between the Divvy Observation and the Verdict, using the same layout as
+the Divvy Observation slide (text block plus one empty image placeholder).
+
+**Slide 1**
+
+WHO DARES SINGS
+
+Lovejoy Series 2 Episode 5
+
+Image slot (my reference — leave the slide's placeholder empty): Lovejoy
+driving with Tinker beside him in tweed, hat and yellow buttonhole, on a
+sunlit country road.
+
+**Slide 2**
+
+PLOT IN ONE WINK
+
+Tinker's old army mate opens a restaurant with no money in it. A £300 piano,
+a doctored set of silver, and the whole gang given something to do.
+
+Image slot (my reference — leave the slide's placeholder empty): Miriam with
+the decrepit piano strapped on the back, or Linden outside the restaurant.
+
+**Slide 3**
+
+DIVVY OBSERVATION
+
+Not a whodunnit. Just a man trying to get his three grand back.
+
+or
+
+£300 for a piano nobody wanted. The old books propping it up made sixty
+thousand.
+
+Image slot (my reference — leave the slide's placeholder empty): Lady Jane in
+the duck jumper, arm in arm with Lovejoy outside the red-brick house.
+
+**Slide 4**
+
+THE PROPS GOT IT RIGHT
+
+Somebody throws 84 at the darts in the Three Horseshoes.
+
+I added it up. It is correct.
+
+Image slot (my reference — leave the slide's placeholder empty): the
+dartboard, or the bar of the Three Horseshoes.
+
+**Slide 5**
+
+VERDICT
+
+Low-key, lovely to look at, and the whole gang properly in it.
+
+No murder. Nobody leaves East Anglia.
+
+It was a five until somebody came dressed as Hitler.
+
+⭐⭐⭐⭐½
+
+Image slot (my reference — leave the slide's placeholder empty): Eric in the
+red waistcoat and Tinker in beret and medals at the opening night party.
+
+**Slide 6**
+
+QUOTE + SCORE
+
+"Crumpet, as far as I'm aware, is a cake one cooks on a griddle."
+
+⭐⭐⭐⭐½
+
+Then underneath:
+
+Full review at TheDivvy.co.uk
+```
+
+Alternatives held back:
+- Slide 6 quote could be the beret exchange ("Memories, Lovejoy. Memories."),
+  which is warmer but needs both lines.
+- Slide 4 could instead be the Lazer crash helmet callback to Just Desserts,
+  or the Co-op multipack crisps.
+- Slide 3's second option is the stronger one for an antiques audience; the
+  first is funnier.
+
+## Instagram caption
+
+```
+🎩 Who Dares Sings
+
+Tinker's old army mate opens a restaurant with no money in it, and Lovejoy
+ends up paying three grand to burgle a house. Then the £300 piano nobody
+wanted turns out to have been propped up on a 1532 Chaucer. Sixty thousand.
+
+Low-key, lovely to look at, and the whole gang properly in it. It was a five
+until somebody turned up dressed as Hitler. 4.5 out of 5.
+
+Swipe for the darts — the props got the maths right.
+
+Full review on The Divvy. Link in bio.
+
+#Lovejoy #IanMcShane #TheDivvy #Antiques #BritishTV
+```
+
+Caption notes: 80 words, inside the 50-100 rule. #EightiesTV ruled out again —
+February 1991. #BritishTV rather than #ClassicTV this time, for a bit of
+variation from S02E04 and because the Flanders & Swann and national service
+material is about as British as the programme gets. #Antiques earns it on the
+Chaucer and the doctored silver.
+
+## Instagram stills
+
+Staged in `public/images/insta/se2ep5/`:
+- `lovejoy_et_al.jpg`
+- `morris_chase.jpg` — the Miriam and piano chase, slide 2
+- `eric_and_george.jpg` — Eric and Palmer, the superglue scene
+- `lovejopy_and_adolf.jpg` — the costume that cost half a star. Filename has a
+  typo; harmless, since nothing references these.
+
+Still wanted for the deck: the dartboard, for slide 4.
+
+## Instagram AI label — notes
+
+The decks use Mat's own screenshots and his own text, so an "AI info" label is
+a false positive describing the editing tool rather than the content.
+
+Mechanism, as best established (sources are mostly SEO material from companies
+selling removal tools — neither Canva's nor Meta's own documentation could be
+found stating this directly, and it will change): Meta reads C2PA and IPTC
+provenance metadata on upload and auto-applies the label when it finds an
+AI-generated marker. Canva writes that metadata when its AI features are used
+— image generator, AI photo editor, background generator — and the marker
+survives re-export even after the generated element is gone.
+
+Workflow:
+1. Check an export in a C2PA/EXIF viewer first. There may be nothing to fix.
+2. If there is a manifest, strip it, keeping the colour profile:
+   `exiftool -all= -tagsfromfile @ -icc_profile -overwrite_original *.jpg`
+3. The prompt above now explicitly rules out the AI photo editor and
+   background tools, not just image generation.
+
+If a deck ever does contain genuinely AI-generated imagery, the label is
+correct and should be left alone.
+
