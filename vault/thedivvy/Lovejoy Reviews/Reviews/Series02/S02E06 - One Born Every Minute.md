@@ -387,3 +387,151 @@ Two notes for drafting:
 - Wikipedia, Batang Kali massacre; Bindmans LLP briefing and UK government apology; Al Jazeera, "No justice: 75 years after a British massacre in colonial Malaya" (2023)
 - Wikipedia, Tom Wilkinson; list of awards and nominations
 - IMDb, Joanna Lumley as Victoria Cavero; TMDB Lovejoy Series 4 Episode 1
+
+# Social
+
+Generated from [[CanvaPromptTemplate]]. Instagram stills staged in
+`public/images/insta/se2ep6/`.
+
+Decisions: no per-series recolour (walnut set at S02E01, once per series), and
+six slides again — the third in a row. The extra panel is the Gone With The
+Wind name joke, which is the best "did you notice" in the episode and belongs
+to Tinker.
+
+**Deliberately not in the carousel: Batang Kali.** It is the most striking
+thing in the episode and it has no business on an Instagram slide. A real
+atrocity and a cover-up that families were still litigating in 2015 does not
+survive being compressed to two lines under a screengrab. It stays in the
+review, handled straight, where there is room for it.
+
+## Canva prompt
+
+```
+This is a copy of episode 5 template that needs updating for episode 6.
+**Update the text only. Do not generate, create, replace or move any images.**
+Do not use the AI image generator, the AI photo editor or any background
+generation tool anywhere in this design — every image is my own screenshot and
+must stay untouched. Any existing image placeholder on each slide should stay
+exactly where it is. The "Image slot" lines below are notes for me, not
+instructions for you. For One Born Every Minute, adapt the template like this:
+
+**Add one slide.** This episode needs six slides rather than five. Insert a new
+slide between the Divvy Observation and the Verdict, using the same layout as
+the Divvy Observation slide (text block plus one empty image placeholder).
+
+**Slide 1**
+
+ONE BORN EVERY MINUTE
+
+Lovejoy Series 2 Episode 6
+
+Image slot (my reference — leave the slide's placeholder empty): Wilkes in the
+blue cap at his easel, the woman whose cottage it is watching him work.
+
+**Slide 2**
+
+PLOT IN ONE WINK
+
+An itinerant painter works his way round the thatched cottages of Suffolk, two
+hours a canvas. Lovejoy and Tinker go looking for him, and nobody comes out of
+it especially well.
+
+Image slot (my reference — leave the slide's placeholder empty):
+painter_pub.jpg — Wilkes holding court in the Dun Cow.
+
+**Slide 3**
+
+DIVVY OBSERVATION
+
+Two hours a painting, £200 a time, and he picks the houses by who lives in
+them.
+
+or
+
+No Eric. No Jane. No Gimbert. Just Lovejoy and Tinker, and it turns out that
+is plenty.
+
+Image slot (my reference — leave the slide's placeholder empty):
+lovejoy_woman.jpg, or hero 3 — Lovejoy leaning out of the car window looking
+thoroughly unimpressed.
+
+**Slide 4**
+
+EVEN HIS NAME'S A LIE
+
+Ashley Wilkes is the character Leslie Howard plays in Gone With The Wind.
+
+The episode saves it for the last act and lets Tinker work it out.
+
+Image slot (my reference — leave the slide's placeholder empty):
+tinker_field.jpg — Tinker at the easel at the art school.
+
+**Slide 5**
+
+VERDICT
+
+Lovejoy and Tinker alone for an hour, which works.
+
+Tom Wilkinson, six years before anybody knew his face.
+
+Marked down for what it finds charming.
+
+⭐⭐⭐⭐
+
+Image slot (my reference — leave the slide's placeholder empty):
+major_painter.jpg — the Major and Wilkes in the same frame.
+
+**Slide 6**
+
+QUOTE + SCORE
+
+"Bargain-basement Lothario."
+
+⭐⭐⭐⭐
+
+Then underneath:
+
+Full review at TheDivvy.co.uk
+```
+
+Alternatives held back:
+- Slide 6 could be "Biggest load of cobblers I've heard in years" (the review's
+  Good Quote) or Tinker's "Even his name's a lie!" — but the latter is spent on
+  slide 4, and the divvyMoment has had the slide-6 slot on the last two decks.
+- Slide 4 could instead be Tom Wilkinson's later career, or the answering
+  machine at pub quizzes. The name joke wins on being a genuine spot.
+- Slide 3's second option is the better one if the deck is feeling heavy; the
+  first is the more honest summary of the episode.
+
+Still wanted: nothing. All five staged stills plus the three heroes cover the
+six slides, with tinker-hat.jpg (the closing scene, Tinker in the cap painting
+a pub) spare if a slide needs swapping.
+
+## Instagram caption
+
+```
+🎩 One Born Every Minute
+
+An itinerant painter does your cottage in two hours, charges £200, and picks
+his houses by who lives in them. Tom Wilkinson plays him, six years before
+anybody knew his face.
+
+No Eric, no Jane, no Gimbert — just Lovejoy and Tinker for a whole hour, which
+turns out to be plenty. Marked down for what it finds charming. 4 out of 5.
+
+Swipe for the name joke. It is a good one.
+
+Full review on The Divvy. Link in bio.
+
+#Lovejoy #IanMcShane #TheDivvy #ClassicTV #TVReview
+```
+
+Caption notes: 82 words, inside the 50-100 rule. #EightiesTV ruled out again —
+February 1991. #Antiques dropped this time, having had it for S02E04 and
+S02E05, and there are no antiques at the centre of this one anyway — it is
+paintings and a con. #TVReview earns its place because the marking-down is the
+story.
+
+The swipe line points at slide 4, so the caption and the carousel run the same
+joke. As with the deck, Batang Kali is deliberately absent.
+
