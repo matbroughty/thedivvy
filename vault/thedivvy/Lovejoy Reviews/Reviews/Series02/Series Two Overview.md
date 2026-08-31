@@ -80,6 +80,21 @@ A rubbish round in the rain, a widow with a leaking roof, and Warren Clarke runn
 
 E7 *National Wealth* · E8 *Sugar and Spice* · E9 *Raise the Hispanic* · E10 *Lily's Pearls* · E11 *The Black Virgin of Vladimir*
 
+**Gang data for these five, from Mat's table.** Recorded here because it is
+needed at scaffold time and exists nowhere else in the repo. Gimbert is absent
+from the whole of Series Two, so he is `false` throughout.
+
+| Ep | Title | Lovejoy | Eric | Tinker | Jane | Gimbert |
+| -- | ----- | ------- | ---- | ------ | ---- | ------- |
+| 7  | National Wealth | ✓ | ✓ | ✓ | — | — |
+| 8  | Sugar and Spice | ✓ | ✓ | — | ✓ | — |
+| 9  | Raise the Hispanic | ✓ | ✓ | ✓ | — | — |
+| 10 | Lily's Pearls | ✓ | ✓ | ✓ | ✓ | — |
+| 11 | The Black Virgin of Vladimir | ✓ | ✓ | ✓ | — | — |
+
+So no full bands anywhere in Series Two, and Jane appears in only two of the
+last five.
+
 The finale is the one to watch for. It is feature-length, it has Linda Gray in it — five years after McShane's *Dallas* stint, where his Don Lockwood married her Sue Ellen — and repeats chop it in two and send the first half out as *Riding in Rollers*. Whether it gets reviewed as one episode or two is still undecided, and it changes the shape of this list either way.
 
 # Post Episode Thoughts

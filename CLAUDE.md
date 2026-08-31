@@ -108,6 +108,7 @@ gang:
 - Absent keys count as absent, so `false` is optional — but write it out anyway. An explicit `false` records that the absence was checked rather than forgotten.
 - A strikethrough is not announced by screen readers, so `GangLine` appends visually-hidden "(does not appear)" text. Keep that if the markup changes.
 - **Populated for Series 1 and 2 from Mat's table.** Gimbert is in every Series One episode and absent from the whole of Series Two (he returns in Series Four). Series 1 is therefore eleven straight full bands; Series 2 has none. Note S01E09–10 is a single MDX file covering both parts, so it gets one block.
+- **Gang data for the unreviewed Series Two episodes (E7–E11) is recorded** under "Still to come" in `vault/thedivvy/Lovejoy Reviews/Reviews/Series02/Series Two Overview.md`. Use it when scaffolding those reviews rather than re-deriving it.
 - `src/lib/gang.ts` also exports `isFullBand` and `presentMembers`, and the helpers take frontmatter rather than an `Episode`, so later features — appearance totals, full-band percentage, filtering by character, scores against cast combinations — can be built without touching the component. **None of those statistics are built yet.**
 
 ### Manual character overrides
@@ -166,7 +167,15 @@ Referenced later in the fantastic <Ep slug="series-2-episode-3-bin-diving">Bin D
 ### Soundtrack ("Heard in the episode")
 Episodes can carry an optional `soundtrack` block in their frontmatter (`title`, `artist`, optional `spotifyUrl`).
 
-**House rule — episodes with no song.** Some episodes have no usable song in them at all. When that happens, substitute a track from Ian McShane's own album *From Both Sides Now* so the playlist stays one-song-per-episode. Established so far: S01E09-10 *Death in Venice* → "I'd Really Love to See You Tonight"; S02E01 *Just Desserts* → "Avalon". Don't reuse a track already spent on an earlier episode.
+**House rule — episodes with no song.** Some episodes have no usable song in them at all. When that happens, substitute a track from Ian McShane's own album *From Both Sides Now* so the playlist stays one-song-per-episode. Don't reuse a track already spent on an earlier episode.
+
+**Tracks spent so far**, from *From Both Sides Now*:
+- S01E09-10 *Death in Venice* → "I'd Really Love to See You Tonight"
+- S02E01 *Just Desserts* → "Avalon"
+- S02E02 *The Italian Venus* → "Fool If You Think It's Over"
+- S02E06 *One Born Every Minute* → "This Guy's In Love With You"
+
+Note S02E04 *Montezuma's Revenge* broke the rule with Def Leppard instead, which does **not** spend a McShane track — see **Breaking the rule** below. Keep this list current; a reused track is the easy mistake here.
 
 **You must set `substitute: true` on the soundtrack block when you do this.** Without it the episode page announces the track as "Heard in the episode", which is the one thing a substitute demonstrably wasn't:
 
