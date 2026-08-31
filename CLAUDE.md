@@ -46,15 +46,67 @@ Before drafting or scaffolding a review, gather the episode's facts from these t
 
 One offline source may close the gap: *The Lovejoy Trail: Locations from the Lovejoy TV Series* by Paul Atkinson (Upfront Publishing, 2012, 166pp), covering Suffolk, Norfolk, Hertfordshire and Essex. **Not yet consulted.** Reviews are mixed — useful to fans visiting the sites, but several report poor editing and factual errors, so anything taken from it needs a second check before it goes on the site.
 
+### How a review gets written — division of labour
+This is the settled way of working from S02E06 onwards. It is not "Claude writes a review". Mat is the columnist; Claude is the researcher, sub-editor and typist.
+
+**Mat supplies:**
+- The episode script, pasted into chat. subslikescript is JavaScript-rendered now and returns nothing to a fetch, so there is no way to get it otherwise.
+- Rough notes: plot beats in the order he noticed them, wry observations, personal anecdotes, digressions, jokes. Typo-ridden and unordered is expected and fine.
+- The `score` and the `divvyMoment`.
+- The hero images and Instagram stills.
+- **The cold open — always, and always last.** See below.
+
+**Claude supplies:**
+- Research and verification: airdate, writer, director, cast, and anything checkable behind Mat's observations. Correct him when the facts differ, and say so plainly rather than silently.
+- Structure: his notes arranged under the standard headings, in an order that reads.
+- Connective prose between his observations, and the plot mechanics he skipped.
+- Grammar, spelling, British spellings, house typography.
+- The comment trail at the foot of the MDX, separating what is verified from what is Mat's own unverified observation, and recording what was deliberately left out.
+
+**The line to hold:** his jokes, phrasings and turns of phrase survive intact, including his superlatives. Claude's own prose gets the superlatives dialled out (see House style). If a note is factually wrong, fix it and flag it — do not quietly write around it.
+
+**The cold open is Mat's, never Claude's.** Leave a marked placeholder where it goes:
+
+```mdx
+## Review
+
+{/* COLD OPEN STILL TO COME — Mat adding this later. */}
+```
+
+He writes it last, once the rest exists, and ties it to both the start and the end of the episode.
+
+**When the cold open lands, re-read the final paragraph.** The house structure closes by circling back to the opening anecdote, so a verdict drafted before the cold open exists will be circling back to nothing — or worse, to a placeholder opening that has since been replaced. This went wrong once already on S02E04, where the review still ended on a holiday-ailment callback after the opening had become football. Check it every time.
+
+**Nothing is published until the cold open is in.** The review is not finished without it.
+
 ### Publishing a new episode review (standard workflow)
 1. Confirm the four decision fields with the user *before* writing files: `score` (0–5, halves allowed), `divvyMoment` (usually the review's headline pull-quote), `guestStar` (an actor name — if there's no natural one, a witty in-character stand-in is fine, e.g. `"None — Dandy Jack still convalescing"` for S01E05), and whether the hero images and Instagram folder are already staged.
-2. Create the MDX at `src/content/reviews/series-XX/NN-slug.mdx`. See **Review headings** below for the required structure. Some episodes use an opening pull-quote as a `>` blockquote directly under `## Review`.
-3. Mirror the same review body into the vault at `vault/thedivvy/Lovejoy Reviews/Reviews/Series{NN}/SXEXX - {Title}.md`. Vault has its own template frontmatter (see `Templates/ReviewTemplate.md`); vault prose can drift slightly from the published MDX if the user's edits accumulate there first.
+2. Build the MDX at `src/content/reviews/series-XX/NN-slug.mdx` **from Mat's rough notes**, per **How a review gets written** above — his observations and anecdotes kept, arranged, fact-checked and joined up, with a placeholder where the cold open goes. See **Review headings** below for the required structure. Some episodes use an opening pull-quote as a `>` blockquote directly under `## Review`.
+3. Mirror the finished body back into the vault at `vault/thedivvy/Lovejoy Reviews/Reviews/Series{NN}/SXEXX - {Title}.md`, preserving any sections the MDX does not own — `# Post Episode Thoughts`, `## Cast`, `## Sources`, `# Social`. The vault file starts life as the research scaffold and Mat's notes, so it leads before drafting and follows after; once he starts editing the MDX directly, **stop regenerating the vault from it unless asked**, or his edits get flattened.
 4. Create the empty Instagram staging folder `public/images/insta/se{S}ep{N}/` for later Canva carousel work.
 5. **Wire up the hero images.** Dropping the three files into `public/images/episodes/` is not enough — the frontmatter must name them via `image` / `imageAlt` (+ `…2`, `…3`). `EpisodeImage` returns `null` when those fields are absent, so a review with unreferenced images shows **no gallery at all, with no error and no broken-image icon**. This has already bitten once on S02E05, where the MDX was written before the files were staged. If the images arrive after the MDX, go back and add the fields. Write real `imageAlt` text describing what is actually in the shot — it is the accessible name on the episode page *and* the caption source for `/image-wall`, so "Still from X" is a wasted opportunity.
 6. Verify with `npm run routes` — the new `/episodes/series-N-episode-N-slug` line should appear.
 7. **Search, Word Map, image wall, RSS**: nothing manual to do for any of them. `npm run build` regenerates `src/data/word-stats.json` (first, before `tsc`), `public/search-index.json` (before `vite build`) and `dist/feed.xml` (after prerender). `/image-wall` needs no generation step at all — it reads the `image` / `image2` / `image3` frontmatter at render time, so step 5 is what feeds it. If the dev server is already running, `npm run generate:search` and `npm run generate:words` bring `/search` and `/word-map` up to date without a restart; the feed is a build-only artifact.
 8. **Do NOT commit until the user says so** — they preview the rendered page first (dev server on port 5173 or 5174) and often edit the MDX before asking to commit.
+
+### The Gang (recurring-regular presence)
+Every episode review carries a `gang` block naming which of the five regulars turn up. `src/components/GangLine.tsx` renders it in `article__head`, below the soundtrack line, with absentees struck through and dimmed. All five present adds a `🎸 Full band` marker.
+
+```yaml
+gang:
+  lovejoy: true
+  eric: true
+  tinker: false
+  jane: true
+  gimbert: false
+```
+
+- **The five characters and their display names live in `src/lib/gang.ts`**, as an ordered `GANG` array — not in the component and not in the MDX. Change a display name there and it changes everywhere.
+- **`gang` is optional on purpose.** It is *not* in the `required` list in `src/lib/episodes.ts`, because a required field that is missing drops the episode from the entire site with only a `console.warn`. `GangLine` returns `null` when the block is absent, so a review without one degrades quietly. Do add it to every new review.
+- Absent keys count as absent, so `false` is optional — but write it out anyway. An explicit `false` records that the absence was checked rather than forgotten.
+- A strikethrough is not announced by screen readers, so `GangLine` appends visually-hidden "(does not appear)" text. Keep that if the markup changes.
+- **Populated for Series 1 and 2 from Mat's table.** Gimbert is in every Series One episode and absent from the whole of Series Two (he returns in Series Four). Series 1 is therefore eleven straight full bands; Series 2 has none. Note S01E09–10 is a single MDX file covering both parts, so it gets one block.
+- `src/lib/gang.ts` also exports `isFullBand` and `presentMembers`, and the helpers take frontmatter rather than an `Episode`, so later features — appearance totals, full-band percentage, filtering by character, scores against cast combinations — can be built without touching the component. **None of those statistics are built yet.**
 
 ### Manual character overrides
 `src/data/manual-characters.json` supplements the IMDb-generated cast list at `src/data/lovejoy-characters.json`. Add hand-curated entries here for recurring faces IMDb has as uncredited (currently: John Scholes as Sgt Drabble across S01E01, E06, E08, E09). `CharactersPage` merges the two, deduped by lowercase `actor::character`.
@@ -218,11 +270,11 @@ Production site URL lives in `.env.production` (`VITE_SITE_URL`). Both the React
 
 The reviews should read like a weekly newspaper column rather than a traditional TV recap. The structure is flexible, not rigid, but each review should broadly follow these beats:
 
-### 1. Cold Open (150–250 words)
+### 1. Cold Open (150–250 words) — **Mat writes this, not Claude**
 
-Start with a topical, nostalgic or personal observation from the week the review is being written. It doesn't have to be about *Lovejoy* at all. It could be a holiday, football, the weather, current events, old television, antiques or everyday life.
+A topical, nostalgic or personal observation from the week the review is being written. It doesn't have to be about *Lovejoy* at all. It could be a holiday, football, the weather, current events, old television, antiques or everyday life. It ends with a natural bridge into the episode.
 
-End this section with a natural bridge into the episode.
+Claude leaves a placeholder here and never drafts it — see **How a review gets written** above. Written by Mat last, and deliberately tied to both the start and the end of the episode.
 
 ### 2. First Impressions
 
@@ -288,6 +340,8 @@ The conclusion should zoom out to a bigger idea or theme.
 
 Finally, bring the review full circle by referencing the opening anecdote or observation. This callback should feel natural and give the piece a satisfying ending.
 
+**Sequencing trap.** Claude drafts the verdict before Mat's cold open exists, so the callback cannot be written yet. Either leave the ending on the episode itself and let Mat add the callback with his opening, or write one and revisit it the moment the cold open lands. What must not happen is a callback to an opening that was never published — see the S02E04 note in **How a review gets written**.
+
 ### House style
 
 - Write with warmth, wit and gentle sarcasm.
@@ -298,6 +352,8 @@ Finally, bring the review full circle by referencing the opening anecdote or obs
 - Don't be afraid to wander briefly if it produces a good joke or observation.
 - Every review should feel like spending ten minutes in the pub with someone who loves television and notices odd little details.
 - Above all, the review should feel like a column that happens to be about *Lovejoy*, not just a review of an episode.
+
+**Mat's shorthand in draft notes.** When reading his rough notes, `lj` means Lovejoy and `Tink` means Tinker. Expand both to the full name in published prose — the reviews always write Lovejoy and Tinker out. Also expect `Muriel` for Miriam the Morris Minor, which is a recurring slip and should be silently corrected.
 
 **Dial down the superlatives.** This is the most common note Mat gives on drafted prose. When writing *for* him, avoid reaching for "the best scene in the hour", "the best-looking thing in the episode", "genuinely remarkable", "I have never been so…", "the most X all series". State the observation and let it stand — "Palmer gets a good scene with Eric" beats "Palmer gets the best scene with Eric", and dropping the ranking entirely is usually better still.
 
