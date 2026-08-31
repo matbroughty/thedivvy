@@ -9,6 +9,7 @@ import EpisodeCard from "../components/EpisodeCard";
 import EpisodeScore from "../components/EpisodeScore";
 import EpisodeThumbnail from "../components/EpisodeThumbnail";
 import Seo from "../components/Seo";
+import SiteJsonLd from "../components/SiteJsonLd";
 import { formatAirDate, formatReviewDate } from "../lib/dates";
 import { episodeHeading } from "../lib/episodeLabel";
 
@@ -23,7 +24,20 @@ export default function HomePage() {
         description="Lovejoy reviews on The Divvy — a weekly walk-through of every episode of the BBC's finest dodgy-antiques-dealer drama, starring Ian McShane. Antiques, Eric, Tinker, Lady Jane, and the occasional murder."
         image={latest?.frontmatter.image}
       />
-      <h1 className="sr-only">Lovejoy reviews</h1>
+      <SiteJsonLd />
+      {/* Visible rather than sr-only: this is the homepage's only h1 and the
+          strongest on-page signal it has. Kept small and editorial so it reads
+          as a standfirst instead of a banner. */}
+      <div className="page-intro">
+        <h1 className="page-intro__title">
+          Lovejoy reviews — every episode, one at a time
+        </h1>
+        <p className="page-intro__blurb">
+          A weekly walk through all six series of the BBC antiques drama, from
+          1986 to 1994. Scores, guest stars, the songs, and an unreasonable
+          amount of attention paid to Miriam the Morris Minor.
+        </p>
+      </div>
       {latest ? (
         <section className="hero" aria-labelledby="latest-title">
           <div className="hero__layout">

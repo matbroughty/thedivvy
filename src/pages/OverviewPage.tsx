@@ -4,8 +4,11 @@ export default function OverviewPage() {
     return (
         <article className="article">
             <Seo
-                title="What is Lovejoy? — an introduction"
-                description="A full introduction to Lovejoy: the show, the cast (Ian McShane, Phyllis Logan, Dudley Sutton, Chris Jury, Malcolm Tierney), the writers (Dick Clement & Ian La Frenais), and the novels by Jonathan Gash."
+                // Titled for the query rather than the editorial voice: this is the
+                // page that should answer "lovejoy tv series". The h1 below stays
+                // conversational — only the search-facing title changes.
+                title="Lovejoy (TV series) — cast, episodes and where to watch"
+                description="Lovejoy, the BBC comedy-drama starring Ian McShane as a roguish East Anglian antiques dealer, ran from 1986 to 1994 across six series. The cast, the writers Dick Clement and Ian La Frenais, the Jonathan Gash novels behind it, and every episode reviewed."
             />
             <img
                 src="/images/core/lovejoy_cast.jpg"
