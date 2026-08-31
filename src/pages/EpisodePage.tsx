@@ -10,6 +10,7 @@ import EpisodeJsonLd from "../components/EpisodeJsonLd";
 import LikeButton from "../components/LikeButton";
 import Seo from "../components/Seo";
 import SoundtrackLine from "../components/SoundtrackLine";
+import GangLine from "../components/GangLine";
 import { formatAirDate, formatReviewDate } from "../lib/dates";
 import { episodeCode, episodeHeading } from "../lib/episodeLabel";
 import { useSeriesTheme } from "../lib/useSeriesTheme";
@@ -71,6 +72,7 @@ export default function EpisodePage() {
         {frontmatter.soundtrack && (
           <SoundtrackLine soundtrack={frontmatter.soundtrack} variant="full" />
         )}
+        <GangLine frontmatter={frontmatter} />
       </header>
 
       <EpisodeImage frontmatter={frontmatter} />

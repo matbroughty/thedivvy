@@ -20,6 +20,20 @@ export interface Soundtrack {
   substituteNote?: string;
 }
 
+/**
+ * Which of the five recurring regulars appear in an episode.
+ *
+ * Absent keys count as absent. The display names and ordering live in
+ * src/lib/gang.ts so they are defined once.
+ */
+export interface Gang {
+  lovejoy?: boolean;
+  eric?: boolean;
+  tinker?: boolean;
+  jane?: boolean;
+  gimbert?: boolean;
+}
+
 export interface EpisodeFrontmatter {
   title: string;
   series: number;
@@ -50,6 +64,11 @@ export interface EpisodeFrontmatter {
   imageSourceUrl3?: string;
   /** Song heard somewhere in the episode. Optional. */
   soundtrack?: Soundtrack;
+  /**
+   * Which regulars turn up. Optional so reviews written before the field
+   * existed still load; GangLine renders nothing when it is missing.
+   */
+  gang?: Gang;
 }
 
 export interface Episode {
