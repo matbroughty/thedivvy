@@ -1037,6 +1037,48 @@ li {
   margin-top: 0.4rem;
 }
 
+/* Tables written as markdown inside a review or overview body. Deliberately
+   no min-width: unlike /novels these are narrow (two or three columns), so
+   they wrap rather than pushing the page sideways, and stay a real <table>
+   for assistive tech instead of being switched to display:block to scroll. */
+.article__body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.4rem 0;
+  font-size: 0.96rem;
+}
+
+.article__body th {
+  text-align: left;
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  border-bottom: 2px solid var(--color-rule);
+  padding: 0.5rem 0.7rem;
+  white-space: nowrap;
+}
+
+.article__body td {
+  border-bottom: 1px solid var(--color-border);
+  padding: 0.6rem 0.7rem;
+  vertical-align: top;
+}
+
+/* A leading numeric column reads as an index, not data — mute it and keep the
+   digits aligned. */
+.article__body td:first-child {
+  color: var(--color-text-muted);
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.article__body tbody tr:last-child td {
+  border-bottom: 0;
+}
+
 /* ---------------- Characters page ---------------- */
 
 .character-list {
