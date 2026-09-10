@@ -27,7 +27,7 @@ No linter and no formatter are configured. Static checks are `tsc` and `npm test
 ### Content pipeline
 Episodes are MDX files at `src/content/reviews/series-XX/NN-slug.mdx`. They are loaded at module-init time by `src/lib/episodes.ts` via `import.meta.glob("/src/content/reviews/**/*.mdx", { eager: true })`. The loader validates frontmatter against a required-keys list (see `EpisodeFrontmatter` in `src/types.ts`) — **episodes missing any required field are dropped with a `console.warn` and never appear on the site**. When adding fields, update both `EpisodeFrontmatter` in `src/types.ts` and (if required) the `required` array in `episodes.ts`.
 
-Frontmatter parsing uses `remark-frontmatter` + `remark-mdx-frontmatter` (configured in `vite.config.ts`) which exposes the YAML block as a named `frontmatter` export from the MDX module.
+Frontmatter parsing uses `remark-frontmatter` + `remark-mdx-frontmatter` (configured in `vite.config.ts`) which exposes the YAML block as a named `frontmatter` export from the MDX module. `remark-gfm` is the third plugin, and it is what makes markdown tables render — see **Tables in review bodies** below. There is no `rehype-slug`, so headings carry no `id` attributes.
 
 ### Required frontmatter fields
 `title`, `series`, `episode`, `slug`, `score`, `summary`, `lovejoyUnits`, `divvyMoment`, `guestStar`. Missing any of these drops the episode from the site.
@@ -135,11 +135,42 @@ Inside `## Review`, new reviews carry these four `###` subsections, in this orde
 ```
 
 Notes:
-- **Order is fixed.** Verdict always last. `Guest Focus` always sits between `Good Quote` and `The Divvy Verdict`.
+- **Order is fixed.** The Verdict is the last *review* section. `Guest Focus` always sits between `Good Quote` and `The Divvy Verdict`. The one thing allowed after the Verdict is an appendix — see **Appendices** below.
 - **`Guest Focus` takes an em-dash and the actor's name**, matching the `guestStar` frontmatter field — e.g. `### Guest Focus — Warren Clarke`. If the review has no Guest Focus section, `guestStar` is promising a guest the prose never delivers, so add one or change the field.
 - **Optional extras are allowed** where an episode earns one. Established so far: `### Antique Lesson` (S01E06) and `### Trivia & Observations` (S01E09-10). Place an extra before `### The Divvy Verdict`. Reuse an existing name rather than inventing a synonym.
 - **Do not retrofit the early reviews.** S01E01–E05 and E08 are deliberately continuous prose with no subsections, which is a decision, not an oversight. Leave them alone.
 - Watch for near-miss headings — a stray `### Gold Quote` has slipped in before. The four names above are the only spellings.
+
+### Appendices (after the Divvy Verdict)
+An appendix is reference material the cold open or the prose refers the reader down to — not a review section. It is the **only** thing permitted after `### The Divvy Verdict`, and it takes a `###` heading like any other section.
+
+Established: `### R.E.M. at KOKO, 4 September 2026` in S02E07 *National Wealth*, holding the twenty-nine-song setlist from the gig Mat's cold open opens on.
+
+Rules:
+- **Only add one when something in the review points at it.** An appendix nobody is sent to is just padding at the foot of the page. If the prose does not link down to it, it does not belong.
+- **It must be about the cold open, not the episode.** Anything about the episode itself belongs in the review, as an optional extra before the Verdict.
+- **Anchor it with a `<span id="…" />` immediately above the heading**, and link to it from the prose with `[text](#the-id)`:
+
+  ```mdx
+  <span id="rem-at-koko-4-september-2026" />
+
+  ### R.E.M. at KOKO, 4 September 2026
+  ```
+
+  **Do not use the `{#slug}` heading-attribute syntax.** The MDX pipeline has no `rehype-slug` or `remark-heading-id`, so headings get no `id` of their own and `{#slug}` is parsed as a JSX expression, which fails the build. If in-page links become common, add `rehype-slug` to `vite.config.ts` and the spans can all come out.
+- The appendix text is counted by the search index and the word cloud like any other prose, so a long setlist will nudge `/word-map`. That is accepted, not a bug.
+
+### Tables in review bodies
+Markdown pipe tables work in any MDX body. Two pieces make that true, and both are easy to forget:
+
+- **`remark-gfm` in `vite.config.ts`.** Without it a pipe table is never parsed and renders as literal `| 13 | Lotus |` text inside a `<p>` — no error, no warning, just a mess on the page. This bit once on S02E07.
+- **`.article__body table` in `src/styles/global.css`.** Review bodies had no table rules at all before S02E07; the only table styling on the site was `.novels-table` and `.word-heat__table`, both class-scoped. Without these an unstyled browser-default table renders instead.
+
+The rules deliberately set **no `min-width`**, unlike `.novels-table`. Review tables are two or three narrow columns, so they wrap rather than pushing the page sideways, and they stay a real `<table>` rather than being flipped to `display: block` to gain a scrollbar — which can cost table semantics in assistive tech. If a review ever needs a genuinely wide table, give it its own class and its own scroll container rather than loosening these.
+
+Use a table only where there is a real second column. A single-column list stays a list — in S02E07 the album tracklist is a numbered list and only the annotated sections (song, album, year) are tables. Give a leading index column a real header (`#`); `.article__body td:first-child` mutes it and sets tabular figures, so it reads as an index rather than data.
+
+Adding `remark-gfm` also switches on the rest of GitHub-flavoured markdown — strikethrough, footnotes, task lists, bare-URL autolinks. No review used any of it when the plugin went in, so nothing changed retrospectively, but bear it in mind: a bare `~~` or a stray `[^1]` in prose now means something.
 
 ### Image assets
 Two image folder patterns are established under `public/images/`:
