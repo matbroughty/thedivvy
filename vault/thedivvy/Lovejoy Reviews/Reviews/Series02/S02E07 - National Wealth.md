@@ -391,9 +391,14 @@ Instagram stills staged in `public/images/insta/se2ep7/`. Five files, and they c
 | `boat.jpg` | Eric front, Lovejoy behind him, and the blond detective on the right, all three low in a boat on the river. **Mat to confirm who the third man is** — the same face is in `windosor.jpg`, so it reads as Armstrong. |
 | `windosor.jpg` | Lovejoy and the blond detective outside Windsor Castle with a document between them. Spare. |
 
-Plus the three heroes, of which **hero 2 — Tinker at the bar in the Toad get-up — is the divvyMoment scene** and therefore the natural slide 5.
+Plus the three heroes. Two of them are doing real work here:
 
-Five slides. No sixth needed: the good "did you notice" is the Jean Kent casting, and it fits the Divvy Observation slide without a panel of its own.
+- **Hero 2 — Tinker at the bar in the boater — is the divvyMoment scene.** The quote slide should use the still the quote comes from.
+- **Hero 3 has Ronald Fraser's butler standing at the right of frame**, which is what makes a Fraser slide possible without grabbing anything new.
+
+**Six slides**, same count as the S02E06 deck, so no slides to add or remove this time.
+
+The deck changed shape once the review was finished. The original plan folded the casting into one Divvy Observation slide and stopped at five. But there are three genuine "did you notice" items here — Jean Kent really was a Gainsborough star, Ronald Fraser was in the very first episode, and the villain is called Le Mor — and two of them deserve their own panel. **Fraser gets the sixth slide** because a returning face from S01E01 that nobody ever mentions is the best of the three, and because hero 3 already has him in it. Le Mor goes to the caption.
 
 ## Canva prompt
 
@@ -406,8 +411,8 @@ must stay untouched. Any existing image placeholder on each slide should stay
 exactly where it is. The "Image slot" lines below are notes for me, not
 instructions for you.
 
-**Remove one slide.** This episode needs five slides rather than six. Delete
-the extra slide that sits between the Divvy Observation and the Verdict.
+**Slide count is unchanged.** Episode 7 uses the same six slides as episode 6.
+Nothing to add or delete — just replace the text on each one.
 
 **Slide 1**
 
@@ -433,27 +438,41 @@ Image slot (my reference — leave the slide's placeholder empty): gendarmes.jpg
 
 DIVVY OBSERVATION
 
-Madelene Gilbert is played by Jean Kent, who really was a Gainsborough star.
-Her butler is her old dresser from Gainsborough Pictures.
+Madelene Gilbert is played by Jean Kent, who really was one of the Gainsborough
+Girls.
 
-Tinker's fawning is the only accurate thing in the episode.
+So when Tinker turns up dressed as Toad of Toad Hall to meet a screen goddess,
+he is not wrong about her.
 
 Image slot (my reference — leave the slide's placeholder empty):
 tinker_filmstar.jpg — Madelene seated, Tinker in the foreground fawning.
 
 **Slide 4**
 
+HE HAS BEEN HERE BEFORE
+
+The butler is Ronald Fraser — who was in the very first episode of Lovejoy,
+five years earlier, credited as Drummer.
+
+Same show. Different man. Nobody mentions it.
+
+Image slot (my reference — leave the slide's placeholder empty): hero 3 — the
+thank-you at Carlton Grange, with Fraser standing at the right of frame. Crop
+in on him if the slide can take it.
+
+**Slide 5**
+
 THEY LOST A BOAT
 
 Not a man. Not a car. A boat, on a river, in the dark, while both of them were
-looking at it.
+sitting there looking at it.
 
 So they gave chase. In a punt.
 
 Image slot (my reference — leave the slide's placeholder empty): boat.jpg —
 Eric, Lovejoy and the detective all crammed low into a boat on the river.
 
-**Slide 5**
+**Slide 6**
 
 QUOTE + SCORE
 
@@ -469,12 +488,17 @@ Image slot (my reference — leave the slide's placeholder empty): hero 2 —
 Tinker at the bar in the boater and bow tie. It is the scene the quote is from.
 ```
 
+Notes on the choices:
+- **Slide 4 is the one that changed.** Fraser being a returning face is the best "did you notice" in the episode, it needs no setup, and hero 3 already has him in shot — so it costs nothing to run it.
+- **Slide 3 dropped the dresser detail.** "Her butler was her dresser at Gainsborough Pictures" is lovely but it is a second fact on a slide that only wants one, and the butler now has his own panel two slides later. It stays in the review.
+- **Slide 6 pairs the quote with its own scene**, which the last two decks did not manage.
+
 Alternatives held back:
-- **Slide 3 could be the Le Mor joke instead** — "The one man who dies is called Le Mor. One letter off *le mort*." It is the sharper "did you notice" of the two and it fits a slide without setup, but it needs a still of Michel and there isn't one staged. Grab one and it probably wins.
-- Slide 3 could also be the divvy test reversed — "You passed my test as soon as you entered the room" — the better scene but the weaker slide, because it needs the setup explaining.
-- Slide 4 could be "I'll make her fly" over the helicopter, if the boat still doesn't grab well.
-- Slide 5 could be "Where do you sell a staircase?", which is the more intriguing hook. The decay line wins because it is the divvyMoment, it has its own still, and Tinker deserves the last word.
-- `windosor.jpg` is spare. It would suit a slide on the Windsor detour and Edward IV, if the deck ever wants a sixth.
+- **The Le Mor joke** — "The one man who dies is called Le Mor. One letter off *le mort*." Sharp, needs no setup, and would walk onto a slide. It is out only because there is no still of Michel staged. **Grab one and it displaces slide 4 or becomes a seventh.** It is in the caption either way.
+- Slide 3 could be the divvy test reversed — "You passed my test as soon as you entered the room" — the better scene but the weaker slide, because it needs explaining.
+- Slide 5 could be "I'll make her fly" over the helicopter, if the boat still doesn't grab well.
+- Slide 6 could be "Where do you sell a staircase?", which is the more intriguing hook. The decay line wins because it is the divvyMoment, it has its own still, and Tinker deserves the last word.
+- **Spare stills:** `windosor.jpg` (would suit a Windsor / Edward IV panel) and hero 1, the bed scene — which is staying off the grid deliberately, since the review is not especially kind about that part of the episode.
 
 ## Instagram caption
 
@@ -482,18 +506,23 @@ Alternatives held back:
 🎩 National Wealth
 
 A French gang is stripping country houses back to the floorboards — fireplaces,
-panelling, floorboards, and in one case the entire staircase. Lovejoy is
-supposed to be selling a retired film star's collection, and is otherwise
-engaged when they get to her house.
+panelling, rugs, and in one case the entire staircase. Lovejoy is supposed to be
+selling a retired film star's collection, and is otherwise engaged when they get
+to her house.
 
-Lovejoy as Bond, which history says to worry about. But the antiques never
-disappear and neither do Tinker and Eric, who at one point lose an enormous
-boat and set off after it in a punt. 3.5 out of 5.
+Lovejoy as Bond, which history tells us to worry about. But the antiques never
+disappear and neither do Tinker and Eric, who at one point lose an enormous boat
+and set off after it in a punt. 3.5 out of 5.
 
-Madelene Gilbert is Jean Kent, who really was one of the Gainsborough Girls.
-And the villain is called Le Mor. Swipe for both.
+Two things worth knowing. Madelene Gilbert is played by Jean Kent, who really
+was one of the Gainsborough Girls. And her butler is Ronald Fraser, who was in
+the very first episode of Lovejoy five years earlier, playing somebody else
+entirely. Swipe for that one.
+
+Oh, and the villain is called Le Mor. One letter off le mort. He is the only
+person in it who dies.
 
 Full review on The Divvy. Link in bio.
 
-#Lovejoy #IanMcShane #TheDivvy #JeanKent #ClassicTV #TVReview
+#Lovejoy #IanMcShane #TheDivvy #JeanKent #RonaldFraser #ClassicTV #TVReview
 ```
