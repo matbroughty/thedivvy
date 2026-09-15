@@ -40,6 +40,12 @@ const linkSections: LinkSection[] = [
         url: "https://www.lovejoyactually.com",
         description: "Episode-by-episode podcast discussion",
       },
+      {
+        title: "A Cup of Crime – Lovejoy",
+        url: "https://www.acupofcrime.com/tv/lovejoy/",
+        description:
+          "Series overview, character profiles and episode guide. Good on plot and tone — but it credits Ian La Frenais as writer throughout, so check writing credits elsewhere",
+      },
     ],
   },
   {
@@ -61,9 +67,10 @@ const linkSections: LinkSection[] = [
         description: "YouTube deep dive tracing the Morris Minor Lovejoy drove in series 2–6",
       },
       {
-        title: "Belcham Hall — the Lovejoy connection",
+        title: "Belchamp Hall — the Lovejoy connection",
         url: "https://belchamphall.com/history/the-lovejoy-connection/",
-        description: "The Suffolk country house's own account of its appearances in the series",
+        description:
+          "Felsham Hall itself. The house's own account of its appearances, plus the pubs, churches and villages used around it",
       },
       {
         title: "The Lovejoy Trail by Paul Atkinson",
