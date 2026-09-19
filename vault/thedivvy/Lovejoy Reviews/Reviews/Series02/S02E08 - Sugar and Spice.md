@@ -488,12 +488,224 @@ two of them are re-running a two-hundred-year-old argument without knowing it.
 
 # Social
 
-To be written after publication, from [[CanvaPromptTemplate]]. Instagram stills
-staged in `public/images/insta/se2ep8/` — currently empty.
+Generated from [[CanvaPromptTemplate]]. **Six slides**, same count as the S02E06
+and S02E07 decks, so there is nothing to add or delete — the starting point is
+the episode 7 deck. No per-series recolour; walnut was set at S02E01 and holds
+for the rest of Series Two.
 
-Note for the deck when it comes: **the blackmail plot does not go on a slide.**
-Same call as Batang Kali on S02E06. A teenager being blackmailed over a
-termination does not survive being compressed to two lines under a screengrab.
-The slides have plenty to work with without it — the parents' day marquee, the
-Fuseli argument, the felt-tip scene, and the fact that Lovejoy turns out to
-have a wife and a daughter nobody has ever mentioned.
+**Back to the template shape.** The S02E07 deck dropped the VERDICT slide and
+ran two "did you notice" panels instead. This one restores the verdict, because
+a 3 is the first low score of the series and the number needs a sentence of
+explanation rather than arriving cold on the quote slide.
+
+## The blackmail plot stays off the deck
+
+Decided before drafting and unchanged. Same call as Batang Kali on S02E06. A
+teenager being blackmailed over a termination does not survive compression to
+two lines under a screengrab, and it is the one part of this episode that would
+look worst as a caption. It stays in the review, handled straight.
+
+It is also absent from the Instagram caption, which is a change from S02E06 —
+there the omission was deck-only. Here the seediness is the review's whole
+argument, so the caption says "seedy" and lets the review explain why.
+
+## Stills — three still to grab
+
+`public/images/insta/se2ep8/` is empty. The three heroes cover slides 1–3. The
+back half needs three grabs, in priority order:
+
+| Want | For | Why it matters |
+| ---- | --- | -------------- |
+| **Miss Hemmingway**, ideally in the Mistresses' Library or her study | Slide 4 | The Mon Mothma slide is the best panel in the deck and does not work without her face on it. **This is the one to get right.** |
+| **Eric in the Lazer helmet on the bike**, with the 'Lovejoy Antiques' sidecar legible | Slide 5 | Mat's X-wing-to-sidecar joke pays off visually. If the sign is legible it can carry slide 4 instead and Hemmingway moves to 5. |
+| **Lovejoy and Eric at the barn** — the inner-self conversation, before Khadija arrives | Slide 6 | The quote slide should use the scene the quote comes from. S02E07 managed this and it is worth keeping up. **Changed when the quote changed** — the garden-whisky still is no longer needed. |
+
+Spares worth taking while you are there: Eric in the beret at the auction with
+*My Adonis*; the felt-tip scene in the art shop; Lovejoy with the folio open.
+
+## The quote slide — SETTLED
+
+Slide 6 uses **"You don't know your arts from your elbow"** — Lovejoy to Eric,
+early doors, when Eric announces he is opening the door to his inner self.
+Mat's call, taken after the risk below was flagged.
+
+The slide originally carried the review's Good Quote, the line Mat had picked
+as "the show's quote", which contains the word *pornography*. An
+antiques-nostalgia account posting that word set large, on an episode about
+erotica, is asking a recommendation algorithm a question it tends to answer
+conservatively — likely reduced reach rather than removal, and possibly nothing
+at all. Not worth the gamble for a line that has a genuinely funny alternative.
+
+**This is a deck decision only.** The Good Quote in the published review is
+unchanged and stays as Mat picked it. The carousel and the review do not have
+to run the same line, and here they deliberately do not.
+
+Knock-on: the slide 6 still changed with the quote. The scene is now the barn
+rather than the whisky in Jane's garden.
+
+## Canva prompt
+
+```
+This is a copy of the episode 7 template that needs updating for episode 8.
+**Update the text only. Do not generate, create, replace or move any images.**
+Do not use the AI image generator, the AI photo editor or any background
+generation tool anywhere in this design — every image is my own screenshot and
+must stay untouched. Any existing image placeholder on each slide should stay
+exactly where it is. The "Image slot" lines below are notes for me, not
+instructions for you.
+
+**Slide count is unchanged.** Episode 8 uses the same six slides as episode 7.
+Nothing to add or delete — just replace the text on each one.
+
+**Slide 1**
+
+SUGAR AND SPICE
+
+Lovejoy Series 2 Episode 8
+
+Image slot (my reference — leave the slide's placeholder empty): hero 1 — the
+parents' day marquee, Lovejoy wedged in beside the sofabed man, Susan in the
+teal hat, Vicky in uniform.
+
+**Slide 2**
+
+PLOT IN ONE WINK
+
+A sixth-former turns up at Lovejoy's barn with a folio of eighteenth-century
+erotica to sell. Lovejoy is at his daughter's parents' day, six months behind
+on the fees, and the two problems turn out to be the same problem.
+
+Image slot (my reference — leave the slide's placeholder empty): hero 2 —
+Lovejoy driving, Eric leaning through from the back, Khadija beside him, all
+three looking grim.
+
+**Slide 3**
+
+DIVVY OBSERVATION
+
+Asked what her father does for a living, Vicky answers for him.
+
+Six months in the nick, as a rule. In front of her mother's biggest client.
+
+or
+
+Lovejoy has an ex-wife, a daughter, a school bill he cannot pay and a landlady
+he keeps having to introduce as his landlady. All in one marquee.
+
+Image slot (my reference — leave the slide's placeholder empty): hero 3 —
+Susan and Vicky outside, Eric between them on the bike.
+
+**Slide 4**
+
+SHE BRIEFED THE REBEL FLEET
+
+The headmistress is Caroline Blakiston — Mon Mothma in Return of the Jedi.
+
+Eight years from the briefing room to the back of Eric's sidecar. Quite a fall.
+
+Image slot (my reference — leave the slide's placeholder empty): Miss
+Hemmingway — the library or the study. STILL TO GRAB.
+
+**Slide 5**
+
+VERDICT
+
+A dip, and a seedy one.
+
+Good ingredients that never come together.
+
+The first ten minutes are the episode. Then it goes to London.
+
+⭐⭐⭐
+
+Image slot (my reference — leave the slide's placeholder empty): Eric in the
+Lazer helmet on the bike, 'Lovejoy Antiques' sidecar in shot. STILL TO GRAB.
+
+**Slide 6**
+
+QUOTE + SCORE
+
+"You don't know your arts from your elbow."
+
+⭐⭐⭐
+
+Then underneath:
+
+Full review at TheDivvy.co.uk
+
+Image slot (my reference — leave the slide's placeholder empty): Lovejoy and
+Eric at the barn — the inner-self conversation, just before Khadija turns up
+with the folio. It is the scene the line is from. STILL TO GRAB.
+```
+
+Notes on the choices:
+- **Slide 4 is the deck.** Blakiston being Mon Mothma is the best "did you
+  notice" in the episode by a distance, it needs no setup, and the sidecar
+  punchline is Mat's own line from the review. Everything else was competing
+  for second place.
+- **Slide 3 leads with Vicky** rather than the family. The line is funnier, it
+  is a fourteen-word story with a beginning and an end, and the correction that
+  produced it — it is her line, not Lovejoy's — is the sort of thing worth
+  getting right in public. The family version is the safer second option.
+- **Slide 5 carries the score's reasoning.** Three lines, and the third is the
+  one that actually explains a 3: the good part is over early.
+
+Alternatives held back:
+- **The Lazer helmet as its own panel.** Third appearance, and this time it is
+  load-bearing — it frightens the school receptionist before the pictures do.
+  Out because S02E01 already ran "PERIOD DETAIL: THE LAZER CRASH HELMET" and a
+  repeat reads as running short of material. It is in the caption instead.
+- **Phillips in Mayfair versus the Berwick Street cab.** A good spot, far too
+  inside-baseball for a slide, and it needs two sentences of setup.
+- **The felt-tip scene.** Picasso's black, Braque's red, Cézanne's pastels, and
+  Eric settling it. The funniest two minutes in the back half, but it is a
+  dialogue joke and dies as a still with a caption.
+- **The Adonis.** No.
+- **The Janey line**, displaced from slide 6 by the quote swap. Still the best
+  line in the episode and still the review's Good Quote. Available for the
+  caption if the deck ever wants it back, though the caption is already long.
+
+## Instagram caption
+
+```
+🎩 Sugar and Spice
+
+A sixth-former turns up at the barn with a folio of eighteenth-century erotica
+and asks Lovejoy to sell it. He is at his daughter's parents' day at the time,
+six months behind on her school fees, and the two problems turn out to be the
+same problem.
+
+There is a dip in Series Two around here and this is it. Seedy, and only half
+enjoyable — though the first ten minutes, with Lovejoy's ex-wife, his daughter
+and Lady Jane all in one marquee, are as good as anything in the series. 3 out
+of 5.
+
+Swipe for the headmistress, who briefed the Rebel fleet eight years earlier.
+
+Full review on The Divvy. Link in bio.
+
+#Lovejoy #IanMcShane #TheDivvy #CarolineBlakiston #ClassicTV #TVReview
+```
+
+Caption notes: **118 words with the Lazer helmet line cut**, so still over the
+50–100 rule. An earlier note in this file predicted 96 and was simply wrong —
+the helmet line was two lines of a long caption, not a third of it.
+
+For calibration, counted the same way (body only, no hashtags): S02E06 ran 85
+words, S02E07 ran 161. So the rule is being treated as a guideline in practice
+and this sits between the last two rather than out on its own.
+
+**If it needs to come down further**, the plot paragraph is the place. It
+restates the One Wink Plot almost verbatim and could lose its second sentence —
+the school fees are implied by "parents' day" — which takes it to roughly 100.
+Not done unilaterally: the fees are what tie the two halves of the episode
+together and Mat may want them stated.
+
+#EightiesTV ruled out again, this being February 1991. #Antiques dropped, as on
+S02E06, because there is no antique at the centre of this one — it is prints and
+a blackmail. #CarolineBlakiston earns a place because slide 4 is the reason to
+swipe.
+
+**#StarWars deliberately not used.** It would widen reach and it would bring in
+an audience who are not here for a 1991 antiques drama and will not stay. Worth
+trying once as an experiment, but not on the episode scoring 3.
