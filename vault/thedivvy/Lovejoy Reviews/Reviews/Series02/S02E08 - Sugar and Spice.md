@@ -509,19 +509,30 @@ It is also absent from the Instagram caption, which is a change from S02E06 —
 there the omission was deck-only. Here the seediness is the review's whole
 argument, so the caption says "seedy" and lets the review explain why.
 
-## Stills — three still to grab
+## Stills — staged, and they cover the deck
 
-`public/images/insta/se2ep8/` is empty. The three heroes cover slides 1–3. The
-back half needs three grabs, in priority order:
+Four in `public/images/insta/se2ep8/`, and with two of the three heroes they
+fill all six slides with one hero spare.
 
-| Want | For | Why it matters |
-| ---- | --- | -------------- |
-| **Miss Hemmingway**, ideally in the Mistresses' Library or her study | Slide 4 | The Mon Mothma slide is the best panel in the deck and does not work without her face on it. **This is the one to get right.** |
-| **Eric in the Lazer helmet on the bike**, with the 'Lovejoy Antiques' sidecar legible | Slide 5 | Mat's X-wing-to-sidecar joke pays off visually. If the sign is legible it can carry slide 4 instead and Hemmingway moves to 5. |
-| **Lovejoy and Eric at the barn** — the inner-self conversation, before Khadija arrives | Slide 6 | The quote slide should use the scene the quote comes from. S02E07 managed this and it is worth keeping up. **Changed when the quote changed** — the garden-whisky still is no longer needed. |
+| File | What is in it | Slide |
+| ---- | ------------- | ----- |
+| `LovejoyPrivateSchool.jpg` | Lovejoy and Miss Hemmingway outside Badenside, the Tudor frontage behind them. She is in the yellow jacket she wears throughout. | 1 |
+| `SeedyMeeting.jpg` | A drawing room — moustached man seated in tweed, a younger man standing formally behind him, a dark-haired woman in the foreground mid-sentence. **Mat to confirm who these are**; the filename is his. | 5 |
+| `MonMothSideCar.jpg` | Miss Hemmingway on the Yamaha, reaching up into a tree, with the sidecar lettering visible along the bottom of frame. | 4 |
+| `EricLazer.jpg` | Eric in the white Lazer helmet facing down the school receptionist, framed photographs on the wall behind them. | 6 |
 
-Spares worth taking while you are there: Eric in the beret at the auction with
-*My Adonis*; the felt-tip scene in the art shop; Lovejoy with the folio open.
+**`MonMothSideCar.jpg` is the find.** It has Hemmingway and the sidecar in one
+frame, which is exactly the joke slide 4 is making — no crop, no second image,
+no setup. The deck was built hoping for two separate stills and got one better
+than either.
+
+Heroes used: hero 2 on slide 2 (the car, with Khadija in it) and hero 1 on
+slide 3 (the marquee, which is the scene the Vicky line happens in). Hero 3 —
+Susan, Vicky and Eric on the bike — is spare.
+
+**Nothing further needed.** Still worth grabbing if the deck is ever reworked:
+Eric in the beret at the auction with *My Adonis*, and the felt-tip scene in the
+art shop.
 
 ## The quote slide — SETTLED
 
@@ -563,9 +574,9 @@ SUGAR AND SPICE
 
 Lovejoy Series 2 Episode 8
 
-Image slot (my reference — leave the slide's placeholder empty): hero 1 — the
-parents' day marquee, Lovejoy wedged in beside the sofabed man, Susan in the
-teal hat, Vicky in uniform.
+Image slot (my reference — leave the slide's placeholder empty):
+LovejoyPrivateSchool.jpg — Lovejoy and the headmistress outside Badenside, the
+Tudor frontage behind them.
 
 **Slide 2**
 
@@ -592,8 +603,8 @@ or
 Lovejoy has an ex-wife, a daughter, a school bill he cannot pay and a landlady
 he keeps having to introduce as his landlady. All in one marquee.
 
-Image slot (my reference — leave the slide's placeholder empty): hero 3 —
-Susan and Vicky outside, Eric between them on the bike.
+Image slot (my reference — leave the slide's placeholder empty): hero 1 — the
+parents' day marquee. It is the scene the line is said in.
 
 **Slide 4**
 
@@ -603,8 +614,9 @@ The headmistress is Caroline Blakiston — Mon Mothma in Return of the Jedi.
 
 Eight years from the briefing room to the back of Eric's sidecar. Quite a fall.
 
-Image slot (my reference — leave the slide's placeholder empty): Miss
-Hemmingway — the library or the study. STILL TO GRAB.
+Image slot (my reference — leave the slide's placeholder empty):
+MonMothSideCar.jpg — the headmistress on the bike, sidecar lettering along the
+bottom of frame. Do not crop the lettering out; it is the punchline.
 
 **Slide 5**
 
@@ -618,8 +630,8 @@ The first ten minutes are the episode. Then it goes to London.
 
 ⭐⭐⭐
 
-Image slot (my reference — leave the slide's placeholder empty): Eric in the
-Lazer helmet on the bike, 'Lovejoy Antiques' sidecar in shot. STILL TO GRAB.
+Image slot (my reference — leave the slide's placeholder empty):
+SeedyMeeting.jpg — the drawing room, three of them mid-conversation.
 
 **Slide 6**
 
@@ -633,9 +645,9 @@ Then underneath:
 
 Full review at TheDivvy.co.uk
 
-Image slot (my reference — leave the slide's placeholder empty): Lovejoy and
-Eric at the barn — the inner-self conversation, just before Khadija turns up
-with the folio. It is the scene the line is from. STILL TO GRAB.
+Image slot (my reference — leave the slide's placeholder empty): EricLazer.jpg
+— Eric in the helmet facing down the school receptionist. The line is aimed at
+Eric, so it is his slide.
 ```
 
 Notes on the choices:
