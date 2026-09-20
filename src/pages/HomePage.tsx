@@ -16,7 +16,10 @@ import { episodeHeading } from "../lib/episodeLabel";
 export default function HomePage() {
   const latest = getLatestEpisode();
   const all = getAllEpisodes();
-  const recent = all.slice(-6).reverse();
+  // Drop the last episode before taking the six: getLatestEpisode() is the
+  // same element, and it already has the hero to itself. Without this the
+  // newest review's summary renders twice on one page, word for word.
+  const recent = all.slice(-7, -1).reverse();
 
   return (
     <div className="page">
