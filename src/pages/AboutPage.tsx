@@ -1,3 +1,4 @@
+import IntroductionVideo from "../components/IntroductionVideo";
 import Seo from "../components/Seo";
 
 export default function AboutPage() {
@@ -14,6 +15,7 @@ export default function AboutPage() {
       </header>
 
       <div className="article__body">
+        <IntroductionVideo />
         <p>
           I watched <em>Lovejoy</em> with my mum. That's where it starts,
           really — the lounge, Mum commenting on how dishy Ian McShane was,

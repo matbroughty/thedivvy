@@ -138,3 +138,11 @@ src/
 ## Constraints kept
 
 No auth, no comments, no search, no CMS, no DB, no analytics. Lean on purpose.
+
+## Narrated introduction video
+
+The isolated [video workshop](video/README.md) contains the editable narration,
+real-site captures, phrase-triggered camera cues and Remotion export commands.
+Start with `video/narration.md` for script review. Voice generation waits for
+Mat's approval; final assets can then be published locally to the About page.
+Video dependencies are installed separately and are not part of the site build.

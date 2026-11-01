@@ -1,0 +1,301 @@
+{
+  "hash": "9c1d1ed2f2980e0547dd9e1a05923931cbd655b2341025539be3e2d5c2abba2d",
+  "words": [
+    {
+      "text": "Hi,",
+      "type": "word",
+      "start": 0,
+      "end": 0.557
+    },
+    {
+      "text": "I'm",
+      "type": "word",
+      "start": 0.592,
+      "end": 0.708
+    },
+    {
+      "text": "Mat.",
+      "type": "word",
+      "start": 0.766,
+      "end": 1.149
+    },
+    {
+      "text": "One",
+      "type": "word",
+      "start": 1.474,
+      "end": 1.695
+    },
+    {
+      "text": "T.",
+      "type": "word",
+      "start": 1.741,
+      "end": 2.032
+    },
+    {
+      "text": "I",
+      "type": "word",
+      "start": 2.183,
+      "end": 2.241
+    },
+    {
+      "text": "watched",
+      "type": "word",
+      "start": 2.334,
+      "end": 2.543
+    },
+    {
+      "text": "Lovejoy",
+      "type": "word",
+      "start": 2.577,
+      "end": 2.902
+    },
+    {
+      "text": "with",
+      "type": "word",
+      "start": 2.937,
+      "end": 3.042
+    },
+    {
+      "text": "my",
+      "type": "word",
+      "start": 3.077,
+      "end": 3.146
+    },
+    {
+      "text": "mum.",
+      "type": "word",
+      "start": 3.204,
+      "end": 3.483
+    },
+    {
+      "text": "She",
+      "type": "word",
+      "start": 3.506,
+      "end": 3.646
+    },
+    {
+      "text": "thought",
+      "type": "word",
+      "start": 3.704,
+      "end": 3.959
+    },
+    {
+      "text": "Ian",
+      "type": "word",
+      "start": 4.017,
+      "end": 4.18
+    },
+    {
+      "text": "McShane",
+      "type": "word",
+      "start": 4.238,
+      "end": 4.714
+    },
+    {
+      "text": "was",
+      "type": "word",
+      "start": 4.748,
+      "end": 4.865
+    },
+    {
+      "text": "dishy.",
+      "type": "word",
+      "start": 4.934,
+      "end": 5.457
+    },
+    {
+      "text": "Dad",
+      "type": "word",
+      "start": 5.666,
+      "end": 5.898
+    },
+    {
+      "text": "pointed",
+      "type": "word",
+      "start": 5.956,
+      "end": 6.246
+    },
+    {
+      "text": "out",
+      "type": "word",
+      "start": 6.293,
+      "end": 6.42
+    },
+    {
+      "text": "that",
+      "type": "word",
+      "start": 6.444,
+      "end": 6.56
+    },
+    {
+      "text": "he",
+      "type": "word",
+      "start": 6.594,
+      "end": 6.641
+    },
+    {
+      "text": "was",
+      "type": "word",
+      "start": 6.687,
+      "end": 6.78
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 6.827,
+      "end": 6.85
+    },
+    {
+      "text": "short",
+      "type": "word",
+      "start": 6.896,
+      "end": 7.129
+    },
+    {
+      "text": "arse.",
+      "type": "word",
+      "start": 7.187,
+      "end": 7.697
+    },
+    {
+      "text": "So",
+      "type": "word",
+      "start": 7.814,
+      "end": 7.953
+    },
+    {
+      "text": "this",
+      "type": "word",
+      "start": 7.999,
+      "end": 8.127
+    },
+    {
+      "text": "is",
+      "type": "word",
+      "start": 8.173,
+      "end": 8.255
+    },
+    {
+      "text": "partly",
+      "type": "word",
+      "start": 8.324,
+      "end": 8.673
+    },
+    {
+      "text": "nostalgia,",
+      "type": "word",
+      "start": 8.731,
+      "end": 9.485
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 9.578,
+      "end": 9.718
+    },
+    {
+      "text": "partly",
+      "type": "word",
+      "start": 9.776,
+      "end": 10.101
+    },
+    {
+      "text": "an",
+      "type": "word",
+      "start": 10.147,
+      "end": 10.205
+    },
+    {
+      "text": "excuse",
+      "type": "word",
+      "start": 10.252,
+      "end": 10.646
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 10.681,
+      "end": 10.739
+    },
+    {
+      "text": "spend",
+      "type": "word",
+      "start": 10.786,
+      "end": 11.006
+    },
+    {
+      "text": "rather",
+      "type": "word",
+      "start": 11.064,
+      "end": 11.273
+    },
+    {
+      "text": "more",
+      "type": "word",
+      "start": 11.308,
+      "end": 11.459
+    },
+    {
+      "text": "time",
+      "type": "word",
+      "start": 11.494,
+      "end": 11.738
+    },
+    {
+      "text": "in",
+      "type": "word",
+      "start": 11.773,
+      "end": 11.831
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 11.865,
+      "end": 11.935
+    },
+    {
+      "text": "mid-eighties",
+      "type": "word",
+      "start": 11.97,
+      "end": 12.516
+    },
+    {
+      "text": "and",
+      "type": "word",
+      "start": 12.55,
+      "end": 12.62
+    },
+    {
+      "text": "nineties",
+      "type": "word",
+      "start": 12.678,
+      "end": 13.108
+    },
+    {
+      "text": "than",
+      "type": "word",
+      "start": 13.142,
+      "end": 13.259
+    },
+    {
+      "text": "in",
+      "type": "word",
+      "start": 13.305,
+      "end": 13.363
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 13.398,
+      "end": 13.468
+    },
+    {
+      "text": "twenty-twenties.",
+      "type": "word",
+      "start": 13.491,
+      "end": 14.536
+    }
+  ],
+  "voice": "j8M2vPgcRFdLZrnlgVqU",
+  "source": "ElevenLabs MCP speech + Scribe alignment"
+}

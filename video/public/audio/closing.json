@@ -1,0 +1,301 @@
+{
+  "hash": "c689cb8eb3f16d1ec341cbe1186c0d4a5f765864179c576f89f9fce3cfa85e7f",
+  "words": [
+    {
+      "text": "Have",
+      "type": "word",
+      "start": 0,
+      "end": 0.174
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 0.197,
+      "end": 0.221
+    },
+    {
+      "text": "look",
+      "type": "word",
+      "start": 0.255,
+      "end": 0.383
+    },
+    {
+      "text": "around.",
+      "type": "word",
+      "start": 0.418,
+      "end": 0.917
+    },
+    {
+      "text": "Revisit",
+      "type": "word",
+      "start": 1.242,
+      "end": 1.683
+    },
+    {
+      "text": "an",
+      "type": "word",
+      "start": 1.718,
+      "end": 1.776
+    },
+    {
+      "text": "old",
+      "type": "word",
+      "start": 1.823,
+      "end": 1.939
+    },
+    {
+      "text": "favourite,",
+      "type": "word",
+      "start": 2.009,
+      "end": 2.496
+    },
+    {
+      "text": "discover",
+      "type": "word",
+      "start": 2.543,
+      "end": 2.914
+    },
+    {
+      "text": "one",
+      "type": "word",
+      "start": 2.984,
+      "end": 3.088
+    },
+    {
+      "text": "you'd",
+      "type": "word",
+      "start": 3.123,
+      "end": 3.286
+    },
+    {
+      "text": "forgotten,",
+      "type": "word",
+      "start": 3.32,
+      "end": 3.901
+    },
+    {
+      "text": "or",
+      "type": "word",
+      "start": 4.075,
+      "end": 4.191
+    },
+    {
+      "text": "tell",
+      "type": "word",
+      "start": 4.238,
+      "end": 4.377
+    },
+    {
+      "text": "me",
+      "type": "word",
+      "start": 4.423,
+      "end": 4.481
+    },
+    {
+      "text": "I've",
+      "type": "word",
+      "start": 4.516,
+      "end": 4.621
+    },
+    {
+      "text": "got",
+      "type": "word",
+      "start": 4.644,
+      "end": 4.76
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 4.783,
+      "end": 4.853
+    },
+    {
+      "text": "rating",
+      "type": "word",
+      "start": 4.899,
+      "end": 5.259
+    },
+    {
+      "text": "completely",
+      "type": "word",
+      "start": 5.317,
+      "end": 5.817
+    },
+    {
+      "text": "wrong.",
+      "type": "word",
+      "start": 5.851,
+      "end": 6.235
+    },
+    {
+      "text": "That's",
+      "type": "word",
+      "start": 6.676,
+      "end": 6.908
+    },
+    {
+      "text": "half",
+      "type": "word",
+      "start": 6.954,
+      "end": 7.105
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 7.152,
+      "end": 7.221
+    },
+    {
+      "text": "pleasure.",
+      "type": "word",
+      "start": 7.256,
+      "end": 7.721
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 8.046,
+      "end": 8.173
+    },
+    {
+      "text": "Divvy",
+      "type": "word",
+      "start": 8.22,
+      "end": 8.464
+    },
+    {
+      "text": "also",
+      "type": "word",
+      "start": 8.499,
+      "end": 8.858
+    },
+    {
+      "text": "has",
+      "type": "word",
+      "start": 8.928,
+      "end": 9.067
+    },
+    {
+      "text": "an",
+      "type": "word",
+      "start": 9.114,
+      "end": 9.183
+    },
+    {
+      "text": "Insta",
+      "type": "word",
+      "start": 9.218,
+      "end": 9.532
+    },
+    {
+      "text": "account,",
+      "type": "word",
+      "start": 9.578,
+      "end": 9.996
+    },
+    {
+      "text": "where",
+      "type": "word",
+      "start": 10.054,
+      "end": 10.275
+    },
+    {
+      "text": "I",
+      "type": "word",
+      "start": 10.321,
+      "end": 10.344
+    },
+    {
+      "text": "announce",
+      "type": "word",
+      "start": 10.403,
+      "end": 10.786
+    },
+    {
+      "text": "a",
+      "type": "word",
+      "start": 10.82,
+      "end": 10.855
+    },
+    {
+      "text": "new",
+      "type": "word",
+      "start": 10.948,
+      "end": 11.122
+    },
+    {
+      "text": "review",
+      "type": "word",
+      "start": 11.192,
+      "end": 11.505
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 11.575,
+      "end": 11.656
+    },
+    {
+      "text": "the",
+      "type": "word",
+      "start": 11.714,
+      "end": 11.784
+    },
+    {
+      "text": "interest",
+      "type": "word",
+      "start": 11.842,
+      "end": 12.26
+    },
+    {
+      "text": "of",
+      "type": "word",
+      "start": 12.318,
+      "end": 12.376
+    },
+    {
+      "text": "largely",
+      "type": "word",
+      "start": 12.469,
+      "end": 12.91
+    },
+    {
+      "text": "no",
+      "type": "word",
+      "start": 12.992,
+      "end": 13.142
+    },
+    {
+      "text": "one.",
+      "type": "word",
+      "start": 13.259,
+      "end": 13.56
+    },
+    {
+      "text": "Welcome",
+      "type": "word",
+      "start": 14.071,
+      "end": 14.431
+    },
+    {
+      "text": "to",
+      "type": "word",
+      "start": 14.466,
+      "end": 14.524
+    },
+    {
+      "text": "The",
+      "type": "word",
+      "start": 14.571,
+      "end": 14.64
+    },
+    {
+      "text": "Divvy.",
+      "type": "word",
+      "start": 14.675,
+      "end": 15.232
+    }
+  ],
+  "voice": "j8M2vPgcRFdLZrnlgVqU",
+  "source": "ElevenLabs MCP speech + Scribe alignment"
+}

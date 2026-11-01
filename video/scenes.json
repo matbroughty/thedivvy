@@ -1,0 +1,126 @@
+{
+  "voice": {
+    "name": "Broughton",
+    "id": "j8M2vPgcRFdLZrnlgVqU",
+    "model": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.55,
+      "similarity_boost": 0.75,
+      "use_speaker_boost": true
+    }
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "why",
+      "title": "The Divvy",
+      "subtitle": "Lovejoy, one episode at a time",
+      "path": "/about",
+      "selector": ".article__body",
+      "asset": "why.png",
+      "cues": []
+    },
+    {
+      "id": "different",
+      "title": "A personal view",
+      "path": "/episodes/series-2-episode-6-one-born-every-minute",
+      "selector": ".article__body",
+      "asset": "different.png",
+      "cues": [
+        {
+          "phrase": "personal reviews",
+          "region": "content",
+          "zoom": 1.15,
+          "duration": 1.5,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": "series",
+      "title": "Find your series",
+      "path": "/series",
+      "asset": "series.png",
+      "regions": {
+        "series": {
+          "selector": "a.series-card[href='/series/1']"
+        }
+      },
+      "cues": [
+        {
+          "phrase": "select a series",
+          "region": "series",
+          "zoom": 1.65,
+          "duration": 1.4,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": "episode",
+      "title": "Pick an episode",
+      "path": "/series/1",
+      "asset": "episode.png",
+      "regions": {
+        "episode": {
+          "selector": ".episode-card"
+        }
+      },
+      "cues": [
+        {
+          "phrase": "Choose an episode",
+          "region": "episode",
+          "zoom": 1.35,
+          "duration": 1.3,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": "rating",
+      "title": "Out of five",
+      "path": "/episodes/series-2-episode-6-one-born-every-minute",
+      "asset": "rating.png",
+      "regions": {
+        "score": {
+          "selector": ".article__score-row"
+        }
+      },
+      "cues": [
+        {
+          "phrase": "score is at the top",
+          "region": "score",
+          "zoom": 1.5,
+          "duration": 1.4,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": "review",
+      "title": "The review, and the verdict",
+      "path": "/episodes/series-2-episode-6-one-born-every-minute",
+      "selector": ".article__body",
+      "asset": "review.png",
+      "cues": [
+        {
+          "phrase": "read my review",
+          "region": "content",
+          "zoom": 1.18,
+          "duration": 1.5,
+          "highlight": true
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "title": "Welcome to The Divvy",
+      "subtitle": "Explore. Reminisce. Disagree.",
+      "path": "/series",
+      "asset": "closing.png",
+      "cues": []
+    }
+  ]
+}

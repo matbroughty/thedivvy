@@ -1,0 +1,434 @@
+{
+  "voice": {
+    "name": "Broughton",
+    "id": "j8M2vPgcRFdLZrnlgVqU",
+    "model": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.55,
+      "similarity_boost": 0.75,
+      "use_speaker_boost": true
+    }
+  },
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "scenes": [
+    {
+      "id": "why",
+      "title": "The Divvy",
+      "subtitle": "Lovejoy, one episode at a time",
+      "path": "/about",
+      "selector": ".article__body",
+      "asset": "why.png",
+      "cues": [],
+      "text": "Hi, I'm Mat. One T. I watched Lovejoy with my mum. She thought Ian McShane was dishy. Dad pointed out that he was a short arse. So this is partly nostalgia, and partly an excuse to spend rather more time in the mid-eighties and nineties than in the twenty-twenties.",
+      "regions": {
+        "content": [
+          610,
+          291.015625,
+          700,
+          580.453125
+        ]
+      },
+      "chunks": [
+        {
+          "start": 0,
+          "end": 3.042,
+          "text": "Hi, I'm Mat. One T. I watched Lovejoy with"
+        },
+        {
+          "start": 3.077,
+          "end": 5.898,
+          "text": "my mum. She thought Ian McShane was dishy. Dad"
+        },
+        {
+          "start": 5.956,
+          "end": 7.953,
+          "text": "pointed out that he was a short arse. So"
+        },
+        {
+          "start": 7.999,
+          "end": 10.739,
+          "text": "this is partly nostalgia, and partly an excuse to"
+        },
+        {
+          "start": 10.786,
+          "end": 13.108,
+          "text": "spend rather more time in the mid-eighties and nineties"
+        },
+        {
+          "start": 13.142,
+          "end": 14.536,
+          "text": "than in the twenty-twenties."
+        }
+      ],
+      "from": 0,
+      "duration": 461,
+      "audio": "audio/why.mp3"
+    },
+    {
+      "id": "different",
+      "title": "A personal view",
+      "path": "/episodes/series-2-episode-6-one-born-every-minute",
+      "selector": ".article__body",
+      "asset": "different.png",
+      "cues": [
+        {
+          "phrase": "personal reviews",
+          "region": "content",
+          "zoom": 1.15,
+          "duration": 1.5,
+          "highlight": true,
+          "at": 4.331,
+          "target": [
+            610,
+            0.4375,
+            700,
+            1079.5625
+          ]
+        }
+      ],
+      "text": "The plan is to revisit every episode, one review at a time. These are personal reviews: the characters, the antiques, the plotting, and the bits that have aged rather less gracefully than the furniture. There are digressions. Occasionally I may forget to post reviews if life or lethargy gets in the way.",
+      "regions": {
+        "content": [
+          610,
+          0.4375,
+          700,
+          1079.5625
+        ]
+      },
+      "chunks": [
+        {
+          "start": 0,
+          "end": 2.856,
+          "text": "The plan is to revisit every episode, one review"
+        },
+        {
+          "start": 2.902,
+          "end": 6.316,
+          "text": "at a time. These are personal reviews: the characters,"
+        },
+        {
+          "start": 6.339,
+          "end": 8.464,
+          "text": "the antiques, the plotting, and the bits that have"
+        },
+        {
+          "start": 8.51,
+          "end": 11.482,
+          "text": "aged rather less gracefully than the furniture. There are"
+        },
+        {
+          "start": 11.517,
+          "end": 14.605,
+          "text": "digressions. Occasionally I may forget to post reviews if"
+        },
+        {
+          "start": 14.687,
+          "end": 16.533,
+          "text": "life or lethargy gets in the way."
+        }
+      ],
+      "from": 461,
+      "duration": 520,
+      "audio": "audio/different.mp3"
+    },
+    {
+      "id": "series",
+      "title": "Find your series",
+      "path": "/series",
+      "asset": "series.png",
+      "regions": {
+        "content": [
+          0,
+          237.734375,
+          1920,
+          726.546875
+        ],
+        "series": [
+          610,
+          490.421875,
+          341,
+          101.234375
+        ]
+      },
+      "cues": [
+        {
+          "phrase": "select a series",
+          "region": "series",
+          "zoom": 1.65,
+          "duration": 1.4,
+          "highlight": true,
+          "at": 1.057,
+          "target": [
+            610,
+            490.421875,
+            341,
+            101.234375
+          ]
+        }
+      ],
+      "text": "To find your way around, select a series from the Series page. You'll see which ones I've reviewed so far. Start with Series One, or head straight for an old favourite. The unreviewed episodes will have to wait until I've caught up.",
+      "chunks": [
+        {
+          "start": 0,
+          "end": 1.904,
+          "text": "To find your way around, select a series from"
+        },
+        {
+          "start": 1.939,
+          "end": 4.133,
+          "text": "the Series page. You'll see which ones I've reviewed"
+        },
+        {
+          "start": 4.168,
+          "end": 6.803,
+          "text": "so far. Start with Series One, or head straight"
+        },
+        {
+          "start": 6.838,
+          "end": 9.323,
+          "text": "for an old favourite. The unreviewed episodes will have"
+        },
+        {
+          "start": 9.346,
+          "end": 10.774,
+          "text": "to wait until I've caught up."
+        }
+      ],
+      "from": 981,
+      "duration": 348,
+      "audio": "audio/series.mp3"
+    },
+    {
+      "id": "episode",
+      "title": "Pick an episode",
+      "path": "/series/1",
+      "asset": "episode.png",
+      "regions": {
+        "content": [
+          0,
+          237.734375,
+          1920,
+          842.265625
+        ],
+        "episode": [
+          610,
+          637.609375,
+          341,
+          395.75
+        ]
+      },
+      "cues": [
+        {
+          "phrase": "Choose an episode",
+          "region": "episode",
+          "zoom": 1.35,
+          "duration": 1.3,
+          "highlight": true,
+          "at": 0,
+          "target": [
+            610,
+            637.609375,
+            341,
+            395.75
+          ]
+        }
+      ],
+      "text": "Choose an episode to open its review. Each card gives you the title and a taste of what I made of it.",
+      "chunks": [
+        {
+          "start": 0,
+          "end": 2.519,
+          "text": "Choose an episode to open its review. Each card"
+        },
+        {
+          "start": 2.566,
+          "end": 4.168,
+          "text": "gives you the title and a taste of what"
+        },
+        {
+          "start": 4.203,
+          "end": 4.969,
+          "text": "I made of it."
+        }
+      ],
+      "from": 1329,
+      "duration": 174,
+      "audio": "audio/episode.mp3"
+    },
+    {
+      "id": "rating",
+      "title": "Out of five",
+      "path": "/episodes/series-2-episode-6-one-born-every-minute",
+      "asset": "rating.png",
+      "regions": {
+        "content": [
+          0,
+          237.734375,
+          1920,
+          842.265625
+        ],
+        "score": [
+          610,
+          562.453125,
+          700,
+          48.046875
+        ]
+      },
+      "cues": [
+        {
+          "phrase": "score is at the top",
+          "region": "score",
+          "zoom": 1.5,
+          "duration": 1.4,
+          "highlight": true,
+          "at": 0.279,
+          "target": [
+            610,
+            562.453125,
+            700,
+            48.046875
+          ]
+        }
+      ],
+      "text": "The score is at the top, out of five. A useful guide, provided you accept that the judging panel consists entirely of me.",
+      "chunks": [
+        {
+          "start": 0,
+          "end": 1.892,
+          "text": "The score is at the top, out of five."
+        },
+        {
+          "start": 2.043,
+          "end": 4.191,
+          "text": "A useful guide, provided you accept that the judging"
+        },
+        {
+          "start": 4.261,
+          "end": 6.084,
+          "text": "panel consists entirely of me."
+        }
+      ],
+      "from": 1503,
+      "duration": 207,
+      "audio": "audio/rating.mp3"
+    },
+    {
+      "id": "review",
+      "title": "The review, and the verdict",
+      "path": "/episodes/series-2-episode-6-one-born-every-minute",
+      "selector": ".article__body",
+      "asset": "review.png",
+      "cues": [
+        {
+          "phrase": "read my review",
+          "region": "content",
+          "zoom": 1.18,
+          "duration": 1.5,
+          "highlight": true,
+          "at": 0.36,
+          "target": [
+            610,
+            0.4375,
+            700,
+            1079.5625
+          ]
+        }
+      ],
+      "text": "Then read my review. There's a quick plot summary, followed by the longer ramble. Later reviews include a favourite moment, a good quote, a guest focus, and the Divvy Verdict. The Archive brings the published reviews together; Search helps you find a half-remembered detail.",
+      "regions": {
+        "content": [
+          610,
+          0.4375,
+          700,
+          1079.5625
+        ]
+      },
+      "chunks": [
+        {
+          "start": 0,
+          "end": 2.705,
+          "text": "Then read my review. There's a quick plot summary,"
+        },
+        {
+          "start": 2.74,
+          "end": 5.817,
+          "text": "followed by the longer ramble. Later reviews include a"
+        },
+        {
+          "start": 5.886,
+          "end": 8.8,
+          "text": "favourite moment, a good quote, a guest focus, and"
+        },
+        {
+          "start": 8.835,
+          "end": 11.935,
+          "text": "the Divvy Verdict. The Archive brings the published reviews"
+        },
+        {
+          "start": 11.981,
+          "end": 15.093,
+          "text": "together; Search helps you find a half-remembered detail."
+        }
+      ],
+      "from": 1710,
+      "duration": 477,
+      "audio": "audio/review.mp3"
+    },
+    {
+      "id": "closing",
+      "title": "Welcome to The Divvy",
+      "subtitle": "Explore. Reminisce. Disagree.",
+      "path": "/series",
+      "asset": "closing.png",
+      "cues": [],
+      "text": "Have a look around. Revisit an old favourite, discover one you'd forgotten, or tell me I've got the rating completely wrong. That's half the pleasure. The Divvy also has an Insta account, where I announce a new review to the interest of largely no one. Welcome to The Divvy.",
+      "regions": {
+        "content": [
+          0,
+          237.734375,
+          1920,
+          726.546875
+        ]
+      },
+      "chunks": [
+        {
+          "start": 0,
+          "end": 2.914,
+          "text": "Have a look around. Revisit an old favourite, discover"
+        },
+        {
+          "start": 2.984,
+          "end": 4.853,
+          "text": "one you'd forgotten, or tell me I've got the"
+        },
+        {
+          "start": 4.899,
+          "end": 8.464,
+          "text": "rating completely wrong. That's half the pleasure. The Divvy"
+        },
+        {
+          "start": 8.499,
+          "end": 10.855,
+          "text": "also has an Insta account, where I announce a"
+        },
+        {
+          "start": 10.948,
+          "end": 13.56,
+          "text": "new review to the interest of largely no one."
+        },
+        {
+          "start": 14.071,
+          "end": 15.232,
+          "text": "Welcome to The Divvy."
+        }
+      ],
+      "from": 2187,
+      "duration": 481,
+      "audio": "audio/closing.mp3"
+    }
+  ],
+  "duration": 2668,
+  "draft": false
+}

@@ -1,0 +1,28 @@
+{
+  "name": "the-divvy-video",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.tsx",
+    "capture": "node scripts/capture.mjs",
+    "approve": "node scripts/approve.mjs",
+    "narrate": "node --env-file-if-exists=.env.local scripts/narrate.mjs",
+    "render:preview": "node scripts/render.mjs --preview",
+    "render": "node scripts/render.mjs",
+    "publish": "node scripts/publish.mjs",
+    "check": "tsc --noEmit && node --test scripts/*.test.mjs",
+    "timeline": "node scripts/prepare.mjs",
+    "import:narration": "node scripts/import-narration.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.372",
+    "remotion": "4.0.372",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.6.3"
+  }
+}

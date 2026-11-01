@@ -34,3 +34,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Narration credentials, raw API responses and local video renders
+video/.env*
+!video/.env.example
+video/public/audio/*.response.json
+video/output/*
+video/approval.json
