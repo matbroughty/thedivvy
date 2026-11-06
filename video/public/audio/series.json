@@ -1,259 +1,218 @@
 {
-  "hash": "b7d1fa73799790d3aed57e1771dad645462a0901920751bf6e518676e9164c20",
+  "hash": "09022e5b36a2cb5f0bb035486ccda6e23586c5094bd9e2abaeff4bdb89030b1f",
   "words": [
     {
       "text": "To",
-      "type": "word",
       "start": 0,
-      "end": 0.128
+      "end": 0.2
     },
     {
       "text": "find",
-      "type": "word",
-      "start": 0.186,
-      "end": 0.372
+      "start": 0.2,
+      "end": 0.4
     },
     {
       "text": "your",
-      "type": "word",
-      "start": 0.406,
-      "end": 0.499
+      "start": 0.4,
+      "end": 0.58
     },
     {
       "text": "way",
-      "type": "word",
-      "start": 0.534,
-      "end": 0.639
+      "start": 0.58,
+      "end": 0.72
     },
     {
       "text": "around,",
-      "type": "word",
-      "start": 0.685,
-      "end": 1.033
+      "start": 0.72,
+      "end": 1.14
     },
     {
       "text": "select",
-      "type": "word",
-      "start": 1.057,
-      "end": 1.347
+      "start": 1.42,
+      "end": 1.66
     },
     {
       "text": "a",
-      "type": "word",
-      "start": 1.382,
-      "end": 1.405
+      "start": 1.66,
+      "end": 1.88
     },
     {
       "text": "series",
-      "type": "word",
-      "start": 1.463,
-      "end": 1.776
+      "start": 1.88,
+      "end": 2.16
     },
     {
       "text": "from",
-      "type": "word",
-      "start": 1.8,
-      "end": 1.904
+      "start": 2.16,
+      "end": 2.44
     },
     {
       "text": "the",
-      "type": "word",
-      "start": 1.939,
-      "end": 2.009
+      "start": 2.44,
+      "end": 2.6
     },
     {
       "text": "Series",
-      "type": "word",
-      "start": 2.055,
-      "end": 2.403
+      "start": 2.6,
+      "end": 2.9
     },
     {
       "text": "page.",
-      "type": "word",
-      "start": 2.461,
-      "end": 2.763
+      "start": 2.9,
+      "end": 3.22
     },
     {
       "text": "You'll",
-      "type": "word",
-      "start": 2.786,
-      "end": 2.972
+      "start": 3.82,
+      "end": 3.96
     },
     {
       "text": "see",
-      "type": "word",
-      "start": 3.019,
-      "end": 3.158
+      "start": 3.96,
+      "end": 4.1
     },
     {
       "text": "which",
-      "type": "word",
-      "start": 3.193,
-      "end": 3.355
+      "start": 4.1,
+      "end": 4.28
     },
     {
       "text": "ones",
-      "type": "word",
-      "start": 3.413,
-      "end": 3.599
+      "start": 4.28,
+      "end": 4.5
     },
     {
       "text": "I've",
-      "type": "word",
-      "start": 3.646,
-      "end": 3.773
+      "start": 4.5,
+      "end": 4.72
     },
     {
       "text": "reviewed",
-      "type": "word",
-      "start": 3.808,
-      "end": 4.133
+      "start": 4.72,
+      "end": 5
     },
     {
       "text": "so",
-      "type": "word",
-      "start": 4.168,
-      "end": 4.331
+      "start": 5,
+      "end": 5.28
     },
     {
       "text": "far.",
-      "type": "word",
-      "start": 4.412,
-      "end": 4.807
+      "start": 5.28,
+      "end": 5.68
     },
     {
       "text": "Start",
-      "type": "word",
-      "start": 5.085,
-      "end": 5.364
+      "start": 6.98,
+      "end": 7.22
     },
     {
       "text": "with",
-      "type": "word",
-      "start": 5.399,
-      "end": 5.503
+      "start": 7.22,
+      "end": 7.4
     },
     {
       "text": "Series",
-      "type": "word",
-      "start": 5.538,
-      "end": 5.851
+      "start": 7.4,
+      "end": 7.7
     },
     {
       "text": "One,",
-      "type": "word",
-      "start": 5.921,
-      "end": 6.142
+      "start": 7.7,
+      "end": 8.04
     },
     {
       "text": "or",
-      "type": "word",
-      "start": 6.165,
-      "end": 6.258
+      "start": 8.04,
+      "end": 8.48
     },
     {
       "text": "head",
-      "type": "word",
-      "start": 6.316,
-      "end": 6.444
+      "start": 8.48,
+      "end": 8.72
     },
     {
       "text": "straight",
-      "type": "word",
-      "start": 6.502,
-      "end": 6.803
+      "start": 8.72,
+      "end": 9.04
     },
     {
       "text": "for",
-      "type": "word",
-      "start": 6.838,
-      "end": 6.931
+      "start": 9.04,
+      "end": 9.26
     },
     {
       "text": "an",
-      "type": "word",
-      "start": 6.966,
-      "end": 7.012
+      "start": 9.26,
+      "end": 9.34
     },
     {
       "text": "old",
-      "type": "word",
-      "start": 7.059,
-      "end": 7.21
+      "start": 9.34,
+      "end": 9.52
     },
     {
       "text": "favourite.",
-      "type": "word",
-      "start": 7.279,
-      "end": 7.79
+      "start": 9.52,
+      "end": 9.8
     },
     {
       "text": "The",
-      "type": "word",
-      "start": 7.964,
-      "end": 8.092
+      "start": 10.42,
+      "end": 10.54
     },
     {
       "text": "unreviewed",
-      "type": "word",
-      "start": 8.162,
-      "end": 8.591
+      "start": 10.54,
+      "end": 10.92
     },
     {
       "text": "episodes",
-      "type": "word",
-      "start": 8.626,
-      "end": 9.033
+      "start": 10.92,
+      "end": 11.32
     },
     {
       "text": "will",
-      "type": "word",
-      "start": 9.056,
-      "end": 9.172
+      "start": 11.32,
+      "end": 11.64
     },
     {
       "text": "have",
-      "type": "word",
-      "start": 9.207,
-      "end": 9.323
+      "start": 11.64,
+      "end": 11.82
     },
     {
       "text": "to",
-      "type": "word",
-      "start": 9.346,
-      "end": 9.392
+      "start": 11.82,
+      "end": 12
     },
     {
       "text": "wait",
-      "type": "word",
-      "start": 9.451,
-      "end": 9.613
+      "start": 12,
+      "end": 12.2
     },
     {
       "text": "until",
-      "type": "word",
-      "start": 9.659,
-      "end": 9.857
+      "start": 12.2,
+      "end": 12.44
     },
     {
       "text": "I've",
-      "type": "word",
-      "start": 9.903,
-      "end": 10.054
+      "start": 12.44,
+      "end": 12.64
     },
     {
       "text": "caught",
-      "type": "word",
-      "start": 10.089,
-      "end": 10.344
+      "start": 12.64,
+      "end": 12.82
     },
     {
       "text": "up.",
-      "type": "word",
-      "start": 10.403,
-      "end": 10.774
+      "start": 12.82,
+      "end": 13.1
     }
   ],
-  "voice": "j8M2vPgcRFdLZrnlgVqU",
-  "source": "ElevenLabs MCP speech + Scribe alignment"
+  "voice": "mD4sIVskaagUgINoNsUT",
+  "duration": 13.3224375,
+  "source": "User-supplied OldGeezer export, locally timed with faster-whisper"
 }

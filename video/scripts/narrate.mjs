@@ -12,7 +12,7 @@ async function request(path,options={}) {
  return res.json();
 }
 const voice=await request(`voices/${config.voice.id}`);
-if(voice.name!== 'Broughton' || config.voice.name!=='Broughton') throw Error('Configured voice is not Broughton; refusing substitution.');
+if(voice.name!==config.voice.name) throw Error('ElevenLabs voice name does not match the narration configuration.');
 const texts=parseNarration(raw);
 await mkdir('public/audio',{recursive:true});
 for(const scene of config.scenes) {

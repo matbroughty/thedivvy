@@ -1,139 +1,118 @@
 {
-  "hash": "529a6714a6b2155b467b0b36fec0dd63e0700b33e2824f934d156df5f2099410",
+  "hash": "99069c426a309ff5c465aa982a3d67e46fc405a646762bd7b167e385dd264b96",
   "words": [
     {
       "text": "Choose",
-      "type": "word",
       "start": 0,
-      "end": 0.36
+      "end": 0.26
     },
     {
       "text": "an",
-      "type": "word",
-      "start": 0.383,
-      "end": 0.43
+      "start": 0.26,
+      "end": 0.44
     },
     {
       "text": "episode",
-      "type": "word",
-      "start": 0.476,
-      "end": 0.859
+      "start": 0.44,
+      "end": 0.82
     },
     {
       "text": "to",
-      "type": "word",
-      "start": 0.894,
-      "end": 0.952
+      "start": 0.82,
+      "end": 1.18
     },
     {
       "text": "open",
-      "type": "word",
-      "start": 1.033,
-      "end": 1.265
+      "start": 1.18,
+      "end": 1.52
     },
     {
       "text": "its",
-      "type": "word",
-      "start": 1.312,
-      "end": 1.428
+      "start": 1.52,
+      "end": 1.94
     },
     {
       "text": "review.",
-      "type": "word",
-      "start": 1.474,
-      "end": 1.858
+      "start": 1.94,
+      "end": 3
     },
     {
       "text": "Each",
-      "type": "word",
-      "start": 2.067,
-      "end": 2.264
+      "start": 3.76,
+      "end": 3.92
     },
     {
       "text": "card",
-      "type": "word",
-      "start": 2.322,
-      "end": 2.519
+      "start": 3.92,
+      "end": 4.28
     },
     {
       "text": "gives",
-      "type": "word",
-      "start": 2.566,
-      "end": 2.717
+      "start": 4.28,
+      "end": 4.5
     },
     {
       "text": "you",
-      "type": "word",
-      "start": 2.752,
-      "end": 2.821
+      "start": 4.5,
+      "end": 4.64
     },
     {
       "text": "the",
-      "type": "word",
-      "start": 2.868,
-      "end": 2.937
+      "start": 4.64,
+      "end": 4.78
     },
     {
       "text": "title",
-      "type": "word",
-      "start": 2.984,
-      "end": 3.355
+      "start": 4.78,
+      "end": 5.1
     },
     {
       "text": "and",
-      "type": "word",
-      "start": 3.39,
-      "end": 3.46
+      "start": 5.1,
+      "end": 5.44
     },
     {
       "text": "a",
-      "type": "word",
-      "start": 3.495,
-      "end": 3.529
+      "start": 5.44,
+      "end": 5.56
     },
     {
       "text": "taste",
-      "type": "word",
-      "start": 3.587,
-      "end": 3.924
+      "start": 5.56,
+      "end": 5.82
     },
     {
       "text": "of",
-      "type": "word",
-      "start": 3.959,
-      "end": 4.005
+      "start": 5.82,
+      "end": 6.08
     },
     {
       "text": "what",
-      "type": "word",
-      "start": 4.04,
-      "end": 4.168
+      "start": 6.08,
+      "end": 6.2
     },
     {
       "text": "I",
-      "type": "word",
-      "start": 4.203,
-      "end": 4.238
+      "start": 6.2,
+      "end": 6.32
     },
     {
       "text": "made",
-      "type": "word",
-      "start": 4.319,
-      "end": 4.505
+      "start": 6.32,
+      "end": 6.52
     },
     {
       "text": "of",
-      "type": "word",
-      "start": 4.54,
-      "end": 4.598
+      "start": 6.52,
+      "end": 6.66
     },
     {
       "text": "it.",
-      "type": "word",
-      "start": 4.656,
-      "end": 4.969
+      "start": 6.66,
+      "end": 6.84
     }
   ],
-  "voice": "j8M2vPgcRFdLZrnlgVqU",
-  "source": "ElevenLabs MCP speech + Scribe alignment"
+  "voice": "mD4sIVskaagUgINoNsUT",
+  "duration": 7.0791875,
+  "source": "User-supplied OldGeezer export, locally timed with faster-whisper"
 }

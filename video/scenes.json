@@ -1,10 +1,10 @@
 {
   "voice": {
-    "name": "Broughton",
-    "id": "j8M2vPgcRFdLZrnlgVqU",
-    "model": "eleven_multilingual_v2",
+    "name": "OldGeezer",
+    "id": "mD4sIVskaagUgINoNsUT",
+    "model": "eleven_v4",
     "settings": {
-      "stability": 0.55,
+      "stability": 0.5,
       "similarity_boost": 0.75,
       "use_speaker_boost": true
     }

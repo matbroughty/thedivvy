@@ -4,7 +4,7 @@ Separate Remotion + React/TypeScript workspace. Production remains React/Vite/MD
 
 ## Review the script and preview
 
-Edit `narration.md` by scene ID. New wording is a draft for Mat's approval, based on his About page. `scenes.json` holds capture routes, phrase cues, named target regions and the account-discovered Broughton voice ID.
+Edit `narration.md` by scene ID. New wording is a draft for Mat's approval, based on his About page. `scenes.json` holds capture routes, phrase cues, named target regions and the configured narration voice ID.
 
 From the repository root, start `npm run dev`. In another terminal:
 
@@ -24,15 +24,13 @@ Run from `video/`, only after approval in chat:
 
 ```sh
 npm run approve -- --confirm
-# Set ELEVENLABS_API_KEY in your shell or video/.env.local (see .env.example).
-npm run narrate
 npm run render
 npm run publish
 ```
 
-Approval records the exact narration revision locally; wording changes invalidate it. Credentials and approval files are ignored by Git. Broughton was discovered through the connected ElevenLabs MCP on 1 November 2026. The script checks the voice's account name and refuses substitutions. For the connected-account workflow, use MCP speech generation with this Broughton ID (one take per scene), then MCP Scribe transcription to obtain word timing. Import the downloaded MP3 and a JSON object containing `voice_id`, the exact generation prompt as `text`, and `words: [{text,start,end}]` using `npm run import:narration -- SCENE AUDIO.mp3 TIMING.json`. This validates the approved words, actual voice ID and phrase cues before caching. Imported scenes need no local API key. Speech and transcription consume credits; both wait for approval.
+Approval records the exact narration revision locally; wording changes invalidate it. Credentials and approval files are ignored by Git. The current narration uses Mat’s supplied OldGeezer exports, with word timings measured locally. The script checks the voice's account name and refuses substitutions. For the connected-account workflow, use MCP speech generation with the configured voice ID (one take per scene), then MCP Scribe transcription to obtain word timing. Import the downloaded MP3 and a JSON object containing `voice_id`, the exact generation prompt as `text`, `words: [{text,start,end}]`, and optionally `duration` in seconds and `source` using `npm run import:narration -- SCENE AUDIO.mp3 TIMING.json`. This validates the approved words, actual voice ID and phrase cues before caching. Imported scenes need no local API key. Speech and transcription consume credits; both wait for approval.
 
-The repeatable local generator instead obtains audio and character alignment in a single request using the official timestamp endpoint:
+For models supported by the official timestamp endpoint, set `ELEVENLABS_API_KEY` and run `npm run narrate` before rendering if you need new audio. The generator obtains audio and character alignment in one request:
 https://elevenlabs.io/docs/api-reference/text-to-speech/convert-with-timestamps/
 
 Per-scene audio and derived word timing are cached in `public/audio/` and can be committed with the video sources, so another checkout can reuse the same narration without spending credits. Raw API responses remain ignored. Hashes include text, voice ID, model, settings and output format. Changing camera regions does not regenerate audio. API calls are not automatically retried. Raw paid responses are saved before timing validation for recovery. After a timeout, check ElevenLabs history before retrying to avoid duplicate charges.

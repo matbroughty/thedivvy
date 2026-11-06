@@ -15,7 +15,8 @@ for(const scene of config.scenes) {
  if(final&&!valid) throw Error(`Missing or stale narration: ${scene.id}`);
  const words=final?cache.words:previewWords(text);
  const regions=JSON.parse(await readFile(`public/screenshots/${scene.id}.regions.json`,'utf8'));
- const duration=Math.ceil((words.at(-1).end+0.8)*config.fps);
+ const audioDuration=final ? (cache.duration ?? words.at(-1).end) : words.at(-1).end;
+ const duration=Math.ceil((Math.max(audioDuration,words.at(-1).end)+0.8)*config.fps);
  const cues=scene.cues.map(c=>{
   if(!regions[c.region]) throw Error(`Missing region ${c.region} in ${scene.id}`);
   if(!(c.zoom>=1 && c.zoom<=3 && c.duration>0)) throw Error(`Invalid camera cue in ${scene.id}`);

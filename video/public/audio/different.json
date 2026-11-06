@@ -1,319 +1,268 @@
 {
-  "hash": "81fd9567b0e92495414690db06fbe72df74a80579ed253bc7f9adfb38e73de5b",
+  "hash": "27e189616e9d3b89fa69204f36310e2bbe36e4b9e24994d79f814f7b15f49150",
   "words": [
     {
       "text": "The",
-      "type": "word",
       "start": 0,
-      "end": 0.244
+      "end": 0.2
     },
     {
       "text": "plan",
-      "type": "word",
-      "start": 0.29,
-      "end": 0.569
+      "start": 0.2,
+      "end": 0.44
     },
     {
       "text": "is",
-      "type": "word",
-      "start": 0.639,
-      "end": 0.708
+      "start": 0.44,
+      "end": 0.64
     },
     {
       "text": "to",
-      "type": "word",
-      "start": 0.755,
-      "end": 0.824
+      "start": 0.64,
+      "end": 0.8
     },
     {
       "text": "revisit",
-      "type": "word",
-      "start": 0.917,
-      "end": 1.416
+      "start": 0.8,
+      "end": 1.1
     },
     {
       "text": "every",
-      "type": "word",
-      "start": 1.474,
-      "end": 1.718
+      "start": 1.1,
+      "end": 1.56
     },
     {
       "text": "episode,",
-      "type": "word",
-      "start": 1.776,
-      "end": 2.299
+      "start": 1.56,
+      "end": 2
     },
     {
       "text": "one",
-      "type": "word",
-      "start": 2.345,
-      "end": 2.531
+      "start": 2.42,
+      "end": 2.6
     },
     {
       "text": "review",
-      "type": "word",
-      "start": 2.577,
-      "end": 2.856
+      "start": 2.6,
+      "end": 2.9
     },
     {
       "text": "at",
-      "type": "word",
-      "start": 2.902,
-      "end": 2.984
+      "start": 2.9,
+      "end": 3.12
     },
     {
       "text": "a",
-      "type": "word",
-      "start": 3.03,
-      "end": 3.065
+      "start": 3.12,
+      "end": 3.26
     },
     {
       "text": "time.",
-      "type": "word",
-      "start": 3.123,
-      "end": 3.576
+      "start": 3.26,
+      "end": 3.56
     },
     {
       "text": "These",
-      "type": "word",
-      "start": 3.959,
-      "end": 4.168
+      "start": 4.18,
+      "end": 4.28
     },
     {
       "text": "are",
-      "type": "word",
-      "start": 4.203,
-      "end": 4.296
+      "start": 4.28,
+      "end": 4.4
     },
     {
       "text": "personal",
-      "type": "word",
-      "start": 4.331,
-      "end": 4.737
+      "start": 4.4,
+      "end": 4.88
     },
     {
       "text": "reviews:",
-      "type": "word",
-      "start": 4.795,
-      "end": 5.399
+      "start": 4.88,
+      "end": 5.26
     },
     {
       "text": "the",
-      "type": "word",
-      "start": 5.573,
-      "end": 5.677
+      "start": 5.76,
+      "end": 5.86
     },
     {
       "text": "characters,",
-      "type": "word",
-      "start": 5.735,
-      "end": 6.316
+      "start": 5.86,
+      "end": 6.22
     },
     {
       "text": "the",
-      "type": "word",
-      "start": 6.339,
-      "end": 6.409
+      "start": 6.64,
+      "end": 6.64
     },
     {
       "text": "antiques,",
-      "type": "word",
-      "start": 6.467,
-      "end": 6.978
+      "start": 6.64,
+      "end": 7.16
     },
     {
       "text": "the",
-      "type": "word",
-      "start": 7.012,
-      "end": 7.094
+      "start": 7.4,
+      "end": 7.44
     },
     {
       "text": "plotting,",
-      "type": "word",
-      "start": 7.14,
-      "end": 7.674
+      "start": 7.44,
+      "end": 7.8
     },
     {
       "text": "and",
-      "type": "word",
-      "start": 7.697,
-      "end": 7.825
+      "start": 7.8,
+      "end": 8.52
     },
     {
       "text": "the",
-      "type": "word",
-      "start": 7.872,
-      "end": 7.941
+      "start": 8.52,
+      "end": 8.64
     },
     {
       "text": "bits",
-      "type": "word",
-      "start": 7.988,
-      "end": 8.197
+      "start": 8.64,
+      "end": 8.8
     },
     {
       "text": "that",
-      "type": "word",
-      "start": 8.22,
-      "end": 8.324
+      "start": 8.8,
+      "end": 8.94
     },
     {
       "text": "have",
-      "type": "word",
-      "start": 8.359,
-      "end": 8.464
+      "start": 8.94,
+      "end": 9.06
     },
     {
       "text": "aged",
-      "type": "word",
-      "start": 8.51,
-      "end": 8.754
+      "start": 9.06,
+      "end": 9.26
     },
     {
       "text": "rather",
-      "type": "word",
-      "start": 8.8,
-      "end": 9.033
+      "start": 9.26,
+      "end": 9.58
     },
     {
       "text": "less",
-      "type": "word",
-      "start": 9.079,
-      "end": 9.242
+      "start": 9.58,
+      "end": 10
     },
     {
       "text": "gracefully",
-      "type": "word",
-      "start": 9.288,
-      "end": 9.718
+      "start": 10,
+      "end": 10.52
     },
     {
       "text": "than",
-      "type": "word",
-      "start": 9.752,
-      "end": 9.868
+      "start": 10.52,
+      "end": 10.68
     },
     {
       "text": "the",
-      "type": "word",
-      "start": 9.903,
-      "end": 9.973
+      "start": 10.68,
+      "end": 10.8
     },
     {
       "text": "furniture.",
-      "type": "word",
-      "start": 10.019,
-      "end": 10.681
+      "start": 10.8,
+      "end": 11.1
     },
     {
       "text": "There",
-      "type": "word",
-      "start": 11.192,
-      "end": 11.366
+      "start": 11.78,
+      "end": 12
     },
     {
       "text": "are",
-      "type": "word",
-      "start": 11.401,
-      "end": 11.482
+      "start": 12,
+      "end": 12.16
     },
     {
       "text": "digressions.",
-      "type": "word",
-      "start": 11.517,
-      "end": 12.353
+      "start": 12.16,
+      "end": 12.9
     },
     {
       "text": "Occasionally",
-      "type": "word",
-      "start": 12.504,
-      "end": 13.084
+      "start": 13.6,
+      "end": 13.8
     },
     {
       "text": "I",
-      "type": "word",
-      "start": 13.131,
-      "end": 13.154
+      "start": 13.8,
+      "end": 14.12
     },
     {
       "text": "may",
-      "type": "word",
-      "start": 13.224,
-      "end": 13.34
+      "start": 14.12,
+      "end": 14.24
     },
     {
       "text": "forget",
-      "type": "word",
-      "start": 13.398,
-      "end": 13.642
+      "start": 14.24,
+      "end": 14.5
     },
     {
       "text": "to",
-      "type": "word",
-      "start": 13.677,
-      "end": 13.735
+      "start": 14.5,
+      "end": 14.68
     },
     {
       "text": "post",
-      "type": "word",
-      "start": 13.793,
-      "end": 14.025
+      "start": 14.68,
+      "end": 14.88
     },
     {
       "text": "reviews",
-      "type": "word",
-      "start": 14.083,
-      "end": 14.466
+      "start": 14.88,
+      "end": 15.24
     },
     {
       "text": "if",
-      "type": "word",
-      "start": 14.524,
-      "end": 14.605
+      "start": 15.24,
+      "end": 15.64
     },
     {
       "text": "life",
-      "type": "word",
-      "start": 14.687,
-      "end": 14.965
+      "start": 15.64,
+      "end": 15.96
     },
     {
       "text": "or",
-      "type": "word",
-      "start": 15.012,
-      "end": 15.105
+      "start": 15.96,
+      "end": 16.34
     },
     {
       "text": "lethargy",
-      "type": "word",
-      "start": 15.186,
-      "end": 15.569
+      "start": 16.34,
+      "end": 17
     },
     {
       "text": "gets",
-      "type": "word",
-      "start": 15.615,
-      "end": 15.813
+      "start": 17,
+      "end": 18.28
     },
     {
       "text": "in",
-      "type": "word",
-      "start": 15.859,
-      "end": 15.929
+      "start": 18.28,
+      "end": 18.54
     },
     {
       "text": "the",
-      "type": "word",
-      "start": 15.964,
-      "end": 16.033
+      "start": 18.54,
+      "end": 18.64
     },
     {
       "text": "way.",
-      "type": "word",
-      "start": 16.068,
-      "end": 16.533
+      "start": 18.64,
+      "end": 18.88
     }
   ],
-  "voice": "j8M2vPgcRFdLZrnlgVqU",
-  "source": "ElevenLabs MCP speech + Scribe alignment"
+  "voice": "mD4sIVskaagUgINoNsUT",
+  "duration": 19.14775,
+  "source": "User-supplied OldGeezer export, locally timed with faster-whisper"
 }

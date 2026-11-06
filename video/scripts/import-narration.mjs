@@ -1,4 +1,4 @@
-// Import audio generated with the connected ElevenLabs MCP, plus Scribe word timing.
+// Import a narration recording and its word timings.
 import {readFile,writeFile,mkdir,copyFile} from 'node:fs/promises';
 import {digest,parseNarration,narrationKey,phraseTime} from './lib.mjs';
 const [id,audioPath,timingPath]=process.argv.slice(2);
@@ -10,7 +10,7 @@ const approval=JSON.parse(await readFile('approval.json','utf8'));
 if(approval.hash!==digest(raw)) throw Error('Current words need Mat’s approval before import.');
 const text=parseNarration(raw)[id];
 const result=JSON.parse(await readFile(timingPath,'utf8'));
-if(result.voice_id!==config.voice.id||result.text!==text) throw Error('Import must record the actual Broughton voice ID and exact approved generation prompt.');
+if(result.voice_id!==config.voice.id||result.text!==text) throw Error('Import must match the configured voice ID and approved script.');
 if(!Array.isArray(result.words)||!result.words.length) throw Error('No aligned words');
 let previous=0;
 for(const word of result.words) {
@@ -21,7 +21,8 @@ for(const word of result.words) {
 const normal=s=>s.toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
 if(normal(result.words.map(w=>w.text).join(' '))!==normal(text)) throw Error('Transcript differs from script; review alignment before import.');
 for(const cue of scene.cues) phraseTime(result.words,cue.phrase,cue.occurrence);
+if(result.duration!==undefined && (!Number.isFinite(result.duration) || result.duration<previous)) throw Error('Audio duration ends before the last word');
 await mkdir('public/audio',{recursive:true});
 await copyFile(audioPath,`public/audio/${id}.mp3`);
-await writeFile(`public/audio/${id}.json`,JSON.stringify({hash:narrationKey(text,config.voice),words:result.words,voice:result.voice_id,source:'ElevenLabs MCP speech + Scribe alignment'},null,2));
-console.log(`Imported aligned Broughton narration: ${id}`);
+await writeFile(`public/audio/${id}.json`,JSON.stringify({hash:narrationKey(text,config.voice),words:result.words,voice:result.voice_id,duration:result.duration,source:result.source},null,2));
+console.log(`Imported aligned ${config.voice.name} narration: ${id}`);
