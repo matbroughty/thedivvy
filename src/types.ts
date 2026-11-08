@@ -34,6 +34,15 @@ export interface Gang {
   gimbert?: boolean;
 }
 
+export interface ReviewAudio {
+  url: string;
+  durationSeconds: number;
+  abridged?: boolean;
+  aiNarrated?: boolean;
+  /** Optional personal explanation of the narration, replacing the generic AI label. */
+  narrationNote?: string;
+}
+
 export interface EpisodeFrontmatter {
   title: string;
   series: number;
@@ -64,6 +73,8 @@ export interface EpisodeFrontmatter {
   imageSourceUrl3?: string;
   /** Song heard somewhere in the episode. Optional. */
   soundtrack?: Soundtrack;
+  /** Optional spoken version of the review, hosted separately from the site. */
+  audio?: ReviewAudio;
   /**
    * Which regulars turn up. Optional so reviews written before the field
    * existed still load; GangLine renders nothing when it is missing.

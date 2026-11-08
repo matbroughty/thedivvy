@@ -11,6 +11,7 @@ import LikeButton from "../components/LikeButton";
 import Seo from "../components/Seo";
 import SoundtrackLine from "../components/SoundtrackLine";
 import GangLine from "../components/GangLine";
+import ReviewAudioPlayer from "../components/ReviewAudioPlayer";
 import { formatAirDate, formatReviewDate } from "../lib/dates";
 import { episodeCode, episodeHeading } from "../lib/episodeLabel";
 import { useSeriesTheme } from "../lib/useSeriesTheme";
@@ -74,6 +75,10 @@ export default function EpisodePage() {
         )}
         <GangLine frontmatter={frontmatter} />
       </header>
+
+      {frontmatter.audio && (
+        <ReviewAudioPlayer audio={frontmatter.audio} title={frontmatter.title} />
+      )}
 
       <EpisodeImage frontmatter={frontmatter} />
 

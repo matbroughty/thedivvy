@@ -701,6 +701,44 @@ li {
   margin: 0 0 1.3rem;
 }
 
+.review-audio {
+  margin: 0 0 2rem;
+  padding: 1rem;
+  border-left: 3px solid var(--color-accent);
+  background: var(--color-bg-card);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.review-audio__heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.review-audio__heading h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.review-audio__heading span,
+.review-audio__note,
+.review-audio__link {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.review-audio__note {
+  margin: 0 0 0.7rem;
+}
+
+.review-audio audio {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.6rem;
+}
+
 /* Standing editorial aside under a page summary (e.g. the "no song in the
    episode" house rule on /soundtrack). Quieter than the summary above it. */
 .article__note {
