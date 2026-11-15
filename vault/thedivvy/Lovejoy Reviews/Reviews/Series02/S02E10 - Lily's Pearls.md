@@ -16,6 +16,11 @@ image2: "/images/episodes/series-2-episode-10-lillys-pearls2.jpg"
 imageAlt2: "Eric holding a camera next to a smiling Lovejoy and Jane in a yellow jacket"
 image3: "/images/episodes/series-2-episode-10-lillys-pearls3.jpg"
 imageAlt3: "Lovejoy in a paint-stained shirt beside Joe Gruder and his portrait"
+soundtrack:
+  title: From Both Sides Now
+  artist: Ian McShane
+  spotifyUrl: "https://open.spotify.com/track/1fymCOUtFwdIw5ZsAhAW8M"
+  substitute: true
 gang:
   lovejoy: true
   eric: true
