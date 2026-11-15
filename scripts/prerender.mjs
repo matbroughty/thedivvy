@@ -173,7 +173,7 @@ async function main() {
   const baseUrl = `http://127.0.0.1:${port}`;
 
   const browser = await puppeteer.launch({
-    headless: "new",
+    headless: true,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
