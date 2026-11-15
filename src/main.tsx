@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { MDXProvider } from "@mdx-js/react";
@@ -13,6 +13,13 @@ declare global {
   }
 }
 
+function PrerenderReady() {
+  useEffect(() => {
+    window.__APP_HYDRATED__ = true;
+  }, []);
+  return null;
+}
+
 const container = document.getElementById("root")!;
 const tree = (
   <React.StrictMode>
@@ -20,6 +27,7 @@ const tree = (
       <BrowserRouter>
         <MDXProvider components={mdxComponents}>
           <App />
+          <PrerenderReady />
         </MDXProvider>
       </BrowserRouter>
     </HelmetProvider>
@@ -34,9 +42,3 @@ if (container.hasChildNodes()) {
 } else {
   ReactDOM.createRoot(container).render(tree);
 }
-
-// Signal to the prerender script (scripts/prerender.mjs) that React has
-// finished its initial render, so puppeteer can capture stable HTML.
-requestAnimationFrame(() => {
-  window.__APP_HYDRATED__ = true;
-});

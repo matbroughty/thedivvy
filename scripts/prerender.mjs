@@ -7,13 +7,13 @@
 //      waits for hydration (window.__APP_HYDRATED__ flag from src/main.tsx),
 //      captures document.documentElement.outerHTML, and writes the result to
 //      dist/{route}/index.html.
-//   4. Sanity-checks each captured HTML contains a non-empty <title>.
+//   4. Checks each capture contains the route's title and canonical URL.
 //   5. On any per-route failure, logs and continues; exits non-zero overall.
 //
 // Concurrency: 4 routes in parallel (bounded Promise-pool).
 
 import { existsSync, createReadStream } from "node:fs";
-import { mkdir, writeFile, stat } from "node:fs/promises";
+import { mkdir, readFile, writeFile, stat } from "node:fs/promises";
 import http from "node:http";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -47,7 +47,9 @@ const MIME = {
   ".txt": "text/plain; charset=utf-8",
 };
 
-function startServer(rootDir) {
+async function startServer(rootDir) {
+  // Keep serving the original SPA shell after the homepage has been prerendered.
+  const shell = await readFile(path.join(rootDir, "index.html"));
   return new Promise((resolve) => {
     const server = http.createServer(async (req, res) => {
       try {
@@ -67,10 +69,13 @@ function startServer(rootDir) {
             stats = null;
           }
         }
-        if (!stats?.isFile()) {
-          // Fall back to dist/index.html so client-side routing works during
-          // prerender. This mirrors the production SPA-fallback behaviour.
-          filePath = path.join(rootDir, "index.html");
+        if (urlPath === "/" || !stats?.isFile()) {
+          res.writeHead(200, {
+            "content-type": MIME[".html"],
+            "cache-control": "no-store",
+          });
+          res.end(shell);
+          return;
         }
         const ext = path.extname(filePath).toLowerCase();
         res.writeHead(200, {
@@ -102,14 +107,28 @@ function outputPathFor(route) {
 async function renderRoute(browser, baseUrl, route) {
   const page = await browser.newPage();
   try {
+    // Analytics, fonts, embeds and counters can load when visitors open the page.
+    // Only requests to the local build server should affect the HTML capture.
+    await page.setRequestInterception(true);
+    page.on("request", (request) => {
+      const { origin, protocol } = new URL(request.url());
+      return origin === baseUrl || protocol === "data:" || protocol === "blob:"
+        ? request.continue()
+        : request.abort();
+    });
     const url = `${baseUrl}${route}`;
-    await page.goto(url, { waitUntil: "networkidle0", timeout: HYDRATION_TIMEOUT_MS });
+    await page.goto(url, { waitUntil: "domcontentloaded", timeout: HYDRATION_TIMEOUT_MS });
     await page.waitForFunction(() => window.__APP_HYDRATED__ === true, {
+      polling: 100,
       timeout: HYDRATION_TIMEOUT_MS,
     });
-    const html = await page.evaluate(() => document.documentElement.outerHTML);
-    if (!/<title>[^<]+<\/title>/i.test(html)) {
-      throw new Error("captured HTML has empty or missing <title>");
+    const { html, title, canonical } = await page.evaluate(() => ({
+      html: document.documentElement.outerHTML,
+      title: document.title,
+      canonical: document.querySelector('link[rel="canonical"]')?.href,
+    }));
+    if (!title.trim() || !canonical || new URL(canonical).pathname !== route) {
+      throw new Error("captured HTML is missing the route's metadata");
     }
     const out = outputPathFor(route);
     await mkdir(path.dirname(out), { recursive: true });

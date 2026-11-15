@@ -43,7 +43,7 @@ export default function Seo({
   const imgAbs = imgPath.startsWith("http") ? imgPath : `${SITE_URL}${imgPath}`;
 
   return (
-    <Helmet>
+    <Helmet defer={false}>
       <title>{fullTitle}</title>
       <meta name="description" content={desc} />
       <link rel="canonical" href={url} />
