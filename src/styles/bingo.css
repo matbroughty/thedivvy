@@ -1,0 +1,81 @@
+.bingo__rules,
+.bingo__credit {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.bingo__card {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: clamp(4px, 1vw, 10px);
+  padding: clamp(4px, 1vw, 10px);
+  background: var(--color-rule);
+  border-radius: var(--radius-lg);
+}
+
+.bingo button {
+  color: var(--color-accent-ink);
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.bingo button:focus-visible {
+  outline: 2px solid var(--color-accent-ink);
+  outline-offset: 2px;
+  z-index: 1;
+}
+
+.bingo .bingo__square {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  align-items: center;
+  min-height: clamp(5.25rem, 13vw, 7rem);
+  padding: clamp(3px, 1vw, 12px);
+  font: 700 clamp(0.66rem, 2.5vw, 0.94rem) / 1.28 var(--font-serif);
+  overflow-wrap: anywhere;
+}
+
+.bingo .bingo__square[aria-pressed="true"] {
+  color: var(--color-bg-card);
+  background: var(--color-accent-ink);
+  border-color: var(--color-accent-ink);
+}
+
+.bingo .bingo__square--win[aria-pressed="true"] {
+  box-shadow: inset 0 0 0 2px var(--color-rule);
+}
+
+.bingo__check {
+  font: 700 1rem / 1 var(--font-sans);
+  margin-top: 4px;
+}
+
+.bingo__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem 1rem;
+  margin-top: 0.8rem;
+  font-size: 0.85rem;
+}
+
+.bingo__controls p {
+  margin: 0;
+}
+
+.bingo__controls button {
+  min-height: 44px;
+  padding: 0.35rem 0.7rem;
+  font: inherit;
+  font-weight: 700;
+}
+
+@media (hover: hover) {
+  .bingo button:hover {
+    border-color: var(--color-accent-ink);
+  }
+}

@@ -25,6 +25,7 @@ export default function Header() {
           <NavLink to="/novels">Novels</NavLink>
           <NavLink to="/word-map">Word Map</NavLink>
           <NavLink to="/image-wall">Images</NavLink>
+          <NavLink to="/bingo">Bingo</NavLink>
           <NavLink to="/search">Search</NavLink>
           <NavLink to="/links">Links</NavLink>
           <NavLink to="/about">About</NavLink>

@@ -13,6 +13,7 @@ import NovelsPage from "./pages/NovelsPage";
 import SearchPage from "./pages/SearchPage";
 import WordMapPage from "./pages/WordMapPage";
 import ImageWallPage from "./pages/ImageWallPage";
+import BingoPage from "./pages/BingoPage";
 import AboutPage from "./pages/AboutPage";
 import ExternalLinksPage from "./pages/ExternalLinksPage";
 import NotFoundPage from "./pages/NotFoundPage";
@@ -34,6 +35,7 @@ export default function App() {
         <Route path="/search" element={<SearchPage />} />
         <Route path="/word-map" element={<WordMapPage />} />
         <Route path="/image-wall" element={<ImageWallPage />} />
+        <Route path="/bingo" element={<BingoPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/links" element={<ExternalLinksPage />} />
         <Route path="*" element={<NotFoundPage />} />
